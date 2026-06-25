@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Micron Technology FY2026 Q3決算後ディープダイブ。実績、Q4ガイダンス、HBM4、戦略顧客契約、投資判断を整理。">
+  <meta name="description" content="Micron Technology FY2026 Q3決算プレビュー。注目KPI、コンセンサス、Bull/Base/Bearシナリオと株価反応の条件を整理。">
   <link rel="canonical" href="https://anritosho.github.io/earnings-preview/">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="MU Earnings Research">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:url" content="https://anritosho.github.io/earnings-preview/">
-  <meta property="og:title" content="MU FY2026 Q3 決算後ディープダイブ">
-  <meta property="og:description" content="予想超過より重要なのは、メモリ市況を「契約収益」に変え始めたこと。実績、Q4ガイド、HBM4、投資判断を整理。">
+  <meta property="og:title" content="MU FY2026 Q3 決算プレビュー">
+  <meta property="og:description" content="注目KPI、コンセンサス、上振れ・下振れ要因、Bull/Base/Bearシナリオと株価反応の条件を整理。">
   <meta property="og:image" content="https://anritosho.github.io/earnings-preview/x-card.png">
   <meta property="og:image:secure_url" content="https://anritosho.github.io/earnings-preview/x-card.png">
   <meta property="og:image:type" content="image/png">
@@ -18,42 +18,37 @@
   <meta property="og:image:height" content="909">
   <meta property="og:image:alt" content="株価チャートを背景にした金髪の女性キャラクター">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MU FY2026 Q3 決算後ディープダイブ">
-  <meta name="twitter:description" content="実績、Q4ガイダンス、HBM4、戦略顧客契約、投資判断を一次資料中心に整理。">
+  <meta name="twitter:title" content="MU FY2026 Q3 決算プレビュー">
+  <meta name="twitter:description" content="注目KPI、コンセンサス、Bull/Base/Bearシナリオと決算後の株価反応条件を整理。">
   <meta name="twitter:image" content="https://anritosho.github.io/earnings-preview/x-card.png">
   <meta name="twitter:image:alt" content="株価チャートを背景にした金髪の女性キャラクター">
-  <title>MU FY2026 Q3 決算後ディープダイブ</title>
+  <title>MU FY2026 Q3 Earnings Preview</title>
   <style>
     :root {
-      --bg: #f2f4f5;
+      --bg: #f3f5f6;
       --paper: #ffffff;
-      --ink: #15191c;
-      --muted: #5b666d;
-      --line: #d6dde1;
+      --ink: #14191d;
+      --muted: #5d6870;
+      --line: #d7dde1;
       --charcoal: #20272c;
-      --red: #b52d3a;
+      --red: #bd2d3a;
       --red-soft: #fff0f1;
-      --green: #24704a;
+      --green: #28724c;
       --green-soft: #edf7f1;
-      --amber: #946013;
+      --amber: #9a6414;
       --amber-soft: #fff7e7;
-      --blue: #21647d;
+      --blue: #246681;
       --blue-soft: #edf6fa;
-      --violet: #654f8d;
-      --violet-soft: #f4f0fb;
     }
 
     * { box-sizing: border-box; }
 
-    html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
-      overflow-x: hidden;
       background: var(--bg);
       color: var(--ink);
       font-family: Arial, "Helvetica Neue", "Yu Gothic", "Meiryo", sans-serif;
-      line-height: 1.64;
+      line-height: 1.62;
     }
 
     a {
@@ -62,19 +57,15 @@
       text-underline-offset: 2px;
     }
 
-    sup a { text-decoration: none; }
-
     header {
       background: var(--charcoal);
       color: #fff;
       border-top: 7px solid var(--red);
-      padding: 34px 6vw 30px;
+      padding: 36px 6vw 30px;
     }
 
-    .header-inner,
-    main,
-    .footer-inner {
-      width: min(1180px, 92vw);
+    .header-inner {
+      width: min(1180px, 100%);
       margin: 0 auto;
     }
 
@@ -82,113 +73,65 @@
       display: flex;
       align-items: center;
       gap: 14px;
-      margin-bottom: 17px;
+      margin-bottom: 18px;
     }
 
     .ticker {
-      width: 60px;
-      height: 60px;
+      width: 58px;
+      height: 58px;
       display: grid;
       place-items: center;
-      flex: 0 0 auto;
-      border-radius: 6px;
       background: var(--red);
+      color: #fff;
       font-size: 23px;
       font-weight: 800;
+      border-radius: 6px;
+      flex: 0 0 auto;
     }
 
     .eyebrow {
-      color: #cdd5d9;
+      color: #cbd3d8;
       font-size: 13px;
       text-transform: uppercase;
     }
 
-    .as-of {
-      margin-top: 3px;
-      color: #eef1f3;
-      font-size: 14px;
-    }
-
     h1 {
       margin: 0;
-      max-width: 1000px;
-      font-size: clamp(31px, 5vw, 55px);
+      font-size: clamp(31px, 5vw, 54px);
       line-height: 1.08;
       letter-spacing: 0;
       word-break: keep-all;
     }
 
     .subtitle {
-      max-width: 990px;
+      max-width: 960px;
       margin: 14px 0 0;
       color: #dce2e5;
       font-size: 18px;
     }
 
-    .header-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-      margin-top: 18px;
-    }
-
-    .header-tag {
-      border: 1px solid #657178;
-      border-radius: 4px;
-      padding: 4px 8px;
-      color: #edf1f3;
-      font-size: 12px;
-    }
-
-    nav {
-      background: #fff;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .nav-inner {
+    main {
       width: min(1180px, 92vw);
       margin: 0 auto;
-      display: flex;
-      gap: 18px;
-      overflow-x: auto;
-      padding: 10px 0;
-      white-space: nowrap;
+      padding: 26px 0 58px;
     }
 
-    nav a {
-      color: #344047;
-      font-size: 13px;
-      font-weight: 700;
-      text-decoration: none;
+    section {
+      margin: 30px 0;
     }
-
-    main { padding: 26px 0 58px; }
-
-    section { margin: 32px 0; }
 
     h2 {
       margin: 0 0 14px;
-      font-size: 26px;
+      font-size: 25px;
       line-height: 1.25;
-      letter-spacing: 0;
     }
 
     h3 {
       margin: 0 0 8px;
       font-size: 17px;
-      line-height: 1.35;
-      letter-spacing: 0;
     }
 
     p { margin: 0 0 12px; }
-
-    .section-kicker {
-      margin-bottom: 4px;
-      color: var(--red);
-      font-size: 12px;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
 
     .tiles {
       display: grid;
@@ -196,343 +139,272 @@
       gap: 10px;
     }
 
-    .tile {
-      min-height: 132px;
-      border: 1px solid var(--line);
-      border-top: 4px solid var(--blue);
-      border-radius: 6px;
+    .tile,
+    .panel,
+    .scenario {
       background: var(--paper);
-      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      min-width: 0;
     }
 
-    .tile.green { border-top-color: var(--green); }
-    .tile.red { border-top-color: var(--red); }
-    .tile.amber { border-top-color: var(--amber); }
-    .tile.violet { border-top-color: var(--violet); }
+    .tile {
+      padding: 15px;
+      min-height: 142px;
+    }
 
     .tile-label {
       color: var(--muted);
       font-size: 12px;
       font-weight: 700;
+      text-transform: uppercase;
     }
 
     .tile-value {
-      margin: 5px 0 3px;
-      font-size: 27px;
+      margin: 7px 0 5px;
+      font-size: 25px;
       font-weight: 800;
-      line-height: 1.1;
+      line-height: 1.15;
+      overflow-wrap: anywhere;
     }
 
     .tile-note {
       color: var(--muted);
       font-size: 12px;
-      line-height: 1.42;
+      line-height: 1.45;
     }
 
-    .verdict-grid,
-    .two-col,
-    .scenario-grid,
-    .action-grid {
+    .two-col {
       display: grid;
-      gap: 12px;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 18px;
     }
 
-    .verdict-grid { grid-template-columns: 1fr 1fr; }
-    .two-col { grid-template-columns: 1.1fr .9fr; }
-    .scenario-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .action-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-
-    .panel,
-    .scenario,
-    .action {
-      border: 1px solid var(--line);
-      border-radius: 7px;
-      background: var(--paper);
-      padding: 17px;
-    }
-
-    .panel.good { border-left: 5px solid var(--green); }
-    .panel.watch { border-left: 5px solid var(--amber); }
-    .panel.risk { border-left: 5px solid var(--red); }
-    .panel.info { border-left: 5px solid var(--blue); }
-
-    .score {
-      display: inline-block;
-      min-width: 66px;
-      margin-bottom: 9px;
-      border-radius: 4px;
-      padding: 3px 8px;
-      color: #fff;
-      background: var(--green);
-      font-size: 12px;
-      font-weight: 800;
-      text-align: center;
-    }
-
-    .score.amber { background: var(--amber); }
-
-    .decision {
-      border: 2px solid var(--charcoal);
-      border-radius: 7px;
-      background: #fff;
+    .panel {
       padding: 18px;
     }
 
-    .decision-title {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 8px;
+    .lead {
+      font-size: 17px;
     }
 
-    .decision-mark {
-      width: 34px;
-      height: 34px;
-      display: grid;
-      place-items: center;
-      flex: 0 0 auto;
-      border-radius: 50%;
-      color: #fff;
-      background: var(--amber);
-      font-weight: 900;
-    }
-
-    .callout {
-      border-left: 5px solid var(--blue);
-      background: var(--blue-soft);
-      padding: 14px 16px;
-    }
-
-    .callout.green {
-      border-left-color: var(--green);
-      background: var(--green-soft);
-    }
-
-    .callout.amber {
-      border-left-color: var(--amber);
+    .decision {
+      border-left: 5px solid var(--amber);
       background: var(--amber-soft);
+      padding: 14px 16px;
+      margin-top: 15px;
     }
 
-    .callout.red {
-      border-left-color: var(--red);
-      background: var(--red-soft);
+    .decision strong { color: #68450f; }
+
+    .source-line {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 13px;
     }
 
-    .source-type {
+    .source-line:last-child { border-bottom: 0; }
+
+    .label {
       display: inline-block;
-      margin-right: 5px;
-      border-radius: 3px;
-      padding: 2px 6px;
+      padding: 2px 7px;
+      margin-right: 6px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: #f6f8f9;
+      color: #44515a;
       font-size: 11px;
-      font-weight: 800;
-      vertical-align: 1px;
+      font-weight: 700;
     }
 
-    .source-type.fact { background: #e6f2f7; color: #15526a; }
-    .source-type.mgmt { background: #eaf5ee; color: #205d40; }
-    .source-type.consensus { background: #f4eefb; color: #59417d; }
-    .source-type.analysis { background: #fff2d8; color: #7b4f0d; }
-    .source-type.limit { background: #fdebec; color: #8e2530; }
+    .label.fact { background: var(--green-soft); color: var(--green); border-color: #bcdcc9; }
+    .label.consensus { background: var(--blue-soft); color: var(--blue); border-color: #bdd9e5; }
+    .label.assumption { background: var(--amber-soft); color: var(--amber); border-color: #ead29c; }
+    .label.risk { background: var(--red-soft); color: var(--red); border-color: #e7b9be; }
+
+    .bar-chart {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 18px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 190px 1fr 92px;
+      align-items: center;
+      gap: 12px;
+      margin: 12px 0;
+    }
+
+    .bar-name {
+      font-size: 13px;
+      color: #39444c;
+    }
+
+    .track {
+      position: relative;
+      height: 17px;
+      background: #e8ecef;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      border-radius: 3px;
+      background: var(--blue);
+    }
+
+    .fill.guide { background: #6f7d86; }
+    .fill.high { background: var(--red); }
+
+    .bar-number {
+      text-align: right;
+      font-size: 13px;
+      font-weight: 700;
+    }
 
     .table-wrap {
       overflow-x: auto;
       border: 1px solid var(--line);
       border-radius: 7px;
-      background: #fff;
+      background: var(--paper);
     }
 
     table {
       width: 100%;
+      min-width: 800px;
       border-collapse: collapse;
-      min-width: 760px;
+      background: var(--paper);
     }
 
     th,
     td {
-      border-bottom: 1px solid var(--line);
       padding: 11px 12px;
+      border-bottom: 1px solid var(--line);
       text-align: left;
       vertical-align: top;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     th {
-      background: #f0f3f4;
-      color: #354148;
-      font-size: 12px;
+      background: #e9edef;
+      color: #364149;
+      font-size: 11px;
       text-transform: uppercase;
     }
 
     tr:last-child td { border-bottom: 0; }
 
-    .num {
-      white-space: nowrap;
-      font-variant-numeric: tabular-nums;
-    }
+    .positive { color: var(--green); font-weight: 700; }
+    .negative { color: var(--red); font-weight: 700; }
+    .neutral { color: var(--amber); font-weight: 700; }
+    .small { color: var(--muted); font-size: 12px; }
 
-    .positive { color: var(--green); font-weight: 800; }
-    .negative { color: var(--red); font-weight: 800; }
-    .neutral { color: var(--amber); font-weight: 800; }
-
-    .bar-stack {
+    .reaction-grid,
+    .scenario-grid {
       display: grid;
-      gap: 11px;
-      margin-top: 11px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
     }
 
-    .bar-row {
-      display: grid;
-      grid-template-columns: 128px 1fr 76px;
-      gap: 10px;
-      align-items: center;
+    .reaction {
+      padding: 17px;
+      border-top: 5px solid var(--amber);
     }
 
-    .bar-label,
-    .bar-value {
-      font-size: 13px;
-      font-weight: 700;
+    .reaction.up { border-top-color: var(--green); }
+    .reaction.down { border-top-color: var(--red); }
+
+    .scenario {
+      padding: 17px;
     }
-
-    .bar-value {
-      text-align: right;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .bar-track {
-      height: 18px;
-      overflow: hidden;
-      border-radius: 3px;
-      background: #e9edef;
-    }
-
-    .bar-fill {
-      height: 100%;
-      background: var(--blue);
-    }
-
-    .bar-fill.green { background: var(--green); }
-    .bar-fill.red { background: var(--red); }
-    .bar-fill.amber { background: var(--amber); }
-    .bar-fill.violet { background: var(--violet); }
-
-    .bridge {
-      display: grid;
-      grid-template-columns: 1fr 44px 1fr 44px 1fr;
-      align-items: stretch;
-      gap: 8px;
-    }
-
-    .bridge-box {
-      min-height: 150px;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      background: #fff;
-      padding: 14px;
-    }
-
-    .bridge-arrow {
-      display: grid;
-      place-items: center;
-      color: var(--muted);
-      font-size: 27px;
-      font-weight: 900;
-    }
-
-    ul {
-      margin: 8px 0 0;
-      padding-left: 20px;
-    }
-
-    li { margin: 5px 0; }
 
     .scenario.bull { border-top: 5px solid var(--green); }
     .scenario.base { border-top: 5px solid var(--blue); }
     .scenario.bear { border-top: 5px solid var(--red); }
 
-    .probability {
-      color: var(--muted);
-      font-size: 12px;
+    ul {
+      margin: 7px 0 0;
+      padding-left: 20px;
+    }
+
+    li { margin: 6px 0; }
+
+    .questions td:first-child {
       font-weight: 700;
+      width: 29%;
     }
 
-    .action.add { border-top: 4px solid var(--green); }
-    .action.hold { border-top: 4px solid var(--blue); }
-    .action.trim { border-top: 4px solid var(--red); }
-    .action.wait { border-top: 4px solid var(--amber); }
-
-    .small {
-      color: var(--muted);
-      font-size: 12px;
+    .evidence {
+      border-left: 5px solid var(--red);
+      background: var(--red-soft);
+      padding: 14px 16px;
     }
 
-    .source-list {
-      display: grid;
-      gap: 8px;
-      padding: 0;
-      list-style: none;
-      counter-reset: sources;
+    .sources {
+      font-size: 13px;
     }
 
-    .source-list li {
-      counter-increment: sources;
-      border-bottom: 1px solid var(--line);
-      padding: 0 0 9px 31px;
-      position: relative;
+    .sources li {
+      margin: 8px 0;
+      overflow-wrap: anywhere;
     }
 
-    .source-list li::before {
-      content: counter(sources);
-      position: absolute;
-      left: 0;
-      top: 1px;
-      width: 22px;
-      height: 22px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: var(--charcoal);
-      color: #fff;
-      font-size: 11px;
-      font-weight: 800;
+    sup a {
+      font-weight: 700;
+      text-decoration: none;
     }
 
     footer {
+      margin-top: 34px;
+      padding-top: 18px;
       border-top: 1px solid var(--line);
-      background: #fff;
-      padding: 22px 0 30px;
       color: var(--muted);
       font-size: 12px;
     }
 
     @media (max-width: 980px) {
       .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .two-col,
+      .reaction-grid,
       .scenario-grid { grid-template-columns: 1fr; }
-      .action-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .two-col { grid-template-columns: 1fr; }
     }
 
-    @media (max-width: 720px) {
-      header { padding: 26px 0 24px; }
-      .header-inner,
-      main,
-      .footer-inner,
-      .nav-inner { width: min(92vw, 1180px); }
+    @media (max-width: 620px) {
+      header { padding: 28px 5vw 24px; }
+      main { width: min(94vw, 1180px); }
+      .brand-row { display: block; }
+      .ticker { margin-bottom: 12px; }
+      h1 {
+        font-size: 31px;
+        line-height: 1.18;
+        word-break: normal;
+        overflow-wrap: anywhere;
+      }
+      .subtitle {
+        font-size: 17px;
+        overflow-wrap: anywhere;
+      }
+      .tiles { grid-template-columns: 1fr; }
+      .bar-row { grid-template-columns: 1fr; gap: 5px; }
+      .bar-number { text-align: left; }
+      .tile { min-height: 0; }
+    }
+
+    @media (max-width: 420px) {
+      header { padding: 24px 5vw 22px; }
+      .ticker {
+        width: 52px;
+        height: 52px;
+        font-size: 21px;
+      }
+      h1 {
+        font-size: 27px;
+        line-height: 1.2;
+      }
       .subtitle { font-size: 16px; }
-      .tiles,
-      .verdict-grid,
-      .action-grid { grid-template-columns: 1fr; }
-      .bridge { grid-template-columns: 1fr; }
-      .bridge-arrow { min-height: 28px; transform: rotate(90deg); }
-      .bar-row { grid-template-columns: 95px 1fr 62px; gap: 7px; }
-      h2 { font-size: 23px; }
-    }
-
-    @media print {
-      body { background: #fff; }
-      nav { display: none; }
-      main { width: 100%; }
-      section { break-inside: avoid; }
-      a { color: inherit; }
     }
   </style>
 </head>
@@ -542,751 +414,421 @@
       <div class="brand-row">
         <div class="ticker">MU</div>
         <div>
-          <div class="eyebrow">Micron Technology | FY2026 Q3 Post-Earnings Deep Dive</div>
-          <div class="as-of">決算日: 2026年6月24日 | 情報凍結: 2026年6月25日 08:50 JST</div>
+          <div class="eyebrow">Micron Technology | FY2026 Q3 Earnings Preview</div>
+          <h1>Q3のビートより、<br>Q4ガイドと80%超マージンの持続性</h1>
         </div>
       </div>
-      <h1>予想超過より重要なのは、<br>メモリ市況を「契約収益」に変え始めたこと</h1>
       <p class="subtitle">
-        Q3実績とQ4ガイダンスは決算前Bullケースさえ大幅に上回った。会社としては最上級の決算。
-        株式としての次の論点は、85-86%粗利率を外挿することではなく、戦略顧客契約が次の下降局面で
-        どれだけ利益とフリーキャッシュフローを守れるかである。
+        市場予想は3月の会社ガイダンスを大きく上回る水準まで切り上がった。
+        株価反応を決めるのは、HBM4と通常DRAM/NANDの価格上昇がQ4以降にも続き、
+        「ピーク利益」ではなく持続的な収益力として説明できるかどうか。
       </p>
-      <div class="header-tags">
-        <span class="header-tag">一次資料優先</span>
-        <span class="header-tag">コンセンサスは公開報道ベース</span>
-        <span class="header-tag">完全なQ&amp;A逐語録は未取得</span>
-        <span class="header-tag">投資判断は条件付き</span>
-      </div>
     </div>
   </header>
 
-  <nav aria-label="レポート内ナビゲーション">
-    <div class="nav-inner">
-      <a href="#verdict">結論</a>
-      <a href="#scorecard">実績差分</a>
-      <a href="#quality">上振れの質</a>
-      <a href="#memory">DRAM・NAND・HBM</a>
-      <a href="#guide">Q4ガイド</a>
-      <a href="#call">説明会</a>
-      <a href="#thesis">投資仮説</a>
-      <a href="#scenarios">シナリオ</a>
-      <a href="#actions">判断条件</a>
-      <a href="#sources">出所</a>
-    </div>
-  </nav>
-
   <main>
-    <section aria-label="主要数値">
-      <div class="tiles">
-        <article class="tile green">
-          <div class="tile-label">Q3売上高</div>
-          <div class="tile-value">$41.46B</div>
-          <div class="tile-note">FactSet $35.91B比 +15.4%。会社ガイド中央値比 +23.7%。<sup><a href="#src-1">1</a></sup><sup><a href="#src-5">5</a></sup></div>
-        </article>
-        <article class="tile green">
-          <div class="tile-label">調整後EPS</div>
-          <div class="tile-value">$25.11</div>
-          <div class="tile-note">FactSet $20.86比 +20.4%。会社ガイド中央値比 +31.1%。<sup><a href="#src-1">1</a></sup><sup><a href="#src-5">5</a></sup></div>
-        </article>
-        <article class="tile violet">
-          <div class="tile-label">調整後粗利率</div>
-          <div class="tile-value">84.9%</div>
-          <div class="tile-note">会社ガイド約81%を390bp上回る。Q4は約86%。<sup><a href="#src-1">1</a></sup></div>
-        </article>
-        <article class="tile amber">
-          <div class="tile-label">Q4売上ガイド</div>
-          <div class="tile-value">$50.0B</div>
-          <div class="tile-note">FactSet $43.58B比 +14.7%。調整後EPS $31は予想比 +20.5%。<sup><a href="#src-1">1</a></sup><sup><a href="#src-5">5</a></sup></div>
-        </article>
-        <article class="tile red">
-          <div class="tile-label">時間外株価</div>
-          <div class="tile-value">+15.9%</div>
-          <div class="tile-note">$1,048.51終値から$1,215.50。19:49 ET時点の参考値。<sup><a href="#src-10">10</a></sup></div>
-        </article>
-      </div>
+    <section class="tiles">
+      <article class="tile">
+        <div class="tile-label">決算予定</div>
+        <div class="tile-value">6月24日<br>米国引け後</div>
+        <div class="tile-note">日本時間では6月25日早朝。<sup><a href="#src-3">3</a></sup></div>
+      </article>
+      <article class="tile">
+        <div class="tile-label">会社 Q3 売上ガイド</div>
+        <div class="tile-value">$33.5B<br>±$0.75B</div>
+        <div class="tile-note">2026年3月18日提示。<sup><a href="#src-1">1</a></sup></div>
+      </article>
+      <article class="tile">
+        <div class="tile-label">公開コンセンサス</div>
+        <div class="tile-value">$35.75-36.15B</div>
+        <div class="tile-note">FactSet / Visible Alpha、6月22日時点。<sup><a href="#src-3">3</a></sup><sup><a href="#src-4">4</a></sup></div>
+      </article>
+      <article class="tile">
+        <div class="tile-label">調整後 EPS 予想</div>
+        <div class="tile-value">$20.76-20.95</div>
+        <div class="tile-note">会社ガイド中央値は$19.15。<sup><a href="#src-1">1</a></sup><sup><a href="#src-3">3</a></sup></div>
+      </article>
+      <article class="tile">
+        <div class="tile-label">6月23日終値</div>
+        <div class="tile-value">$1,051.77</div>
+        <div class="tile-note">前日比-13.2%。前日の最高値圏から急反落。<sup><a href="#src-5">5</a></sup><sup><a href="#src-9">9</a></sup></div>
+      </article>
     </section>
 
-    <section id="verdict">
-      <div class="section-kicker">Lead Verdict</div>
-      <h2>「会社として良い」と「株式として良い」は、今回は両方Yes。ただし理由は違う</h2>
-      <div class="verdict-grid">
-        <article class="panel good">
-          <span class="score">9.5 / 10</span>
-          <h3>会社として良い決算</h3>
-          <p>
-            売上、EPS、粗利率、Q4ガイドのすべてが公開コンセンサスだけでなく、
-            <a href="./mu-fy2026-q3-earnings-preview.html">決算前プレビュー</a>のBull閾値も突破した。
-            データセンター売上は$25.3B、全社の61%まで拡大し、調整後FCFは$18.3B。
-            HBM4、データセンターSSD、通常DRAM/NANDの価格上昇が同時に寄与した。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup>
-          </p>
-        </article>
-        <article class="panel watch">
-          <span class="score amber">8.0 / 10</span>
-          <h3>株式として良い決算</h3>
-          <p>
-            高い買い手側の期待値をQ4 EPS $31で超え、さらに16件の戦略顧客契約を示したため、
-            単なるピーク利益ではなく「下降局面の利益耐性」へ評価軸を移せる。時間外上昇は妥当。
-            一方、株価はすでに急騰しており、Q4の価格上昇率鈍化とFY27の大型投資は次の評価壁になる。<sup><a href="#src-5">5</a></sup><sup><a href="#src-6">6</a></sup><sup><a href="#src-7">7</a></sup>
-          </p>
-        </article>
-      </div>
-      <div class="decision" style="margin-top:12px">
-        <div class="decision-title">
-          <div class="decision-mark">!</div>
-          <h3>現時点の条件付きスタンス: 保有 / 様子見。ギャップ上昇を無条件には追わない</h3>
-        </div>
-        <p>
-          業績予想の上方修正余地は大きい。ただし、公開情報だけではFY27の正規化EPSとバリュエーションを
-          十分に結び付けられない。追加投資の条件は、(1) HBM4の顧客拡大、(2) 戦略契約の収益認識、
-          (3) 価格上昇鈍化後も80%前後の粗利率が維持される証拠。利益確定の条件は、
-          それらの改善より株価上昇が先行すること。
+    <section class="two-col">
+      <article class="panel">
+        <h2>エグゼクティブ・サマリー</h2>
+        <p class="lead">
+          <strong>暫定スタンスは「wait for proof」。</strong>
+          会社ガイドに対する単純なビートは、すでに株価の十分条件ではない。
+          公開コンセンサスは会社売上ガイド中央値を約7-8%、調整後EPSを約8-9%上回り、
+          強気の個別予想は売上$38.5B、EPS $22.84まで上がっている。<sup><a href="#src-3">3</a></sup>
         </p>
-        <p class="small">個別の取得価格、保有比率、投資期間が未指定のため、売買判断はポジション非依存の条件表として提示する。</p>
+        <p>
+          最重要KPIは、(1) Q4売上・EPSガイド、(2) 80%超の粗利率と70%台の営業利益率の持続性、
+          (3) HBM4の数量・顧客・長期契約、(4) 通常DRAM/NANDのASP上昇とビット出荷のバランス、
+          (5) 能力増強と設備投資である。Q2の増収は数量より価格の寄与が大きく、
+          DRAM ASPは前四半期比で60%台半ば、NAND ASPは70%台後半上昇した。<sup><a href="#src-2">2</a></sup>
+        </p>
+        <p>
+          株価は6月22日に$1,211.38の最高値を付けた翌日、半導体株全体の売りで$1,051.77まで13.2%下落した。
+          決算直前に期待は多少リセットされたが、年初来の大幅上昇と「ピーク利益」懸念は残る。
+          過去12四半期はすべて予想超過でも、翌営業日に下落した回が7回あり、ヘッドラインのビートだけでは反応を説明できない。<sup><a href="#src-6">6</a></sup>
+        </p>
+        <div class="decision">
+          <strong>サイズを変える条件:</strong>
+          Q4ガイドが公開予想の売上$43.14B・EPS $25.39を明確に上回り、
+          かつ80%超の粗利率が一時的なスポット価格ではなく、HBMミックス・長期契約・供給制約で支えられていると確認できれば
+          <em>add / press</em> の検討余地。Q3ビートでもQ4がインライン以下なら <em>hold / trim</em>、
+          需要や価格のピークアウトを示すなら <em>exit / wait for proof</em> が基本線。
+        </div>
+      </article>
+
+      <aside class="panel">
+        <h2>ソース凍結</h2>
+        <div class="source-line"><span class="label fact">Freeze</span>2026年6月24日 05:35 JST</div>
+        <div class="source-line"><span class="label fact">会社資料</span>Q2決算リリース: 2026年3月18日</div>
+        <div class="source-line"><span class="label fact">SEC</span>Q2 10-Q: 2026年3月19日</div>
+        <div class="source-line"><span class="label consensus">Consensus</span>FactSet / Visible Alphaの公開報道: 6月19-22日</div>
+        <div class="source-line"><span class="label fact">Price</span>Yahoo Finance日次データ: 6月23日米国終値</div>
+        <div class="source-line"><span class="label risk">Missing</span>コンセンサス粗利率、予想分布、正式なwhisper、当日オプション板、ポジショニング</div>
+        <p class="small" style="margin-top:12px;">
+          FactSet/LSEGへ直接接続したデータではない。公開報道に記載された各社データを分離して表示し、
+          数字が一致しない箇所はレンジとして扱う。
+        </p>
+      </aside>
+    </section>
+
+    <section>
+      <h2>期待値バー</h2>
+      <div class="bar-chart" aria-label="Q3 revenue expectation bar">
+        <div class="bar-row">
+          <div class="bar-name">会社ガイド中央値</div>
+          <div class="track"><div class="fill guide" style="width:83.75%"></div></div>
+          <div class="bar-number">$33.50B</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-name">FactSet 公開値</div>
+          <div class="track"><div class="fill" style="width:89.38%"></div></div>
+          <div class="bar-number">$35.75B</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-name">Visible Alpha 公開値</div>
+          <div class="track"><div class="fill" style="width:90.38%"></div></div>
+          <div class="bar-number">$36.15B</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-name">強気の個別予想: Wedbush</div>
+          <div class="track"><div class="fill high" style="width:96.25%"></div></div>
+          <div class="bar-number">$38.50B</div>
+        </div>
+        <p class="small">
+          目盛り上限は$40B。FactSetとVisible Alphaの差は、取得時刻・構成銘柄・更新頻度の違いを含みうる。
+          Wedbushはコンセンサスではなく、公開された強気の個別予想。<sup><a href="#src-3">3</a></sup><sup><a href="#src-4">4</a></sup>
+        </p>
       </div>
     </section>
 
-    <section id="scorecard">
-      <div class="section-kicker">Scorecard</div>
-      <h2>実績・会社ガイド・市場予想の差</h2>
+    <section>
+      <h2>注目KPIダッシュボード</h2>
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
-              <th>指標</th>
-              <th>Q3実績</th>
-              <th>会社ガイド</th>
-              <th>FactSet予想</th>
-              <th>差分と評価</th>
+              <th>KPI</th>
+              <th>直近実績 / 会社ガイド</th>
+              <th>市場の公開バー</th>
+              <th>決算での判定軸</th>
+              <th>株価への意味</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>売上高</strong></td>
-              <td class="num">$41.456B</td>
-              <td class="num">$33.5B ± $0.75B</td>
-              <td class="num">$35.91B</td>
-              <td><span class="positive">予想比 +$5.55B / +15.4%</span><br>ガイド中央値比 +$7.96B。過去最大の四半期増収。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup><sup><a href="#src-5">5</a></sup></td>
+              <td><strong>Q3売上</strong></td>
+              <td>Q2 $23.86B<br>Q3 guide $33.5B ±$0.75B</td>
+              <td>$35.75-36.15B<br>強気予想 $38.5B</td>
+              <td>会社ガイド比ではなく、上方修正後の$36B前後を超えるか。</td>
+              <td><span class="neutral">単純ビートの価値は低下。</span> $38B台なら強い需要証明。</td>
             </tr>
             <tr>
-              <td><strong>調整後EPS</strong></td>
-              <td class="num">$25.11</td>
-              <td class="num">$19.15 ± $0.40</td>
-              <td class="num">$20.86</td>
-              <td><span class="positive">予想比 +$4.25 / +20.4%</span><br>ガイド中央値比 +31.1%。売上と粗利率の両方が寄与。<sup><a href="#src-1">1</a></sup><sup><a href="#src-5">5</a></sup></td>
+              <td><strong>非GAAP粗利率</strong></td>
+              <td>Q2 74.9%<br>Q3 guide 約81%</td>
+              <td>公開コンセンサス未取得</td>
+              <td>80%超の実績とQ4継続性。価格、HBMミックス、歩留まり、在庫評価を分解。</td>
+              <td><span class="positive">最重要。</span> 80%台定着ならバリュエーション再評価、失速ならピーク利益懸念。</td>
             </tr>
             <tr>
-              <td><strong>調整後粗利率</strong></td>
-              <td class="num">84.9%</td>
-              <td class="num">約81%</td>
-              <td>公開値未取得</td>
-              <td><span class="positive">会社想定比 +390bp</span><br>価格と高付加価値ミックスが強い。数量主導ではない点に注意。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup></td>
+              <td><strong>非GAAP EPS</strong></td>
+              <td>Q2 $12.20<br>Q3 guide $19.15 ±$0.40</td>
+              <td>$20.76-20.95<br>強気予想 $22.84</td>
+              <td>粗利率と税率、希薄化後株式数の寄与を確認。</td>
+              <td>$21前後はインライン。$22台後半は強いが、Q4ガイド優先。</td>
             </tr>
             <tr>
-              <td><strong>調整後FCF</strong></td>
-              <td class="num">$18.304B</td>
-              <td>開示なし</td>
-              <td>公開値未取得</td>
-              <td>調整後純利益の63.4%。運転資本増加を吸収し、利益の現金化も強い。<sup><a href="#src-1">1</a></sup></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="callout green" style="margin-top:12px">
-        <strong>決算前プレビューとの差分:</strong>
-        Bullケースは売上$38.5B以上、粗利率82.5%以上、EPS $22.8以上、Q4売上$45B以上、EPS $27以上だった。
-        実績は5項目すべてを超過した。これは「予想レンジの上側」ではなく、事前シナリオの再設定を要する上振れである。
-      </div>
-    </section>
-
-    <section id="quality">
-      <div class="section-kicker">Quality of Print</div>
-      <h2>上振れの質: 短期は高品質、循環調整後の持続性はまだ検証中</h2>
-      <div class="bridge">
-        <article class="bridge-box">
-          <span class="source-type fact">事実</span>
-          <h3>数量より価格が主役</h3>
-          <p>DRAMはビット出荷が低1桁%増に対しASPは低60%増。NANDはビット出荷が中1桁%増に対しASPは中80%増。<sup><a href="#src-2">2</a></sup></p>
-        </article>
-        <div class="bridge-arrow">→</div>
-        <article class="bridge-box">
-          <span class="source-type analysis">分析</span>
-          <h3>利益レバレッジは極めて強い</h3>
-          <p>供給制約下の値上げが固定費構造に乗り、84.9%粗利率と81.2%営業利益率へ転換。近い将来のEPS改定には強い追い風。</p>
-        </article>
-        <div class="bridge-arrow">→</div>
-        <article class="bridge-box">
-          <span class="source-type analysis">分析</span>
-          <h3>最大の反証点も価格</h3>
-          <p>数量成長が小さいため、ASPの方向が変われば逆レバレッジも大きい。戦略契約のフロアがどこまで下落を止めるかが新しい核心。</p>
-        </article>
-      </div>
-
-      <div class="two-col" style="margin-top:12px">
-        <article class="panel good">
-          <h3>高品質と評価する理由</h3>
-          <ul>
-            <li>売上だけでなく粗利率、EPS、FCF、Q4ガイドまで一貫して上振れ。</li>
-            <li>データセンター以外も全4事業部で79%以上の粗利率を計上。<sup><a href="#src-1">1</a></sup></li>
-            <li>GAAP EPS $24.67と調整後EPS $25.11の差は$0.44にとどまる。<sup><a href="#src-1">1</a></sup></li>
-            <li>調整項目は株式報酬$341M、債務早期返済損$325Mなどで、全体利益に対する歪みは小さい。<sup><a href="#src-1">1</a></sup></li>
-          </ul>
-        </article>
-        <article class="panel watch">
-          <h3>留保が必要な理由</h3>
-          <ul>
-            <li>増収の大部分はASP上昇で、最終需要の数量証明とは異なる。</li>
-            <li>会社はQ4に価格上昇率の「意味のある鈍化」を見込む。<sup><a href="#src-2">2</a></sup><sup><a href="#src-6">6</a></sup></li>
-            <li>顧客は供給制約下でサーバー1台当たりDRAM搭載量の伸びを抑えている。<sup><a href="#src-2">2</a></sup></li>
-            <li>FY27は四半期設備投資がQ4の約$10Bを上回る見通しで、FCFのハードルが上がる。<sup><a href="#src-2">2</a></sup><sup><a href="#src-7">7</a></sup></li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="memory">
-      <div class="section-kicker">Operating Drivers</div>
-      <h2>DRAM / NANDの価格、出荷量、HBM4</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>領域</th>
-              <th>Q3実績</th>
-              <th>読み方</th>
-              <th>次の確認点</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>DRAM</strong></td>
-              <td>売上$31.33B、全社の76%。前四半期比+67%。ビット出荷は低1桁%増、ASPは低60%増。<sup><a href="#src-2">2</a></sup></td>
-              <td>供給不足と高付加価値ミックスが価格決定力を極端に押し上げた。</td>
-              <td>Q4以降のASP上昇率と、通常DRAMからHBMへの能力配分。</td>
+              <td><strong>Q4ガイド</strong></td>
+              <td>今回初提示</td>
+              <td>売上 $43.14B<br>EPS $25.39</td>
+              <td>価格上昇、HBM4量産、供給制約をどこまで織り込むか。</td>
+              <td><span class="positive">株価反応の本丸。</span> インラインでは好決算でも売られる可能性。</td>
             </tr>
             <tr>
-              <td><strong>NAND</strong></td>
-              <td>売上$9.94B、全社の24%。前四半期比+99%。ビット出荷は中1桁%増、ASPは中80%増。<sup><a href="#src-2">2</a></sup></td>
-              <td>DRAM以上に価格主導。データセンターSSD売上は$5B超で前四半期比2倍超。<sup><a href="#src-2">2</a></sup></td>
-              <td>企業SSDの継続需要と、価格上昇によるPC・スマホ需要破壊。</td>
+              <td><strong>DRAM / NAND</strong></td>
+              <td>Q2売上: DRAM $18.77B、NAND $5.00B</td>
+              <td>製品別コンセンサス未取得</td>
+              <td>Q2はDRAM ASPが60%台半ば、NAND ASPが70%台後半上昇。数量は一桁台。</td>
+              <td>価格主導の増益が続くか、数量・需要破壊・顧客在庫に転じるか。</td>
+            </tr>
+            <tr>
+              <td><strong>Cloud + Core Data Center</strong></td>
+              <td>Q2合計 $13.44B<br>全社売上の56.3%（計算値）</td>
+              <td>セグメント予想未取得</td>
+              <td>HBM、データセンターDRAM、SSDの成長と顧客集中。</td>
+              <td>AI需要の質を測る。通常メモリ価格だけの上振れとの差別化材料。</td>
             </tr>
             <tr>
               <td><strong>HBM4</strong></td>
-              <td>主要顧客向け量産出荷中。累計売上$1B超。複数顧客へ認定サンプルを出荷。12-highの立ち上がりはHBM3E比2倍の速さ。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup></td>
-              <td>「開発中」から「収益化済み」へ移行。歩留まり改善速度も前世代より良い。</td>
-              <td>第2・第3顧客の量産認定、顧客集中度、FY27のHBM売上規模。</td>
+              <td>Vera Rubin向け36GB 12-Hiを量産・出荷開始と報道</td>
+              <td>数量・売上予想は未取得</td>
+              <td>顧客認定、供給シェア、歩留まり、契約期間、2027年の能力予約。</td>
+              <td>コモディティ企業から戦略的AI部品企業への再評価を左右。</td>
             </tr>
             <tr>
-              <td><strong>HBM4E</strong></td>
-              <td>1-gammaベースで開発中、CY2027量産予定。<sup><a href="#src-1">1</a></sup></td>
-              <td>製品ロードマップは途切れていないが、まだ売上証明前。</td>
-              <td>サンプル時期、量産顧客、先端パッケージ能力の立ち上がり。</td>
+              <td><strong>FCF / Capex</strong></td>
+              <td>Q2調整後FCF $6.90B<br>純設備投資 $5.00B</td>
+              <td>公開予想未取得</td>
+              <td>能力増強の時期、先端DRAM・HBM後工程の制約、政府支援、資本還元。</td>
+              <td>高収益の持続期間と将来の供給過剰リスクを同時に示す。</td>
             </tr>
           </tbody>
         </table>
       </div>
-
-      <div class="bar-stack" aria-label="Q3売上構成">
-        <div class="bar-row">
-          <div class="bar-label">Cloud Memory</div>
-          <div class="bar-track"><div class="bar-fill" style="width:33.2%"></div></div>
-          <div class="bar-value">$13.77B</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">Core Data Center</div>
-          <div class="bar-track"><div class="bar-fill green" style="width:27.8%"></div></div>
-          <div class="bar-value">$11.52B</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">Mobile / Client</div>
-          <div class="bar-track"><div class="bar-fill violet" style="width:27.8%"></div></div>
-          <div class="bar-value">$11.52B</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">Auto / Embedded</div>
-          <div class="bar-track"><div class="bar-fill amber" style="width:11.2%"></div></div>
-          <div class="bar-value">$4.63B</div>
-        </div>
-      </div>
-      <p class="small">事業部売上は会社発表値。Cloud MemoryとCore Data Centerの合計は$25.29B、全社売上の61.0%。<sup><a href="#src-1">1</a></sup></p>
+      <p class="small">
+        会社実績・ガイドは非GAAP基準を明示。Q2の技術別売上、ASP、ビット出荷は10-Qに基づく。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup>
+      </p>
     </section>
 
-    <section id="guide">
-      <div class="section-kicker">Forward Guide</div>
-      <h2>Q4ガイダンスは市場予想を大幅超過。ただし粗利率の伸びは減速</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>指標</th>
-              <th>会社Q4ガイド</th>
-              <th>FactSet予想</th>
-              <th>差分</th>
-              <th>投資上の意味</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>売上高</strong></td>
-              <td class="num">$50.0B ± $1.0B</td>
-              <td class="num">$43.58B</td>
-              <td class="positive">+$6.42B / +14.7%</td>
-              <td>需要と価格の強さが8月四半期まで継続。予想上方修正はほぼ不可避。<sup><a href="#src-1">1</a></sup><sup><a href="#src-5">5</a></sup></td>
-            </tr>
-            <tr>
-              <td><strong>調整後EPS</strong></td>
-              <td class="num">$31.00 ± $1.00</td>
-              <td class="num">$25.72</td>
-              <td class="positive">+$5.28 / +20.5%</td>
-              <td>買い手側の期待値が$25-30の上側とされた中でも、その水準を超えた。<sup><a href="#src-5">5</a></sup><sup><a href="#src-8">8</a></sup></td>
-            </tr>
-            <tr>
-              <td><strong>粗利率</strong></td>
-              <td class="num">約86%</td>
-              <td>公開値未取得</td>
-              <td class="neutral">Q3比 +110bp</td>
-              <td>絶対水準は記録的だが、過去数四半期より改善幅が縮小。価格上昇率鈍化を示す。<sup><a href="#src-1">1</a></sup><sup><a href="#src-6">6</a></sup></td>
-            </tr>
-            <tr>
-              <td><strong>設備投資</strong></td>
-              <td class="num">Q4 約$10B</td>
-              <td>公開値未取得</td>
-              <td class="neutral">FY26 約$27B</td>
-              <td>供給能力の確保は成長を支える一方、FY27のFCF感応度を上げる。<sup><a href="#src-2">2</a></sup><sup><a href="#src-7">7</a></sup></td>
-            </tr>
-          </tbody>
-        </table>
+    <section id="reaction">
+      <h2>株価反応のフレームワーク</h2>
+      <div class="reaction-grid">
+        <article class="panel reaction up">
+          <h3>上昇しやすい組み合わせ</h3>
+          <ul>
+            <li>Q3売上が$38B前後以上、EPSが$22台。</li>
+            <li>Q4売上ガイドが$45B超、EPSが$27以上。</li>
+            <li>粗利率82%以上を維持し、FY2027も80%近辺を示唆。</li>
+            <li>HBM4の顧客・数量・長期契約が具体化。</li>
+            <li>通常DRAM/NANDも価格と数量の両方が強い。</li>
+          </ul>
+        </article>
+        <article class="panel reaction">
+          <h3>好決算でもフェードしやすい組み合わせ</h3>
+          <ul>
+            <li>Q3は$36-37Bでビートだが、Q4は公開予想並み。</li>
+            <li>粗利率80%超でも「ピークは近い」と示唆。</li>
+            <li>上振れがスポット価格中心で、長期契約の証拠が弱い。</li>
+            <li>設備投資の急増や2027年後半の供給増が強調される。</li>
+            <li>HBM4の数量・シェア回答が曖昧。</li>
+          </ul>
+        </article>
+        <article class="panel reaction down">
+          <h3>下落しやすい組み合わせ</h3>
+          <ul>
+            <li>Q3売上が$35B以下、またはEPSが$20を下回る。</li>
+            <li>Q4売上ガイドが$41B未満、EPSが$24未満。</li>
+            <li>粗利率が80%を割り、価格・歩留まり・ミックスに悪化。</li>
+            <li>顧客在庫、需要破壊、中国勢、供給増への警戒が強まる。</li>
+            <li>HBM4の量産、認定、歩留まりに遅延。</li>
+          </ul>
+        </article>
       </div>
+      <p class="small">
+        上記の数値閾値は公開コンセンサスと強気予想を基準にした分析上のシナリオであり、会社予想やwhisperではない。
+      </p>
     </section>
 
-    <section id="call">
-      <div class="section-kicker">Call Read-Through</div>
-      <h2>説明会で重要だった発言と、まだ開示されていない論点</h2>
+    <section>
+      <h2>上振れ / 下振れ要因</h2>
       <div class="two-col">
-        <article class="panel info">
-          <span class="source-type mgmt">会社説明</span>
-          <h3>最重要: 16件の戦略顧客契約</h3>
+        <article class="panel">
+          <h3 class="positive">上振れ要因</h3>
           <ul>
-            <li>通常5年、2026年から2030年末。自動車は通常3年。</li>
-            <li>契約済みでDRAM数量の約20%、NAND数量の約3分の1をカバー。</li>
-            <li>take-or-pay型で、特定数量の購入義務を伴う。</li>
-            <li>14件の最低契約売上は残存期間で約$100B。RPOも契約後分を含め約$100B。</li>
-            <li>約$18Bの顧客預り金を見込むが、これは財務キャッシュフローでFCFではない。</li>
-            <li>最大級契約には現在のCQ2市場価格付近の上限と、過去のサイクルピークを上回る粗利率を支える下限がある。</li>
+            <li><strong>DRAM/NAND価格:</strong> 供給制約と顧客の確保競争が続き、Q2以上の価格上昇が実現。</li>
+            <li><strong>HBM4:</strong> NVIDIA Vera Rubin向け量産が想定より速く、歩留まりとミックスが粗利率を押し上げる。<sup><a href="#src-8">8</a></sup></li>
+            <li><strong>長期契約:</strong> 複数年の供給契約が価格の可視性とサイクルの持続性を高める。</li>
+            <li><strong>データセンター:</strong> HBMだけでなく、通常DRAM、SOCAMM、SSD、推論向けNANDも同時に伸びる。</li>
+            <li><strong>能力制約:</strong> 新規供給の立ち上がりが遅く、2027年まで売り手市場が続く。</li>
+            <li><strong>営業レバレッジ:</strong> 売上増に対して非GAAP OpExがQ3ガイド約$1.4Bに抑えられる。</li>
           </ul>
-          <p class="small">出所: 会社Prepared Remarks。<sup><a href="#src-2">2</a></sup></p>
         </article>
-        <article class="panel good">
-          <span class="source-type mgmt">会社説明</span>
-          <h3>供給不足はCY2027を越える</h3>
+        <article class="panel">
+          <h3 class="negative">下振れ要因</h3>
           <ul>
-            <li>DRAM/NANDともCY2027を越えて需給逼迫が続く見通し。</li>
-            <li>供給が需要に追いつく時期について「見通しがない」と説明。</li>
-            <li>ID1初回ウェハはCY2027年央、ID2はCY2028年末を予定。</li>
-            <li>SingaporeのHBMパッケージ能力はCY2027上期から本格寄与。</li>
-            <li>Tongluo既存棟の出荷はCY2027年央へ約1四半期前倒し。</li>
+            <li><strong>期待値の先行:</strong> 公開コンセンサスが会社ガイドを大幅に上回り、普通のビートでは不足。</li>
+            <li><strong>ピーク利益:</strong> 80%超の粗利率が異常な価格環境による一時的な水準と判断される。<sup><a href="#src-7">7</a></sup></li>
+            <li><strong>需要破壊:</strong> メモリ価格上昇がPC、スマートフォン、サーバーの構成変更や購入先送りを招く。</li>
+            <li><strong>供給反応:</strong> Micron、Samsung、SK hynixの能力増強が2027年以降の価格下落を早める。</li>
+            <li><strong>HBM競争:</strong> 顧客認定、歩留まり、パッケージ能力、競合シェアで期待を下回る。</li>
+            <li><strong>マクロ・金利:</strong> 決算前日のようなAI・半導体株全体のデレーティングが個社の好材料を相殺。</li>
           </ul>
-          <p class="small">出所: 会社Prepared Remarks、決算報道。<sup><a href="#src-2">2</a></sup><sup><a href="#src-9">9</a></sup></p>
-        </article>
-      </div>
-
-      <div class="callout amber" style="margin-top:12px">
-        <span class="source-type limit">開示限界</span>
-        会社のPrepared Remarksと決算中継記事は取得できたが、質問者名を含む完全な公式Q&amp;A逐語録は情報凍結時点で確認できなかった。
-        したがって以下は「回答を避けた」と断定せず、取得資料で<strong>未開示・未定量化</strong>だった事項として扱う。
-      </div>
-
-      <div class="table-wrap" style="margin-top:12px">
-        <table>
-          <thead>
-            <tr>
-              <th>未開示・未定量化の論点</th>
-              <th>なぜ重要か</th>
-              <th>次回に聞くべき質問</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>契約顧客名、顧客別数量、HBMを含む比率</td>
-              <td>顧客集中と契約の質を判断できない。</td>
-              <td>上位4契約が総RPO・預り金・数量に占める比率はどの程度か。</td>
-            </tr>
-            <tr>
-              <td>価格フロアと対応粗利率の具体値</td>
-              <td>「過去ピーク超」の幅が不明で、正規化利益をモデル化できない。</td>
-              <td>製品ミックス一定なら、フロア価格で全社粗利率はどのレンジになるか。</td>
-            </tr>
-            <tr>
-              <td>$100B RPOの年度別認識</td>
-              <td>FY27-30の成長と下方耐性を区別できない。</td>
-              <td>残存履行義務の1年以内、1-3年、3年超の配分はどうか。</td>
-            </tr>
-            <tr>
-              <td>HBM4の顧客集中・FY27売上</td>
-              <td>量産開始は確認できたが、複数顧客への広がりが未証明。</td>
-              <td>FY27のHBM4売上と非首位顧客比率をどの程度見込むか。</td>
-            </tr>
-            <tr>
-              <td>価格上昇鈍化後のFY27粗利率</td>
-              <td>Q4約86%がピークか、契約により高止まりするかで株価評価が変わる。</td>
-              <td>ASP横ばい時のミックス、コスト、減価償却を含む粗利率感応度はどうか。</td>
-            </tr>
-            <tr>
-              <td>需要破壊の定量値</td>
-              <td>PC・スマホ台数減とサーバー搭載量抑制はすでに表面化している。</td>
-              <td>価格上昇により失われたビット需要を用途別にどう見積もるか。</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="thesis">
-      <div class="section-kicker">Thesis Update</div>
-      <h2>今回の決算で変わった投資仮説</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>論点</th>
-              <th>決算前</th>
-              <th>決算後</th>
-              <th>確信度</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>循環性</strong></td>
-              <td>AI需要で上昇局面が長期化するが、利益は市況依存。</td>
-              <td>take-or-pay、価格フロア、預り金により、次の下降局面の利益変動が構造的に小さくなる可能性。</td>
-              <td class="positive">上昇</td>
-            </tr>
-            <tr>
-              <td><strong>HBM4</strong></td>
-              <td>量産移行と顧客認定が主な確認点。</td>
-              <td>$1B超を出荷済み。主要顧客で量産、複数顧客で認定中。実行リスクは低下。</td>
-              <td class="positive">上昇</td>
-            </tr>
-            <tr>
-              <td><strong>通常DRAM/NAND</strong></td>
-              <td>AI以外の価格上昇が業績を押し上げる。</td>
-              <td>上振れの主因と確認。ただし数量は低-中1桁%増で、価格反転リスクも拡大。</td>
-              <td class="neutral">両方向</td>
-            </tr>
-            <tr>
-              <td><strong>供給制約</strong></td>
-              <td>CY2026-27の逼迫継続。</td>
-              <td>会社はCY2027を越える逼迫へ延長。新規能力の本格寄与は2027年央以降。</td>
-              <td class="positive">上昇</td>
-            </tr>
-            <tr>
-              <td><strong>資本集約度</strong></td>
-              <td>高FCFで大型投資を吸収。</td>
-              <td>Q4約$10B、FY27は四半期ベースでさらに増加。利益上振れと同時に投資負担も上方修正。</td>
-              <td class="negative">リスク上昇</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="verdict-grid" style="margin-top:12px">
-        <article class="panel info">
-          <h3>市場がまだ見落としうる点</h3>
-          <p>
-            SCAの価値は$100Bという見出しではなく、数量義務、価格フロア、顧客預り金を組み合わせた点にある。
-            これはMicronのバランスシートだけでなく、メモリ事業に適用される評価倍率を変える可能性がある。
-            さらにRPOは最低数量・最低価格に基づく保守的な値で、会社は実収益が上回ると説明している。<sup><a href="#src-2">2</a></sup>
-          </p>
-        </article>
-        <article class="panel risk">
-          <h3>すでに織り込まれている点</h3>
-          <p>
-            記録的なASP、85-86%粗利率、AIメモリ不足、HBM成長は広く認識され、株価も決算前まで2026年に約270%上昇していた。
-            時間外で過去最高値圏へ戻ったため、「Q4まで非常に強い」だけでは次の上昇材料として弱くなる。
-            次の超過収益にはFY27の利益耐性を示す追加証拠が必要。<sup><a href="#src-11">11</a></sup>
-          </p>
         </article>
       </div>
     </section>
 
     <section>
-      <div class="section-kicker">Estimate Revisions</div>
-      <h2>今後の業績予想は上方修正が先行。ただしFY27の粗利率は二段階で考える</h2>
-      <div class="two-col">
-        <article class="panel good">
-          <h3>上方修正されやすい項目</h3>
-          <ul>
-            <li>Q4売上とEPS: 会社中央値が公開FactSet予想をそれぞれ14.7%、20.5%上回る。</li>
-            <li>FY26売上・EPS・FCF: Q3実績とQ4ガイドの機械的反映。</li>
-            <li>FY27売上: CY2027超の供給不足、SCA、HBM4/HBM4E、データセンターSSD。</li>
-            <li>中期利益の下限: 契約フロアとtake-or-payをモデルへ反映する動き。</li>
-          </ul>
-        </article>
-        <article class="panel watch">
-          <h3>上方修正が止まる条件</h3>
-          <ul>
-            <li>Q4以降にASPが横ばいまたは下落へ転じる。</li>
-            <li>高価格でPC・スマホ台数やサーバー搭載量がさらに低下する。</li>
-            <li>新規供給能力と減価償却が、ミックス改善を上回る。</li>
-            <li>SCAの価格上限がアップサイドを抑え、フロアの利益水準が期待以下と判明する。</li>
-          </ul>
-        </article>
-      </div>
-      <div class="callout" style="margin-top:12px">
-        <span class="source-type analysis">分析上の推測</span>
-        近い四半期のコンセンサス改定は明確に上向き。ただし株価が見るのはFY27の「ピークEPS」ではなく、
-        ASP上昇が止まった後の粗利率とFCFである。モデル上は、まずQ4ガイドを反映し、その後に
-        SCAフロアを使った正規化ケースを別建てにするのが妥当。
-      </div>
-    </section>
-
-    <section>
-      <div class="section-kicker">Price Reaction</div>
-      <h2>なぜ、これほど上がったのか</h2>
-      <div class="verdict-grid">
-        <article class="panel good">
-          <h3>好決算だから買われた、だけではない</h3>
-          <ul>
-            <li>Q3はFactSet売上予想を15.4%、EPS予想を20.4%上回った。</li>
-            <li>Q4 EPS $31は買い手側の高い期待値とされた$25-30の上限も超えた。<sup><a href="#src-8">8</a></sup></li>
-            <li>16件のSCAが、ピーク利益の持続性に新しい根拠を与えた。</li>
-            <li>前日の半導体株売りで低下していた期待とポジションが巻き戻された。<sup><a href="#src-12">12</a></sup></li>
-          </ul>
-        </article>
-        <article class="panel watch">
-          <h3>翌日以降に売られるなら、この理由</h3>
-          <ul>
-            <li>決算後の株価が過去最高値圏に戻り、短期利益確定が出やすい。</li>
-            <li>価格上昇率鈍化が「Q4粗利率ピーク」と解釈される。</li>
-            <li>FY27設備投資増がFCF倍率を圧迫する。</li>
-            <li>SCAの価格上限と返還予定の顧客預り金が、見出しほど一方向の好材料ではないと認識される。</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="scenarios">
-      <div class="section-kicker">3-6 Month Framework</div>
-      <h2>Bull / Base / Bearシナリオ</h2>
+      <h2>Bull / Base / Bear</h2>
       <div class="scenario-grid">
         <article class="scenario bull">
           <h3>Bull</h3>
-          <div class="probability">分析上の確率: 30%</div>
-          <ul>
-            <li>Q4実績が売上$51B超、EPS $32超。</li>
-            <li>HBM4の追加顧客が量産認定。</li>
-            <li>価格上昇鈍化後も粗利率が80%台前半以上。</li>
-            <li>SCA追加で契約対象が売上の50%へ接近。</li>
-          </ul>
-          <p><strong>株式:</strong> FY27の利益下限が引き上がり、循環株ディスカウントがさらに縮小。</p>
-          <p><strong>反証:</strong> ASPの急減速、HBM顧客拡大の遅延。</p>
+          <p><span class="label assumption">Analyst scenario</span></p>
+          <p><strong>Q3:</strong> 売上$38.5B以上、粗利率82.5%以上、EPS $22.8以上。</p>
+          <p><strong>Q4 guide:</strong> 売上$45B以上、EPS $27以上。</p>
+          <p><strong>論点:</strong> HBM4と通常メモリの両輪、長期契約、2027年まで供給制約。</p>
+          <p><strong>反証:</strong> 価格上昇がスポット中心、または数量・顧客認定が伴わない。</p>
         </article>
         <article class="scenario base">
           <h3>Base</h3>
-          <div class="probability">分析上の確率: 50%</div>
-          <ul>
-            <li>Q4はガイド範囲内、粗利率約86%。</li>
-            <li>FY27も需給は逼迫するが価格上昇率は正常化。</li>
-            <li>SCAは下値を支えるが、具体的フロア開示は限定的。</li>
-            <li>設備投資増でFCF成長は利益成長より鈍い。</li>
-          </ul>
-          <p><strong>株式:</strong> 大幅な業績上方修正と高い期待値が相殺し、値固め。</p>
-          <p><strong>反証:</strong> FY27の粗利率が70%台前半へ急低下。</p>
+          <p><span class="label assumption">Analyst scenario</span></p>
+          <p><strong>Q3:</strong> 売上$36-37B、粗利率81-82%、EPS $20.5-21.5。</p>
+          <p><strong>Q4 guide:</strong> 売上約$43B、EPS約$25。</p>
+          <p><strong>論点:</strong> 強い業績は継続するが、公開コンセンサスを大きく超えない。</p>
+          <p><strong>反証:</strong> Q4ガイドが上方修正トレンドを止める。</p>
         </article>
         <article class="scenario bear">
           <h3>Bear</h3>
-          <div class="probability">分析上の確率: 20%</div>
-          <ul>
-            <li>高価格で消費者・サーバー顧客の需要破壊が拡大。</li>
-            <li>通常DRAM/NANDのASPがQ4後に反転。</li>
-            <li>SCA上限が上昇余地を抑える一方、ミックス悪化は防げない。</li>
-            <li>大型設備投資と減価償却でFCFが急減。</li>
-          </ul>
-          <p><strong>株式:</strong> ピーク利益と判断され、上方修正中でも倍率が先に縮小。</p>
-          <p><strong>反証:</strong> 契約フロア下でも過去ピーク超の粗利率が実績で確認される。</p>
+          <p><span class="label assumption">Analyst scenario</span></p>
+          <p><strong>Q3:</strong> 売上$35B以下、粗利率80.5%以下、EPS $20以下。</p>
+          <p><strong>Q4 guide:</strong> 売上$41B未満、EPS $24未満。</p>
+          <p><strong>論点:</strong> 価格・ミックス・HBMのいずれかが期待未達、ピークアウト懸念。</p>
+          <p><strong>反証:</strong> 弱さが出荷時期だけで、受注・長期契約が維持される。</p>
         </article>
       </div>
-      <p class="small">確率、閾値、株価への含意は会社予想や市場コンセンサスではなく、分析上のシナリオ。</p>
     </section>
 
     <section>
-      <div class="section-kicker">Catalysts and Risks</div>
-      <h2>今後3-6カ月のカタリストとリスク</h2>
+      <h2>決算コールで必ず聞くこと</h2>
       <div class="table-wrap">
-        <table>
+        <table class="questions">
           <thead>
             <tr>
-              <th>時期</th>
-              <th>カタリスト</th>
-              <th>確認指標</th>
-              <th>主なリスク</th>
+              <th>質問</th>
+              <th>重要な理由</th>
+              <th>良い回答 / Listen-for</th>
+              <th>悪い回答 / Falsifier</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>直近数週</td>
-              <td>アナリスト予想・目標株価の改定</td>
-              <td>FY27売上、粗利率、EPS、FCFの改定幅</td>
-              <td>利益改定を上回る株価上昇、倍率先行</td>
+              <td>Q4ガイドのDRAM・NAND価格とビット出荷の前提は何か。</td>
+              <td>Q2は数量よりASPが増収を主導。持続性の核心。</td>
+              <td>価格と数量の両方が増加、契約価格の可視性が高い。</td>
+              <td>スポット価格依存、数量減、顧客在庫の積み上がり。</td>
             </tr>
             <tr>
-              <td>Q4中</td>
-              <td>追加SCA、顧客預り金、RPO更新</td>
-              <td>契約カバー率、年度別RPO、価格条項</td>
-              <td>契約上限の制約、顧客集中、預り金返還負担</td>
+              <td>粗利率80%超はFY2027のどこまで維持可能か。</td>
+              <td>株価が「ピーク利益」か構造変化かを判断する最大材料。</td>
+              <td>HBMミックス、長期契約、歩留まり改善で持続。</td>
+              <td>Q4がピーク、価格正常化で急低下。</td>
             </tr>
             <tr>
-              <td>Q4中</td>
-              <td>HBM4の追加顧客認定</td>
-              <td>量産顧客数、歩留まり、売上、12-high供給</td>
-              <td>認定遅延、先端パッケージ能力不足</td>
+              <td>HBM4の顧客認定、出荷量、供給シェア、歩留まりは。</td>
+              <td>AIメモリでの競争力と高マージンの持続性を測る。</td>
+              <td>複数顧客、計画以上の量産、歩留まり改善、2027年予約。</td>
+              <td>単一顧客依存、認定遅延、後工程制約、シェア回答回避。</td>
             </tr>
             <tr>
-              <td>次回決算</td>
-              <td>Q4実績とFY27初期見通し</td>
-              <td>ASP、ビット出荷、粗利率、Q1ガイド、設備投資</td>
-              <td>価格上昇停止、需要破壊、FCF減速</td>
+              <td>長期供給契約は価格、数量、前払いをどこまで固定するか。</td>
+              <td>サイクル企業からの再評価に必要な証拠。</td>
+              <td>複数年、take-or-payに近い数量可視性、価格下限。</td>
+              <td>拘束力が弱い、毎四半期の再価格、顧客の解約余地が大きい。</td>
             </tr>
             <tr>
-              <td>年末まで</td>
-              <td>資本還元方針の拡大</td>
-              <td>12月9日以降の買戻し・配当方針</td>
-              <td>投資優先で還元が後ずれ</td>
+              <td>PC・スマホ・自動車で価格上昇による需要破壊は見られるか。</td>
+              <td>通常メモリの高騰が最終需要を壊すリスク。</td>
+              <td>搭載量維持、供給不足、顧客在庫は健全。</td>
+              <td>構成削減、注文先送り、チャネル在庫上昇。</td>
+            </tr>
+            <tr>
+              <td>2027年の能力増強で最も厳しい制約は前工程か、先端パッケージか。</td>
+              <td>売上上限と将来の供給過剰の両方に影響。</td>
+              <td>段階的増産、顧客契約に連動、規律ある供給。</td>
+              <td>需要前提なしの急増産、競合を含む同時供給増。</td>
+            </tr>
+            <tr>
+              <td>中国メモリ企業の増産は2027-28年の価格にどう影響するか。</td>
+              <td>NAND・汎用DRAMの中期的な供給リスク。</td>
+              <td>先端品の技術差、顧客認定、輸出規制で影響限定。</td>
+              <td>汎用品の価格圧力が想定より早く顕在化。</td>
+            </tr>
+            <tr>
+              <td>FCFの優先順位は設備投資、債務削減、買戻し、配当のどれか。</td>
+              <td>サイクル頂点での資本配分規律を確認。</td>
+              <td>需要契約に連動した投資と柔軟な還元。</td>
+              <td>ピーク価格を前提にした過剰設備投資。</td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section id="actions">
-      <div class="section-kicker">Decision Rules</div>
-      <h2>買い増し・保有・利益確定・様子見の判断条件</h2>
-      <div class="action-grid">
-        <article class="action add">
-          <h3>買い増し</h3>
-          <ul>
-            <li>FY27粗利率予想が80%前後へ上方修正。</li>
-            <li>HBM4の第2顧客量産が確認。</li>
-            <li>SCAの年度別売上とフロア利益が定量化。</li>
-            <li>株価上昇より4四半期先EPS改定が速い。</li>
-          </ul>
-        </article>
-        <article class="action hold">
-          <h3>保有</h3>
-          <ul>
-            <li>Q4ガイド達成確度が維持。</li>
-            <li>ASP上昇は鈍化しても粗利率80%台。</li>
-            <li>FCFが大型投資後も十分にプラス。</li>
-            <li>契約の下方保護が徐々に確認される。</li>
-          </ul>
-        </article>
-        <article class="action trim">
-          <h3>利益確定</h3>
-          <ul>
-            <li>株価だけが上昇し、FY27 EPS改定が停滞。</li>
-            <li>通常DRAM/NAND ASPが前四半期比で低下。</li>
-            <li>粗利率ガイドが75%未満へ低下。</li>
-            <li>設備投資増でFCFが急減。</li>
-          </ul>
-        </article>
-        <article class="action wait">
-          <h3>様子見</h3>
-          <ul>
-            <li>決算ギャップ直後で価格発見が不安定。</li>
-            <li>FY27コンセンサスと倍率が未更新。</li>
-            <li>SCAフロアの利益水準が不明。</li>
-            <li>現在の保有比率・許容損失が未定義。</li>
-          </ul>
-        </article>
-      </div>
-      <div class="callout amber" style="margin-top:12px">
-        <strong>優先順位:</strong> 新規・追加投資では「良い会社決算」を再確認するより、
-        <strong>FY27の正規化粗利率、契約利益の下限、追加顧客でのHBM4量産</strong>を確認する方が情報価値が高い。
-      </div>
+    <section class="evidence">
+      <h2>不足している証拠</h2>
+      <p>
+        直前のイベントリスク判断には、当日更新のコンセンサス分布、粗利率・セグメント別予想、
+        whisper、6月24日引け時点のオプション・ストラドル、短期ポジショニングが必要。
+        6月22日報道では金曜まで約12%の変動が織り込まれていたが、その後6月23日に株価が13.2%下落したため、
+        現在の決算インプライド・ムーブとしては古い。<sup><a href="#src-3">3</a></sup>
+        したがって本レポートは、トレード指示ではなく決算セットアップと反応フレームワークとして扱う。
+      </p>
     </section>
 
-    <section id="sources">
-      <div class="section-kicker">Source Ledger</div>
-      <h2>出所と制約</h2>
-      <ol class="source-list">
+    <section>
+      <h2>ソース</h2>
+      <ol class="sources">
         <li id="src-1">
-          <strong>Micron FY2026 Q3 Earnings Release / Exhibit 99.1</strong>, 2026-06-24.
-          <a href="https://www.sec.gov/Archives/edgar/data/723125/000072312526000013/a2026q3ex991-pressrelease.htm">SEC</a>
-          - 実績、事業部、Q4ガイド、GAAP/non-GAAP調整、キャッシュフロー。
+          Micron / SEC, FY2026 Q2 earnings release, 2026-03-18:
+          <a href="https://www.sec.gov/Archives/edgar/data/723125/000072312526000004/a2026q2ex991-pressrelease.htm">SEC Exhibit 99.1</a>
         </li>
         <li id="src-2">
-          <strong>Micron FY2026 Q3 Earnings Call Prepared Remarks</strong>, 2026-06-24.
-          <a href="https://investors.micron.com/static-files/631b1a32-5537-46ae-8f40-82e42fc79dfe">Micron IR PDF</a>
-          - ASP、ビット出荷、SCA、RPO、HBM4、需給、設備投資、需要見通し。
+          Micron / SEC, Form 10-Q for quarter ended 2026-02-26, filed 2026-03-19:
+          <a href="https://www.sec.gov/Archives/edgar/data/723125/000072312526000006/mu-20260226.htm">Form 10-Q</a>
         </li>
         <li id="src-3">
-          <strong>Micron FY2026 Q3 Earnings Presentation</strong>, 2026-06-24.
-          <a href="https://investors.micron.com/static-files/2354ecda-77a0-4ddd-8462-a631eb491356">Micron IR PDF</a>
-          - 経営陣説明資料と主要KPI。
+          Investopedia, 2026-06-22. Visible Alpha consensus, Wedbush estimate, options context:
+          <a href="https://www.investopedia.com/micron-stock-keeps-hitting-new-highs-here-is-how-much-traders-expect-it-could-move-after-earnings-mu-12004077">article</a>
         </li>
         <li id="src-4">
-          <strong>Micron Form 8-K</strong>, 2026-06-24.
-          <a href="https://www.sec.gov/Archives/edgar/data/723125/000072312526000013/mu-20260624.htm">SEC</a>
-          - 決算発表の提出記録。
+          Investor's Business Daily, 2026-06-22. FactSet Q3 and Q4 consensus:
+          <a href="https://www.investors.com/news/technology/micron-stock-record-high-before-fiscal-q3-earnings/">article</a>
         </li>
         <li id="src-5">
-          <strong>Investor's Business Daily</strong>, 2026-06-24.
-          <a href="https://www.investors.com/news/technology/micron-stock-mu-fiscal-q3-2026-earnings/">記事</a>
-          - FactSet Q3売上$35.91B、EPS $20.86、Q4売上$43.58B、EPS $25.72。
+          Associated Press, 2026-06-23. U.S. market close and MU's 13.2% decline:
+          <a href="https://apnews.com/article/8a525396331d3cf41e9a341026c005e7">article</a>
         </li>
         <li id="src-6">
-          <strong>MarketWatch live coverage: price increase moderation</strong>, 2026-06-24.
-          <a href="https://www.marketwatch.com/livecoverage/micron-earnings-stock-results-memory-guidance/card/micron-expects-meaningful-moderation-in-the-rate-of-price-increases--rPPOvl53BC6xSKbZaFKF">記事</a>
-          - Q4の価格上昇率鈍化に関する説明。
+          Barron's, 2026-06-19. Historical earnings reactions and prior-quarter response:
+          <a href="https://www.barrons.com/articles/micron-stock-price-earnings-4393444f">article</a>
         </li>
         <li id="src-7">
-          <strong>MarketWatch live coverage: capital spending</strong>, 2026-06-24.
-          <a href="https://www.marketwatch.com/livecoverage/micron-earnings-stock-results-memory-guidance/card/micron-s-spending-is-moving-higher-in-the-face-of-booming-demand-mLjzhU62y5AJfaUStOEC">記事</a>
-          - Q4、FY26、FY27の設備投資方向。
+          MarketWatch, 2026-06-22. Gross-margin and operating-margin durability debate:
+          <a href="https://www.marketwatch.com/story/micron-grew-by-1-trillion-this-year-these-two-wild-cards-will-determine-its-trajectory-a0c9c714">article</a>
         </li>
         <li id="src-8">
-          <strong>MarketWatch live coverage: Q4 guidance versus expectations</strong>, 2026-06-24.
-          <a href="https://www.marketwatch.com/livecoverage/micron-earnings-stock-results-memory-guidance/card/micron-s-stock-rises-as-earnings-guidance-trounces-expectations-z0SCW4UxK2kPqb0UyfTx">記事</a>
-          - FactSetと買い手側EPS期待値。
+          Tom's Hardware, 2026-03-16. Micron HBM4 high-volume production and Vera Rubin product details:
+          <a href="https://www.tomshardware.com/pc-components/dram/micron-enters-high-volume-production-of-hbm4-for-nvidia-vera-rubin">article</a>
         </li>
         <li id="src-9">
-          <strong>Wall Street Journal</strong>, 2026-06-24.
-          <a href="https://www.wsj.com/business/earnings/micron-revenue-soars-on-continued-memory-demand-d736b34b">記事</a>
-          - 供給不足がCY2027を越えるとの決算後報道。
-        </li>
-        <li id="src-10">
-          <strong>Yahoo Finance chart API</strong>, 2026-06-24 19:49 ET頃取得。
-          <a href="https://query1.finance.yahoo.com/v8/finance/chart/MU?interval=1m&amp;range=1d&amp;includePrePost=true">市場データ</a>
-          - 通常終値と時間外参考値。時間外価格は流動性が低く変動する。
-        </li>
-        <li id="src-11">
-          <strong>Investopedia</strong>, 2026-06-24.
-          <a href="https://www.investopedia.com/micron-earnings-q3-fy2026-memory-stock-soars-ai-demand-12006096">記事</a>
-          - Visible Alpha予想、株価反応、2026年の株価上昇率。
-        </li>
-        <li id="src-12">
-          <strong>Business Insider</strong>, 2026-06-24.
-          <a href="https://www.businessinsider.com/micron-earnings-mu-stock-ai-chip-demand-2026-6">記事</a>
-          - 決算前後の半導体株センチメントと株価反応。
+          Yahoo Finance chart endpoint, accessed 2026-06-24 JST. MU daily OHLCV:
+          <a href="https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1781222400&amp;period2=1782432000&amp;interval=1d">data</a>
         </li>
       </ol>
-
-      <div class="callout red">
-        <span class="source-type limit">制約</span>
-        FactSet、LSEG、Visible Alphaへの直接契約アクセスは使用していない。コンセンサスは各社データを引用した公開報道から取得したため、
-        時刻や構成の違いで数値に小差がある。Q3のForm 10-Qと完全な公式Q&amp;A逐語録は情報凍結時点で確認できず、
-        FY27コンセンサス分布、オプション市場、ポジショニング、正規化バリュエーションは未取得。
-      </div>
     </section>
-  </main>
 
-  <footer>
-    <div class="footer-inner">
-      本資料は公開情報に基づく調査用メモであり、投資助言ではありません。
-      事実、会社説明、市場予想、分析上の推測を区別して表示しています。
-      数値差分とシナリオ確率は端数処理を含みます。
-    </div>
-  </footer>
+    <footer>
+      <p>
+        Public-equity pre-earnings research. 投資助言ではありません。
+        数値は記載した凍結時点の公開情報に基づき、会社ガイダンス、コンセンサス、個別アナリスト予想、分析シナリオを分離しています。
+      </p>
+    </footer>
+  </main>
 </body>
 </html>
