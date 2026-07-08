@@ -1,8 +1,9 @@
-# MU Earnings Research
+# Earnings Preview Research
 
 GitHub Pages serves the `docs/` directory as static files.
 
-- `docs/index.html`: MU FY2026 Q3 pre-earnings preview
+- `docs/index.html`: Yaskawa Electric FY2026 Q1 pre-earnings preview
+- `docs/yaskawa-fy2026-q1-earnings-preview.html`: permanent URL for the Yaskawa Electric preview
 - `docs/mu-fy2026-q3-earnings-preview.html`: permanent URL for the preview
 - `docs/mu-fy2026-q3-post-earnings-deep-dive.html`: post-earnings deep-dive archive
 - `docs/x-card.png`: large X and Open Graph card image
