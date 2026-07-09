@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="9983 ファーストリテイリング FY2026 Q3 決算後ディープダイブ。会社IR、決算短信、公開株価データ、公開コンセンサスを分けて、投資判断・業績見通し・バリュエーションへの影響を整理。">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Earnings Preview Research">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="https://anritosho.github.io/earnings-preview/fast-retailing-fy2026-q3-post-earnings-deep-dive.html">
+  <meta property="og:title" content="9983 ファーストリテイリング FY2026 Q3 決算後ディープダイブ">
+  <meta property="og:description" content="海外ユニクロと粗利・販管費レバレッジが強い一方、50倍台PERと国内Q4の在庫・値引き確認が残る。">
+  <meta property="og:image" content="https://anritosho.github.io/earnings-preview/x-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="9983 ファーストリテイリング FY2026 Q3 決算後ディープダイブ">
+  <meta name="twitter:description" content="強いQ3と上方修正を、株価・高PER・次の確認点から読む。">
+  <meta name="twitter:image" content="https://anritosho.github.io/earnings-preview/x-card.png">
+  <title>9983 ファーストリテイリング FY2026 Q3 決算後ディープダイブ</title>
+  <style>
+    :root {
+      --bg: #f2f4f4;
+      --paper: #ffffff;
+      --ink: #172033;
+      --muted: #60707a;
+      --line: #d8dee2;
+      --charcoal: #202628;
+      --red: #c8102e;
+      --red-soft: #fff0f2;
+      --green: #1f714b;
+      --green-soft: #edf7f1;
+      --blue: #21647d;
+      --blue-soft: #edf6fa;
+      --amber: #956314;
+      --amber-soft: #fff7e7;
+      --violet: #624d86;
+      --violet-soft: #f3eff9;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, "Helvetica Neue", "Yu Gothic", "Meiryo", sans-serif;
+      line-height: 1.64;
+      letter-spacing: 0;
+    }
+    a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+    sup a { text-decoration: none; }
+    header {
+      background: var(--charcoal);
+      color: #fff;
+      border-top: 7px solid var(--red);
+      padding: 34px 6vw 30px;
+    }
+    .inner, main, .footer-inner { width: min(1180px, 92vw); margin: 0 auto; }
+    .brand { display: flex; align-items: center; gap: 15px; margin-bottom: 16px; }
+    .brand > div:last-child { min-width: 0; }
+    .ticker {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      border-radius: 5px;
+      background: var(--red);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .eyebrow { color: #cbd3d6; font-size: 13px; text-transform: uppercase; overflow-wrap: anywhere; }
+    .asof { margin-top: 3px; color: #f1f3f4; font-size: 14px; }
+    h1 { margin: 0; max-width: 1040px; font-size: 46px; line-height: 1.12; letter-spacing: 0; overflow-wrap: anywhere; }
+    .subtitle { max-width: 1000px; margin: 14px 0 0; color: #dde3e5; font-size: 18px; overflow-wrap: anywhere; }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+    .tag { border: 1px solid #657278; border-radius: 4px; padding: 4px 8px; color: #edf1f2; font-size: 12px; overflow-wrap: anywhere; }
+    nav { background: #fff; border-bottom: 1px solid var(--line); }
+    .nav-inner {
+      width: min(1180px, 92vw);
+      margin: 0 auto;
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      padding: 10px 0;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+    .nav-inner::-webkit-scrollbar { display: none; }
+    .nav-inner a { color: #364148; font-size: 13px; font-weight: 700; text-decoration: none; }
+    main { padding: 26px 0 58px; }
+    section { margin: 32px 0; }
+    h2 { margin: 0 0 14px; font-size: 26px; line-height: 1.25; letter-spacing: 0; overflow-wrap: anywhere; }
+    h3 { margin: 0 0 8px; font-size: 17px; line-height: 1.35; letter-spacing: 0; overflow-wrap: anywhere; }
+    p { margin: 0 0 12px; overflow-wrap: anywhere; }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin: 5px 0; overflow-wrap: anywhere; }
+    .kicker { margin-bottom: 4px; color: var(--red); font-size: 12px; font-weight: 800; text-transform: uppercase; }
+    .tiles { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+    .tile {
+      min-width: 0;
+      min-height: 132px;
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--blue);
+      border-radius: 6px;
+      background: #fff;
+      padding: 14px;
+    }
+    .tile.green { border-top-color: var(--green); }
+    .tile.red { border-top-color: var(--red); }
+    .tile.amber { border-top-color: var(--amber); }
+    .tile.violet { border-top-color: var(--violet); }
+    .tile-label { color: var(--muted); font-size: 12px; font-weight: 700; }
+    .tile-value { margin: 5px 0 3px; font-size: 27px; font-weight: 800; line-height: 1.1; }
+    .tile-note { color: var(--muted); font-size: 12px; line-height: 1.42; }
+    .two-col, .verdict-grid, .scenario-grid, .action-grid { display: grid; gap: 12px; }
+    .two-col { grid-template-columns: 1.08fr .92fr; }
+    .verdict-grid { grid-template-columns: 1fr 1fr; }
+    .scenario-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .action-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .panel, .scenario, .action {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      padding: 17px;
+      overflow-wrap: anywhere;
+    }
+    .panel.good { border-left: 5px solid var(--green); }
+    .panel.watch { border-left: 5px solid var(--amber); }
+    .panel.risk { border-left: 5px solid var(--red); }
+    .panel.info { border-left: 5px solid var(--blue); }
+    .decision { min-width: 0; border: 2px solid var(--charcoal); border-radius: 7px; background: #fff; padding: 18px; overflow-wrap: anywhere; }
+    .decision-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: var(--amber);
+      color: #fff;
+      font-weight: 900;
+    }
+    .callout { border-left: 5px solid var(--blue); background: var(--blue-soft); padding: 14px 16px; }
+    .callout.green { border-left-color: var(--green); background: var(--green-soft); }
+    .callout.red { border-left-color: var(--red); background: var(--red-soft); }
+    .callout.amber { border-left-color: var(--amber); background: var(--amber-soft); }
+    .label {
+      display: inline-block;
+      margin-right: 6px;
+      border-radius: 4px;
+      padding: 2px 6px;
+      background: #eef2f4;
+      color: #41505a;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .label.fact { background: var(--blue-soft); color: var(--blue); }
+    .label.company { background: var(--green-soft); color: var(--green); }
+    .label.market { background: var(--amber-soft); color: var(--amber); }
+    .label.missing { background: var(--red-soft); color: var(--red); }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 7px; background: #fff; }
+    table { width: 100%; border-collapse: collapse; min-width: 760px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 11px 12px; text-align: left; vertical-align: top; font-size: 14px; }
+    th { background: #f7f9fa; color: #3f4b52; font-size: 12px; text-transform: uppercase; }
+    tr:last-child td { border-bottom: 0; }
+    .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .positive { color: var(--green); font-weight: 800; }
+    .negative { color: var(--red); font-weight: 800; }
+    .neutral { color: var(--amber); font-weight: 800; }
+    .small { color: var(--muted); font-size: 12px; line-height: 1.45; }
+    .bars { display: grid; gap: 10px; }
+    .bar-row { display: grid; grid-template-columns: 170px 1fr 95px; gap: 10px; align-items: center; }
+    .bar-label { font-size: 13px; font-weight: 700; }
+    .track { height: 13px; border-radius: 3px; background: #e5ebee; overflow: hidden; }
+    .fill { height: 100%; background: var(--blue); }
+    .fill.green { background: var(--green); }
+    .fill.red { background: var(--red); }
+    .fill.amber { background: var(--amber); }
+    .bar-value { color: var(--muted); font-size: 12px; text-align: right; }
+    .source-list { margin: 0; padding-left: 20px; }
+    .source-list li { margin: 7px 0; color: #3f4b52; font-size: 13px; }
+    footer { background: #fff; border-top: 1px solid var(--line); padding: 22px 0; color: var(--muted); font-size: 12px; }
+    @media (max-width: 980px) {
+      h1 { font-size: 36px; }
+      .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .two-col, .verdict-grid, .scenario-grid, .action-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      header { padding: 26px 4vw 24px; }
+      .brand { align-items: flex-start; }
+      .inner, main, .footer-inner { width: calc(100vw - 96px) !important; max-width: none !important; margin-left: auto !important; margin-right: auto !important; }
+      section, .tiles, .verdict-grid, .two-col, .scenario-grid, .action-grid { width: 100%; max-width: 100%; }
+      .nav-inner { width: calc(100vw - 24px) !important; }
+      .verdict-grid > *, .two-col > *, .scenario-grid > *, .action-grid > *, .tiles > * { min-width: 0; max-width: 100%; }
+      h1 { font-size: 30px; }
+      .subtitle { font-size: 16px; }
+      h1, h2, h3, p, li, .subtitle, .eyebrow, .tag, .label, .tile-note { word-break: break-all; overflow-wrap: anywhere; }
+      .tiles { grid-template-columns: 1fr; }
+      .bar-row { grid-template-columns: 1fr; gap: 4px; }
+      .bar-value { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="brand">
+        <div class="ticker">9983</div>
+        <div>
+          <div class="eyebrow">Fast Retailing | FY2026 Q3 Post-Earnings Deep Dive</div>
+          <div class="asof">情報凍結: 2026年7月9日 夕方 JST / 通貨: 円 / 金額: 原則として億円・兆円</div>
+        </div>
+      </div>
+      <h1>強い決算。<br>ただし株価は「次の証拠」待ち。</h1>
+      <p class="subtitle">Q3単独は売上1.01兆円、営業利益2,057億円、親会社帰属利益1,467億円。海外ユニクロと粗利・販管費レバレッジが決算の質を押し上げた一方、PERは会社新予想EPSベースでも約52倍で、国内6月失速後の在庫・値引き確認が残る。</p>
+      <div class="tags"><span class="tag">会社IR・決算短信優先</span><span class="tag">Q&A/書き起こし未取得</span><span class="tag">Visible AlphaはWSJ経由</span><span class="tag">FactSet / LSEG不使用</span></div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#verdict">結論</a>
+      <a href="#numbers">主要数値</a>
+      <a href="#bar">期待値との差</a>
+      <a href="#segments">セグメント</a>
+      <a href="#quality">EPS品質</a>
+      <a href="#valuation">株価・バリュエーション</a>
+      <a href="#scenarios">シナリオ</a>
+      <a href="#sources">ソース</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="verdict">
+      <div class="kicker">Verdict</div>
+      <h2>第一印象は明確にポジティブ。ただし「高PERをさらに買う」材料としては条件付き</h2>
+      <div class="verdict-grid">
+        <article class="decision">
+          <div class="decision-head"><div class="mark">!</div><h3>PMボトムライン</h3></div>
+          <p><span class="label fact">PM判断</span>決算そのものは良い。Q3単独の営業利益は2,057億円、営業利益率は20.4%で前年同期から3.2ポイント改善した。通期営業利益予想も6,900億円から7,100億円へ引き上げられた。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup></p>
+          <p>ただし、株式としては「強い会社」と「いま買ってよい株価」を分けたい。7月9日終値85,170円でも会社新予想EPS 1,629.54円に対するPERは約52.3倍。海外ユニクロの成長持続は評価できるが、Q4国内販売、在庫、値引き、FY2027への利益橋渡しが次の確認点になる。<sup><a href="#src-1">1</a></sup><sup><a href="#src-5">5</a></sup></p>
+        </article>
+        <article class="panel watch">
+          <h3>投資判断への変化</h3>
+          <p><strong>会社 thesis:</strong> 強化。海外ユニクロのグローバル拡張、GUの利益率改善、全社粗利率改善が同時に確認された。</p>
+          <p><strong>株式 thesis:</strong> 小幅強化にとどまる。上方修正は良いが、株価がすでに高い期待を織り込んでいたため、追加のリレーティングにはFY2027の営業利益成長確度が必要。</p>
+          <p><strong>行動規律:</strong> 追いかけ買いより「翌営業日の株価反応と7-8月販売データ待ち」。大きく売られれば再評価、急騰すれば高PERの利確圧力を警戒。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="tiles">
+        <article class="tile green"><div class="tile-label">Q3単独 売上収益</div><div class="tile-value">1.010兆円</div><div class="tile-note">前年同期比+22.2%。会社計画相当の分析試算を約6.6%上回った。<sup><a href="#src-1">1</a></sup><sup><a href="#src-3">3</a></sup></div></article>
+        <article class="tile green"><div class="tile-label">Q3単独 営業利益</div><div class="tile-value">2,057億円</div><div class="tile-note">前年同期比+45.0%。営業利益率20.4%、前年差+3.2pt。<sup><a href="#src-2">2</a></sup></div></article>
+        <article class="tile"><div class="tile-label">Q3純利益 vs Visible Alpha</div><div class="tile-value">+23.4%</div><div class="tile-note">親会社帰属利益1,467億円に対し、WSJ掲載のVisible Alpha予想は1,189億円。<sup><a href="#src-4">4</a></sup></div></article>
+        <article class="tile violet"><div class="tile-label">通期営業利益予想</div><div class="tile-value">7,100億円</div><div class="tile-note">従来6,900億円から+200億円。公開IFISの事前通期営業益7,002億円も上回る。<sup><a href="#src-1">1</a></sup><sup><a href="#src-6">6</a></sup></div></article>
+        <article class="tile amber"><div class="tile-label">新会社予想PER</div><div class="tile-value">約52.3倍</div><div class="tile-note">7月9日終値85,170円 / 会社新予想EPS 1,629.54円。まだ高い。<sup><a href="#src-1">1</a></sup><sup><a href="#src-5">5</a></sup></div></article>
+      </div>
+    </section>
+
+    <section id="numbers">
+      <div class="kicker">Financial Snapshot</div>
+      <h2>Q3は売上、粗利、販管費率、営業利益率が同時に良化</h2>
+      <div class="two-col">
+        <article class="panel good">
+          <h3>Q3単独の質</h3>
+          <p>売上収益は1兆99億円、売上総利益は5,720億円。粗利率は56.6%で前年同期比+1.7ポイント、販管費率は36.3%で同-1.4ポイント。売上の伸びだけでなく、マージンと費用率の両方が効いた決算だった。<sup><a href="#src-2">2</a></sup></p>
+          <div class="bars" aria-label="Q3 key financial bars">
+            <div class="bar-row"><div class="bar-label">売上収益</div><div class="track"><div class="fill" style="width:100%"></div></div><div class="bar-value">1.010兆円</div></div>
+            <div class="bar-row"><div class="bar-label">売上総利益</div><div class="track"><div class="fill green" style="width:56.6%"></div></div><div class="bar-value">5,720億円</div></div>
+            <div class="bar-row"><div class="bar-label">営業利益</div><div class="track"><div class="fill amber" style="width:20.4%"></div></div><div class="bar-value">2,057億円</div></div>
+            <div class="bar-row"><div class="bar-label">親会社帰属利益</div><div class="track"><div class="fill red" style="width:14.5%"></div></div><div class="bar-value">1,467億円</div></div>
+          </div>
+        </article>
+        <article class="panel info">
+          <h3>9カ月累計の姿</h3>
+          <p>9カ月累計では売上収益3兆651億円（+17.1%）、営業利益5,927億円（+33.6%）、親会社帰属利益4,260億円（+25.6%）。売上総利益率は54.9%で+1.1ポイント、販管費率は35.6%で-1.3ポイント。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup></p>
+          <p>営業キャッシュフローは6,501億円。現金及び現金同等物の期末残高は1兆1,320億円で、配当支払い1,779億円と社債償還700億円をこなしてなお財務余力は厚い。<sup><a href="#src-1">1</a></sup></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="bar">
+      <div class="kicker">Expectation Bar</div>
+      <h2>市場期待に対しては「Q3純利益は明確に上振れ、通期上方修正は良いが大幅ではない」</h2>
+      <div class="callout amber"><span class="label market">期待値の扱い</span>FactSet/LSEG/QUICKの完全なQ3コンセンサスは未取得。ここでは、WSJが報じたVisible AlphaのQ3純利益予想、決算前プレビュー時点の公開IFIS通期コンセンサス、会社の従来予想を分けて読む。</div>
+      <div class="table-wrap" style="margin-top:12px">
+        <table>
+          <thead><tr><th>論点</th><th>事前バー</th><th>今回実績・新予想</th><th>差分</th><th>投資家の読み方</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Q3純利益</strong></td><td class="num">1,189億円<br><span class="small">Visible Alpha / WSJ</span></td><td class="num">1,467億円</td><td class="num positive">+278億円<br>+23.4%</td><td>明確な上振れ。EPS品質を確認したうえで、営業利益も強いため「一過性だけ」ではない。</td></tr>
+            <tr><td><strong>Q3売上</strong></td><td class="num">約9,470億円<br><span class="small">前回プレビューの会社計画相当試算</span></td><td class="num">1兆99億円</td><td class="num positive">+629億円<br>+6.6%</td><td>海外ユニクロと国内月次の強さが数字に出た。コンセンサスではなく、分析上の目線。</td></tr>
+            <tr><td><strong>Q3営業利益</strong></td><td class="num">約1,690億円<br><span class="small">前回プレビューの会社計画相当試算</span></td><td class="num">2,057億円</td><td class="num positive">+367億円<br>+21.7%</td><td>営業レバレッジが想定以上。粗利率と販管費率の両面で説明できる。</td></tr>
+            <tr><td><strong>通期営業利益</strong></td><td class="num">6,900億円<br><span class="small">従来会社予想</span></td><td class="num">7,100億円</td><td class="num positive">+200億円</td><td>上方修正はポジティブ。ただしQ3の上振れ幅を考えると、Q4に一定の保守性または国内警戒を残す。</td></tr>
+            <tr><td><strong>通期純利益</strong></td><td class="num">4,834億円<br><span class="small">公開IFIS / 決算前時点</span></td><td class="num">5,000億円</td><td class="num positive">+166億円<br>+3.4%</td><td>純利益は市場目線を上回る。とはいえ高PERをさらに押し上げるにはFY2027の利益水準が必要。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">Q3売上・営業利益の事前バーは決算前プレビューで明示した分析試算。会社ガイダンスやコンセンサスではない。<sup><a href="#src-3">3</a></sup></p>
+    </section>
+
+    <section id="segments">
+      <div class="kicker">Segment Read</div>
+      <h2>主役は海外ユニクロ。国内も良いが、Q4の天候・在庫リスクが残る</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>セグメント</th><th>9カ月累計</th><th>Q3単独</th><th>評価</th><th>次の確認点</th></tr></thead>
+          <tbody>
+            <tr><td><strong>国内ユニクロ</strong></td><td>売上8,676億円（+8.3%）、営業利益1,733億円（+15.1%）。<sup><a href="#src-1">1</a></sup></td><td>売上2,859億円（+10.0%）、営業利益619億円（+16.9%）。既存店+EC売上は+9.9%。<sup><a href="#src-2">2</a></sup></td><td><span class="positive">良い</span>。トレンドを反映した商品とGW・感謝祭が効いた。</td><td>6月の低温影響後、夏物在庫と値引きがどの程度残るか。</td></tr>
+            <tr><td><strong>海外ユニクロ</strong></td><td>売上1兆8,340億円（+25.9%）、営業利益3,519億円（+46.2%）。<sup><a href="#src-1">1</a></sup></td><td>売上5,926億円（+33.8%）、営業利益1,178億円（+63.4%）。営業利益率19.9%、前年差+3.6pt。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup></td><td><span class="positive">最重要の上振れ要因</span>。グレーターチャイナ、韓国、東南アジア・インド・豪州、北米、欧州が2桁増収増益。</td><td>FY2027に北米・欧州の高成長と中国の構造改革効果が続くか。</td></tr>
+            <tr><td><strong>GU</strong></td><td>売上2,656億円（+3.7%）、営業利益332億円（+26.1%）。<sup><a href="#src-1">1</a></sup></td><td>売上971億円（+7.5%）、営業利益167億円（+34.8%）。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup></td><td><span class="positive">利益率は改善</span>。売上成長はまだ控えめだが、商品訴求と在庫・店舗運営改善が効いた。</td><td>利益率だけでなく、売上成長の再加速が続くか。</td></tr>
+            <tr><td><strong>グローバルブランド</strong></td><td>売上963億円（-4.2%）、営業利益30億円（+5.2%）。<sup><a href="#src-1">1</a></sup></td><td>売上336億円（+2.5%）、営業利益31億円（+66.7%）。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup></td><td><span class="neutral">小さいが改善</span>。Q3は黒字改善したが、累計売上は減収。</td><td>Theoryなどの構造改革が持続的な成長へ転じるか。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">Drivers</div>
+      <h2>利益の質を押し上げた3つのドライバー</h2>
+      <div class="scenario-grid">
+        <article class="scenario">
+          <h3>1. 海外ユニクロの実力成長</h3>
+          <p>Q3海外ユニクロは売上+33.8%、営業利益+63.4%。会社は各地域で2桁増収増益と説明しており、単なる円安換算だけではなく、地域展開と商品訴求が効いた決算と読める。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup></p>
+        </article>
+        <article class="scenario">
+          <h3>2. 粗利率と販管費率の同時改善</h3>
+          <p>Q3全社の粗利率は56.6%で+1.7pt、販管費率は36.3%で-1.4pt。売上の伸びに加えて、売上総利益と費用効率の両方が営業利益率を押し上げた。<sup><a href="#src-2">2</a></sup></p>
+        </article>
+        <article class="scenario">
+          <h3>3. GUの利益率改善</h3>
+          <p>GUは9カ月累計で売上+3.7%に対し営業利益+26.1%、Q3単独では営業利益+34.8%。売上の迫力は海外ユニクロほどではないが、利益率改善は株式価値にプラス。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="quality">
+      <div class="kicker">EPS Quality</div>
+      <h2>EPS品質はおおむね良い。営業利益の伸びが純利益の上振れを支えている</h2>
+      <div class="two-col">
+        <article class="panel good">
+          <h3>品質スクリーン</h3>
+          <p><span class="label company">会社数値</span>Q3単独の親会社帰属利益は1,467億円（+39.1%）で、営業利益2,057億円（+45.0%）と方向がそろう。金融収支は157億円のプラスだが、今回の上振れは営業利益だけでも十分説明できる。<sup><a href="#src-1">1</a></sup><sup><a href="#src-2">2</a></sup></p>
+          <p><strong>結論:</strong> 利益の見かけを大きく歪める一過性・税金・金融収支だけのEPS品質トリガーは、入手資料からは確認されない。ただし、完全なEPSコンセンサス基準とQ&Aは未取得。</p>
+        </article>
+        <article class="panel watch">
+          <h3>在庫・値引き</h3>
+          <p>決算短信では棚卸資産が前期末比132億円減少した一方、国内ユニクロの6月既存店+EC売上は天候要因で大きく悪化していた。Q3末時点の在庫は大きな赤信号ではないが、6月以降の夏物消化と値引きはQ4粗利の実務的なリスクとして残る。<sup><a href="#src-1">1</a></sup><sup><a href="#src-3">3</a></sup></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="valuation">
+      <div class="kicker">Stock And Valuation</div>
+      <h2>株価は決算前に高値圏。上方修正でPERは下がったが、まだ「成長を買い切る」水準</h2>
+      <div class="two-col">
+        <article class="panel info">
+          <h3>株価セットアップ</h3>
+          <p>7月8日は年初来高値88,690円を付け、終値87,100円。7月9日終値は85,170円で前日比-2.2%。Yahoo Financeの現物データでは、決算発表後の翌営業日反応はまだ反映されていないため、ここでは7月9日終値を事前/当日アンカーとして扱う。<sup><a href="#src-5">5</a></sup></p>
+          <div class="bars">
+            <div class="bar-row"><div class="bar-label">7/8終値</div><div class="track"><div class="fill amber" style="width:98%"></div></div><div class="bar-value">87,100円</div></div>
+            <div class="bar-row"><div class="bar-label">7/9終値</div><div class="track"><div class="fill" style="width:96%"></div></div><div class="bar-value">85,170円</div></div>
+            <div class="bar-row"><div class="bar-label">年初来高値</div><div class="track"><div class="fill green" style="width:100%"></div></div><div class="bar-value">88,690円</div></div>
+          </div>
+        </article>
+        <article class="panel watch">
+          <h3>高PERは正当化されたか</h3>
+          <p>今回の決算は高PERを「壊さない」内容だった。新会社予想EPS 1,629.54円に対するPERは約52.3倍で、7月8日時点の旧会社予想PER約55.7倍からは低下した。<sup><a href="#src-1">1</a></sup><sup><a href="#src-5">5</a></sup></p>
+          <p>ただし、52倍台はまだFY2026だけでは説明しにくい。市場が買いたいのは、海外ユニクロの北米・欧州・アジア成長がFY2027以降も営業利益率を押し上げる証拠であり、単年度の上方修正だけでは十分ではない。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="scenarios">
+      <div class="kicker">Scenario Map</div>
+      <h2>決算後の強気・中立・弱気シナリオ</h2>
+      <div class="scenario-grid">
+        <article class="scenario">
+          <h3>Bull</h3>
+          <p class="positive"><strong>海外ユニクロの高成長をFY2027へ延長</strong></p>
+          <ul>
+            <li>Q4も海外ユニクロが現地通貨ベースで2桁成長。</li>
+            <li>国内6月の弱さは天候一過性で、在庫・値引きは軽微。</li>
+            <li>FY2027営業利益の市場目線が7,500億円超へ切り上がる。</li>
+          </ul>
+          <p><strong>株価:</strong> 高PER維持、年初来高値再トライ。</p>
+        </article>
+        <article class="scenario">
+          <h3>Base</h3>
+          <p class="neutral"><strong>強い会社、しかし株価は証拠待ち</strong></p>
+          <ul>
+            <li>通期7,100億円は達成確度が高まる。</li>
+            <li>海外ユニクロは強いが、国内Q4粗利に少し警戒。</li>
+            <li>PER50倍台前半で、次の上振れ材料待ち。</li>
+          </ul>
+          <p><strong>株価:</strong> 初動は上振れ評価と利確の綱引き。</p>
+        </article>
+        <article class="scenario">
+          <h3>Bear</h3>
+          <p class="negative"><strong>Q3ピーク感と国内値引きリスク</strong></p>
+          <ul>
+            <li>Q4国内販売が低温・在庫消化で粗利を圧迫。</li>
+            <li>海外の高成長が為替・出店効果中心と見られる。</li>
+            <li>上方修正幅が高PERに対して物足りない。</li>
+          </ul>
+          <p><strong>株価:</strong> 決算好調でもPER調整で下押し。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">Watch List</div>
+      <h2>次に市場が確認するポイント</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>確認点</th><th>なぜ重要か</th><th>強気の証拠</th><th>弱気の証拠</th></tr></thead>
+          <tbody>
+            <tr><td>7-8月の国内ユニクロ販売と夏物在庫</td><td>Q3よりQ4粗利を左右する。</td><td>販売回復、追加値引き不要、在庫正常。</td><td>値引き増、夏物残り、下期国内計画の未達。</td></tr>
+            <tr><td>海外ユニクロの現地通貨成長</td><td>高PERの中核は海外成長の持続。</td><td>北米・欧州・アジアで2桁増収増益継続。</td><td>円換算や出店効果に偏り、既存店が鈍化。</td></tr>
+            <tr><td>グレーターチャイナの構造改革</td><td>過去の不安材料が再評価に変わるか。</td><td>増収増益と大型店・スクラップ&ビルドの成果。</td><td>販売回復が一過性、利益率が再低下。</td></tr>
+            <tr><td>FY2027への橋渡し</td><td>FY2026上方修正だけではPER52倍を説明しにくい。</td><td>営業利益率改善が翌期も続く説明。</td><td>原価・為替・人件費でマージン天井感。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">Transcript And Debate Map</div>
+      <h2>Q&A/書き起こしは未取得。現時点の論争点は「成長の持続性」と「高PERの許容度」</h2>
+      <div class="callout red"><span class="label missing">transcript source not found</span>決算説明会の書き起こし、質疑応答、発言者付きのトランスクリプトは本稿作成時点で未取得。数値は決算短信・決算説明資料を一次ソースとし、経営コメントの引用は行わない。</div>
+      <div class="table-wrap" style="margin-top:12px">
+        <table>
+          <thead><tr><th>論争点</th><th>強気側</th><th>弱気側</th><th>次の反証条件</th></tr></thead>
+          <tbody>
+            <tr><td>海外ユニクロ</td><td>地域分散された2桁増収増益で、グローバル成長の証拠が増えた。</td><td>高成長の一部は出店・為替・比較対象の影響で、FY2027に鈍化し得る。</td><td>Q4・FY2027の現地通貨成長、既存店、利益率。</td></tr>
+            <tr><td>国内ユニクロ</td><td>Q3は既存店+EC+9.9%で、商品力と販売力は強い。</td><td>6月の天候不順後、値引き・在庫がQ4粗利を壊す可能性。</td><td>7-8月月次、夏物在庫、粗利コメント。</td></tr>
+            <tr><td>バリュエーション</td><td>会社新予想と利益率改善でPERは低下し、質の高い成長にはプレミアムが妥当。</td><td>PER50倍台はFY2027以降の継続上振れを前払いしている。</td><td>FY2027コンセンサス改定、翌営業日の株価反応、長期成長目標の信頼度。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">Source Limits</div>
+      <h2>未取得データと確認待ち事項</h2>
+      <div class="action-grid">
+        <article class="action"><h3>Q&A / 書き起こし</h3><p>未取得。発言者・質問者付きのQ&Aは公開確認できていない。</p></article>
+        <article class="action"><h3>完全なQ3コンセンサス</h3><p>FactSet/LSEG/QUICKのQ3売上・営業利益・EPS分布は未取得。</p></article>
+        <article class="action"><h3>決算後株価反応</h3><p>7月9日終値は取得。決算発表後の翌営業日現物反応は確認待ち。</p></article>
+        <article class="action"><h3>機関ポジショニング</h3><p>空売り、オプション、機関投資家ポジション、イベント・インプライドムーブは未取得。</p></article>
+      </div>
+    </section>
+
+    <section id="sources">
+      <div class="kicker">Evidence Ledger</div>
+      <h2>主なソース</h2>
+      <ol class="source-list">
+        <li id="src-1"><strong>ファーストリテイリング 2026年8月期 第3四半期決算短信</strong>: <a href="https://www.fastretailing.com/jp/ir/library/pdf/tanshin202608_3q.pdf">公式PDF</a>。連結P/L、通期予想、セグメント、CF、EPS、在庫・BSコメント。</li>
+        <li id="src-2"><strong>ファーストリテイリング 2026年8月期 第3四半期決算概要</strong>: <a href="https://www.fastretailing.com/jp/ir/library/pdf/fr_ir_n20260709_3q_summary.pdf">公式PDF</a>。Q3単独・セグメント・地域別の説明。</li>
+        <li id="src-3"><strong>9983 ファーストリテイリング FY2026 Q3 決算前プレビュー</strong>: <a href="https://anritosho.github.io/earnings-preview/fast-retailing-fy2026-q3-earnings-preview.html">公開済み前回ページ</a>。事前の会社計画相当試算、7月8日時点株価、公開IFIS通期コンセンサス。</li>
+        <li id="src-4"><strong>Wall Street Journal / Visible Alpha</strong>: <a href="https://www.wsj.com/business/earnings/uniqlo-owner-raises-guidance-after-strong-quarterly-profit-ab5c7c44">Uniqlo Owner Raises Guidance After Strong Quarterly Profit</a>。Q3純利益予想1,189億円、Q3実績1,467億円、通期予想更新の外部報道。</li>
+        <li id="src-5"><strong>Yahoo Finance 9983.T</strong>: <a href="https://finance.yahoo.com/quote/9983.T/">株価データ</a>。2026年7月9日終値85,170円、7月8日終値87,100円、年初来高値88,690円を取得。</li>
+        <li id="src-6"><strong>IFIS株予報 9983 ファーストリテイリング</strong>: <a href="https://kabuyoho.ifis.co.jp/index.php?action=tp1&amp;bcode=9983&amp;id=100&amp;sa=report">公開コンセンサスページ</a>。決算前プレビュー時点の公開IFIS通期コンセンサス参照元。</li>
+      </ol>
+      <div class="callout amber" style="margin-top:14px"><span class="label market">注意</span>本資料は投資判断のための調査メモであり、売買推奨ではない。会社発表数値、公開報道、公開株価データ、分析者による試算を分けて表示している。</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">9983 Fast Retailing FY2026 Q3 post-earnings deep dive. Static research artifact for public-equity discussion. Not investment advice.</div>
+  </footer>
+</body>
+</html>
