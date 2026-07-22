@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW269ZH5CL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VW269ZH5CL');
+  </script>
+  <meta name="description" content="Alphabet（GOOGL）FY2026 Q2決算後ディープダイブ。Google Cloudの高成長と採算、AI投資・FCF、EPS品質、規制リスク、株価評価を整理。">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Earnings Research">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="https://anritosho.github.io/earnings-preview/alphabet-googl-fy2026-q2-post-earnings-deep-dive.html">
+  <meta property="og:title" content="Alphabet GOOGL FY2026 Q2 決算後ディープダイブ | Earnings Research">
+  <meta property="og:description" content="Cloudの成長・採算は強い。一方で巨額の株式評価益がGAAP EPSを押し上げ、Capex急増で四半期FCFは赤字。投資判断への意味を整理。">
+  <meta property="og:image" content="https://anritosho.github.io/earnings-preview/x-card.png">
+  <meta property="og:image:alt" content="Alphabet GOOGL FY2026 Q2 決算後ディープダイブ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alphabet GOOGL FY2026 Q2 決算後ディープダイブ">
+  <meta name="twitter:description" content="Cloudの成長・採算、AI投資、FCF、EPS品質、規制リスクを投資判断の観点から整理。">
+  <meta name="twitter:image" content="https://anritosho.github.io/earnings-preview/x-card.png">
+  <title>Alphabet GOOGL FY2026 Q2 決算後ディープダイブ | Earnings Research</title>
+  <style>
+    :root { --ink:#172033; --muted:#667085; --line:#d7dee8; --paper:#f6f8fb; --panel:#fff; --navy:#14365d; --blue:#2f6b9a; --teal:#127c73; --green:#176b4d; --amber:#9a6100; --red:#a33b3b; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Yu Gothic","Meiryo","Hiragino Kaku Gothic ProN",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.72; letter-spacing:0; }
+    a { color:var(--blue); }
+    .page { width:min(1120px,calc(100% - 32px)); margin:0 auto; padding:32px 0 56px; }
+    .back { display:inline-flex; margin-bottom:16px; font-size:14px; text-decoration:none; }
+    header,.panel { background:var(--panel); border:1px solid var(--line); border-radius:8px; box-shadow:0 10px 26px rgba(20,54,93,.07); }
+    header { padding:30px; }
+    .eyebrow { color:var(--teal); font-size:13px; font-weight:800; margin-bottom:9px; }
+    h1,h2,h3 { color:var(--navy); letter-spacing:0; }
+    h1 { margin:0; font-size:clamp(28px,5vw,46px); line-height:1.18; }
+    h2 { margin:0 0 14px; font-size:23px; line-height:1.3; }
+    h3 { margin:18px 0 8px; font-size:17px; }
+    p { margin:8px 0; }
+    .lede { max-width:900px; color:#36445d; font-size:17px; }
+    .asof { margin-top:16px; color:var(--muted); font-size:13px; }
+    .tag { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:3px 9px; color:var(--muted); background:#fbfcfe; font-size:12px; font-weight:700; }
+    .stance { display:grid; grid-template-columns:160px 1fr; gap:18px; align-items:center; margin-top:20px; padding:18px; background:#f2f8f6; border:1px solid #b9ded0; border-radius:8px; }
+    .stance strong { display:block; color:var(--green); font-size:24px; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:18px; }
+    .metric { padding:16px; background:#fbfcfe; border:1px solid var(--line); border-radius:8px; }
+    .metric .label { color:var(--muted); font-size:12px; font-weight:700; }
+    .metric .value { margin-top:4px; color:var(--navy); font-size:22px; font-weight:800; line-height:1.2; }
+    .metric .note { margin-top:5px; color:var(--muted); font-size:12px; }
+    .panel { margin-top:18px; padding:25px; }
+    .two { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .three { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    .callout { padding:15px 17px; border-left:4px solid var(--teal); background:#f4faf8; }
+    .warning { padding:15px 17px; border-left:4px solid var(--amber); background:#fff9ef; }
+    .danger { padding:15px 17px; border-left:4px solid var(--red); background:#fff5f5; }
+    table { width:100%; border-collapse:collapse; margin-top:12px; font-size:14px; }
+    th,td { padding:10px; border-bottom:1px solid var(--line); text-align:right; vertical-align:top; }
+    th { color:var(--muted); background:#fbfcfe; font-size:12px; }
+    th:first-child,td:first-child { text-align:left; }
+    .up { color:var(--green); font-weight:800; } .down { color:var(--red); font-weight:800; } .watch { color:var(--amber); font-weight:800; }
+    ul { margin:8px 0; padding-left:21px; } li { margin:6px 0; }
+    .scenario { border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .scenario h3 { margin-top:0; } .bull h3 { color:var(--green); } .base h3 { color:var(--amber); } .bear h3 { color:var(--red); }
+    .source-list { font-size:13px; color:#46546c; } .source-list li { overflow-wrap:anywhere; }
+    .small { color:var(--muted); font-size:13px; }
+    .source { font-size:12px; white-space:nowrap; }
+    figure { margin:16px 0 0; padding:16px; border:1px solid var(--line); border-radius:8px; background:#fbfcfe; }
+    figcaption { color:var(--navy); font-weight:800; font-size:14px; margin-bottom:10px; }
+    .chart-row { display:grid; grid-template-columns:68px 1fr 62px; align-items:center; gap:10px; margin:7px 0; font-size:12px; }
+    .bar-track { height:18px; overflow:hidden; background:#e8eef5; border-radius:3px; }
+    .bar { height:100%; min-width:3px; background:var(--blue); border-radius:3px; } .bar.cloud { background:var(--teal); } .bar.net { background:var(--amber); }
+    .chart-value { text-align:right; color:var(--muted); font-variant-numeric:tabular-nums; }
+    .chart-legend { display:flex; flex-wrap:wrap; gap:12px; color:var(--muted); font-size:12px; margin-top:10px; }
+    .dot { display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:4px; background:var(--blue); } .dot.cloud { background:var(--teal); } .dot.net { background:var(--amber); }
+    footer { margin-top:24px; color:var(--muted); font-size:12px; text-align:center; }
+    @media (max-width:820px) { .grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .two,.three { grid-template-columns:1fr; } }
+    @media (max-width:600px) { .page { width:min(100% - 20px,1120px); padding-top:18px; } header,.panel { padding:20px; } .stance { grid-template-columns:1fr; gap:6px; } .grid { grid-template-columns:1fr; } table { font-size:12px; } th,td { padding:8px 6px; } .chart-row { grid-template-columns:54px 1fr 54px; gap:6px; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Earnings Research 一覧へ</a>
+    <header>
+      <div class="eyebrow">POST-EARNINGS DEEP DIVE · NASDAQ: GOOGL · CLASS A</div>
+      <h1>Alphabet GOOGL<br>FY2026 Q2 決算後ディープダイブ</h1>
+      <p class="lede">営業面では、Google Cloudの売上成長と大幅な採算改善、Searchを中心とする広告の二桁成長がそろった強い四半期です。一方、GAAP EPSは巨額の投資有価証券評価益に支えられ、AIインフラ投資で四半期FCFは赤字に転じました。投資判断はEPSの見かけではなく、Cloudの持続性とCapex回収の証明に移ります。</p>
+      <p class="asof">情報凍結: 2026年7月23日 JST。業績はAlphabet連結ベース、金額は特記なき限り米ドル。株価反応は2026年7月22日米国時間の時間外取引までの暫定情報です。GAAP数値は会社Q2 2026 Earnings Release（SEC Exhibit 99.1）を一次資料としています。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+      <div class="stance">
+        <div><span class="tag">決算の第一印象</span><strong>ポジティブ</strong></div>
+        <div><strong>投資仮説は強まった。</strong> Cloudは前年比82%増、営業利益率35.6%へ上昇し、AI需要が単なるインフラ出荷ではなくセグメント利益に転化していることを示した。もっとも、投資回収の最終判定はまだ早い。Capexは前年比約2倍、四半期FCFは-$5.9bnであり、検索収益化とCloudの継続成長がこの負担を吸収できるかが次の証明点である。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></div>
+      </div>
+      <div class="grid">
+        <div class="metric"><div class="label">連結売上高</div><div class="value">$119.80bn</div><div class="note">前年比 +24.2%、FactSet売上予想を約2.3%上回る <a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a> <a class="source" href="https://apnews.com/article/google-results-revenue-profit-ai-alphabet-f914606d842d4c6848019083d667fc3a">[S7]</a></div></div>
+        <div class="metric"><div class="label">営業利益 / マージン</div><div class="value">$40.77bn / 34.0%</div><div class="note">前年比 +30.4% / +1.6pt <a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></div></div>
+        <div class="metric"><div class="label">Google Cloud</div><div class="value">$24.77bn</div><div class="note">前年比 +81.8%、営業利益率 35.6% <a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></div></div>
+        <div class="metric"><div class="label">Capex / 四半期FCF</div><div class="value">$44.92bn / -$5.86bn</div><div class="note">FCF = 営業CF - 有形固定資産取得 <a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></div></div>
+        <div class="metric"><div class="label">GAAP 希薄化後EPS</div><div class="value">$9.11</div><div class="note">株式評価益 $99.03bnを含み、営業実力の指標には不適 <a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></div></div>
+        <div class="metric"><div class="label">時間外株価反応</div><div class="value">$344.62</div><div class="note">+$2.71、通常取引前の暫定値 <a class="source" href="https://apnews.com/article/google-results-revenue-profit-ai-alphabet-f914606d842d4c6848019083d667fc3a">[S7]</a></div></div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>1. 投資判断の結論と決算の質</h2>
+      <div class="two">
+        <div>
+          <h3>結論: 営業面の上振れは本物、EPSの上振れは別物</h3>
+          <p>売上高は市場の公開予想を上回り、Google ServicesとGoogle Cloudの双方で利益率が上昇しました。特にCloudは、売上成長と営業利益率改善が同時に進んだ点が重要です。これは、決算前に置いた「AI需要が利益に転化しているか」という仮説を前進させます。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+          <p>ただし、GAAP純利益$112.19bn・EPS $9.11の大半は、営業外の株式評価益です。事業の再評価には営業利益、Cloud採算、広告成長、FCFを使うべきであり、EPSの大幅ビートをそのまま翌期の利益予想やPERへ外挿してはいけません。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+        </div>
+        <div class="callout">
+          <h3>推定値改定への含意</h3>
+          <p><strong>営業利益・Cloudの予想:</strong> 上方修正方向。公開で照合できたセグメント別コンセンサスや営業利益予想は未取得だが、Cloudの+82%成長と35.6%の営業利益率は、従来の低い採算前提を引き上げる材料です。</p>
+          <p><strong>GAAP EPS:</strong> 予想改定の材料としては限定的。約$99bnの株式評価益は再現性が確認できず、FactSetの調整後EPS予想$2.88との直接比較も定義がそろいません。<a class="source" href="https://apnews.com/article/google-results-revenue-profit-ai-alphabet-f914606d842d4c6848019083d667fc3a">[S7]</a></p>
+          <p><strong>FCF:</strong> 短期的には下方圧力。AI投資の回収が売上・営業利益で始まった一方、Capexが先行しており、FCF予想を直ちに上方修正する根拠は不足します。</p>
+        </div>
+      </div>
+      <div class="warning"><strong>高いAI期待を正当化したか:</strong> <strong>一部は正当化。</strong> Cloudの高成長とマージン拡大は、AI投資が商業化へ向かっている強い証拠です。しかし、AI固有の売上、RPO・受注残、検索におけるAI機能の広告単価・クリック・ROIは今回も定量開示されていません。Capex急増を完全に正当化するには、次四半期以降にもCloudの成長・採算とSearch収益化が続く必要があります。</div>
+    </section>
+
+    <section class="panel">
+      <h2>2. ビート / ミスと市場期待との差</h2>
+      <p>公開で検証できた同一時点の市場予想はFactSetの連結売上高$117.06bn、調整後EPS $2.88です。営業利益、セグメント売上・利益、Capex、FCFのコンセンサスは未取得です。したがって、取得できた項目だけでビートを判定し、GAAP EPSと調整後EPSは比較可能でないものとして扱います。<a class="source" href="https://apnews.com/article/google-results-revenue-profit-ai-alphabet-f914606d842d4c6848019083d667fc3a">[S7]</a></p>
+      <table>
+        <thead><tr><th>指標（$bn、EPSは$）</th><th>Q2 2026 実績</th><th>前年比</th><th>前四半期比</th><th>公開市場予想</th><th>判定</th></tr></thead>
+        <tbody>
+          <tr><td>連結売上高</td><td>119.80</td><td class="up">+24.2%</td><td class="up">+9.0%</td><td>117.06</td><td class="up">+2.74bn / +2.3% ビート</td></tr>
+          <tr><td>営業利益</td><td>40.77</td><td class="up">+30.4%</td><td class="up">+2.7%</td><td>未取得</td><td>営業モメンタムは強い</td></tr>
+          <tr><td>営業利益率</td><td>34.0%</td><td class="up">+1.6pt</td><td class="down">-2.1pt</td><td>未取得</td><td>前年比で改善</td></tr>
+          <tr><td>GAAP 希薄化後EPS</td><td>9.11</td><td class="up">+294%</td><td class="up">+78%</td><td>調整後 2.88</td><td class="watch">定義不一致、ビート判定せず</td></tr>
+          <tr><td>Google Cloud売上高</td><td>24.77</td><td class="up">+81.8%</td><td class="up">+23.7%</td><td>未取得</td><td class="up">成長加速を確認</td></tr>
+          <tr><td>設備投資</td><td>44.92</td><td class="down">+100.1%</td><td class="down">+25.9%</td><td>未取得</td><td class="watch">FCFへの負担を確認</td></tr>
+        </tbody>
+      </table>
+      <p class="small">実績・前年比・前四半期比は会社開示から算出。売上ビートは実績とFactSet公開予想の差。GAAP EPSの前年比・前四半期比には投資有価証券評価損益が大きく含まれるため、事業成長の比較に用いません。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a> <a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm">[S2]</a> <a class="source" href="https://apnews.com/article/google-results-revenue-profit-ai-alphabet-f914606d842d4c6848019083d667fc3a">[S7]</a></p>
+
+      <div class="two">
+        <figure>
+          <figcaption>連結売上高の5四半期推移（$bn）</figcaption>
+          <div class="chart-row"><span>25 Q2</span><div class="bar-track"><div class="bar" style="width:80.5%"></div></div><span class="chart-value">96.43</span></div>
+          <div class="chart-row"><span>25 Q3</span><div class="bar-track"><div class="bar" style="width:85.4%"></div></div><span class="chart-value">102.35</span></div>
+          <div class="chart-row"><span>25 Q4</span><div class="bar-track"><div class="bar" style="width:95.0%"></div></div><span class="chart-value">113.83</span></div>
+          <div class="chart-row"><span>26 Q1</span><div class="bar-track"><div class="bar" style="width:91.7%"></div></div><span class="chart-value">109.90</span></div>
+          <div class="chart-row"><span>26 Q2</span><div class="bar-track"><div class="bar" style="width:100%"></div></div><span class="chart-value">119.80</span></div>
+        </figure>
+        <figure>
+          <figcaption>営業利益の5四半期推移（$bn）</figcaption>
+          <div class="chart-row"><span>25 Q2</span><div class="bar-track"><div class="bar cloud" style="width:76.7%"></div></div><span class="chart-value">31.27</span></div>
+          <div class="chart-row"><span>25 Q3</span><div class="bar-track"><div class="bar cloud" style="width:76.6%"></div></div><span class="chart-value">31.23</span></div>
+          <div class="chart-row"><span>25 Q4</span><div class="bar-track"><div class="bar cloud" style="width:88.1%"></div></div><span class="chart-value">35.93</span></div>
+          <div class="chart-row"><span>26 Q1</span><div class="bar-track"><div class="bar cloud" style="width:97.4%"></div></div><span class="chart-value">39.70</span></div>
+          <div class="chart-row"><span>26 Q2</span><div class="bar-track"><div class="bar cloud" style="width:100%"></div></div><span class="chart-value">40.77</span></div>
+        </figure>
+      </div>
+      <figure>
+        <figcaption>純利益の5四半期推移（$bn）: 営業外評価益によりQ1・Q2 2026は比較注意</figcaption>
+        <div class="chart-row"><span>25 Q2</span><div class="bar-track"><div class="bar net" style="width:25.1%"></div></div><span class="chart-value">28.20</span></div>
+        <div class="chart-row"><span>25 Q3</span><div class="bar-track"><div class="bar net" style="width:31.2%"></div></div><span class="chart-value">34.98</span></div>
+        <div class="chart-row"><span>25 Q4</span><div class="bar-track"><div class="bar net" style="width:30.7%"></div></div><span class="chart-value">34.46</span></div>
+        <div class="chart-row"><span>26 Q1</span><div class="bar-track"><div class="bar net" style="width:55.8%"></div></div><span class="chart-value">62.58</span></div>
+        <div class="chart-row"><span>26 Q2</span><div class="bar-track"><div class="bar net" style="width:100%"></div></div><span class="chart-value">112.19</span></div>
+        <div class="chart-legend"><span><i class="dot net"></i>純利益。Q1には株式評価益$36.9bn、Q2には$99.0bnを含む。</span></div>
+      </figure>
+      <p class="small">5四半期の数値は各期のAlphabet Earnings Release。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204425000056/googexhibit991q22025.htm">[S5]</a> <a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204425000087/googexhibit991q32025.htm">[S4]</a> <a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/googexhibit991q42025.htm">[S3]</a> <a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googex…1195 tokens truncated…100の約90%が利用し、Gemini APIは毎分220億トークン、Gemini Appは月間アクティブユーザー9.5億人と説明しました。ただし、AI固有のCloud売上・契約期間・RPO・受注残はQ2リリースで未提示です。AI需要が継続的な契約収益へ結び付くかは、次回の開示で確認が必要です。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+        </div>
+      </div>
+      <div class="two">
+        <div>
+          <h3>Other BetsとAlphabet-level: 成長のコストも増加</h3>
+          <p>Other Betsの売上は$0.38bnで前年比小幅増にとどまり、営業損失は-$1.80bnへ拡大しました。Alphabet-level activitiesの損失も-$5.79bnへ拡大し、会社は主に共有AI研究開発を反映すると説明しています。CloudとServicesの採算改善はこれらのコストを吸収したものの、AI投資はセグメント外にも大きく表れている点に注意が必要です。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+        </div>
+        <div class="warning">
+          <h3>地域別・競合の読み方</h3>
+          <p>地域別売上高の詳細、Microsoft Azure・Amazon AWSの同四半期比較を、この情報凍結時点で同じ基準の一次資料としてそろえられませんでした。このため、地域・競合との定量比較は行いません。Cloudの+82%成長と35.6%の営業利益率を、まずAlphabet固有の実績として評価します。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>4. AI投資、設備投資、マージン、FCF</h2>
+      <div class="two">
+        <div>
+          <h3>投資負担: Capexは前年比で約2倍</h3>
+          <table>
+            <thead><tr><th>キャッシュフロー指標（$bn）</th><th>Q2 2025</th><th>Q1 2026</th><th>Q2 2026</th><th>読み方</th></tr></thead>
+            <tbody>
+              <tr><td>営業キャッシュフロー</td><td>27.75</td><td>45.79</td><td>39.07</td><td>高水準を維持</td></tr>
+              <tr><td>有形固定資産取得</td><td>22.45</td><td>35.67</td><td class="down">44.92</td><td>AIインフラ投資が先行</td></tr>
+              <tr><td>FCF</td><td>5.30</td><td>10.12</td><td class="down">-5.86</td><td>四半期で赤字化</td></tr>
+              <tr><td>減価償却</td><td>5.00</td><td>6.06</td><td>7.10</td><td>将来の費用増を示す</td></tr>
+              <tr><td>株式報酬</td><td>6.00</td><td>6.75</td><td>7.96</td><td>希薄化・費用の観点で確認</td></tr>
+            </tbody>
+          </table>
+          <p>上期の営業CFは$84.86bn、Capexは$80.60bn、FCFは$4.26bnです。TTM FCFは$53.27bnとプラスを維持する一方、四半期ベースのキャッシュ創出力は投資が先行して圧縮されています。Capex増を悪材料と一律に扱うのではなく、Cloud利益率とSearchの成長で投資を回収できるかを追う局面です。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+        </div>
+        <div>
+          <h3>回収可能性: 最初の答えはYes、FCFの答えは未完</h3>
+          <p><strong>確認できたこと:</strong> Cloudの営業利益は前年比で3倍超、マージンは約15pt改善し、AI投資がセグメント損益に転換していることが見える。Servicesも高い利益率を維持したため、連結営業利益率は前年比で改善しました。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+          <p><strong>未解決:</strong> Capex $44.92bnに対するAI製品別の売上・顧客契約・回収期間は開示されていません。減価償却は前年比42%増、人員は6%増で、将来の費用ベースも上がっています。FCFの反転を評価するには、Cloudの高成長が一過性の供給制約解消ではなく、継続する契約・利用拡大であることが必要です。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+          <p>Q2にはClass A/C普通株と強制転換優先株の発行で約$49.6bn、シニア債の発行で約$20.3bnの純手取りがあり、会社はAIインフラ・コンピュート拡大を含む一般目的に充てると説明しました。これは投資余力を厚くする一方、資本集約度が高まっていることも示します。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>5. EPS品質と正常化利益</h2>
+      <div class="two">
+        <div>
+          <h3>GAAP利益の橋渡し（Q2 2026）</h3>
+          <table>
+            <thead><tr><th>項目（$bn）</th><th>金額</th><th>投資判断上の意味</th></tr></thead>
+            <tbody>
+              <tr><td>営業利益</td><td>40.77</td><td>事業の中心的な収益力</td></tr>
+              <tr><td>その他収益（純額）</td><td class="up">97.98</td><td>主に投資有価証券の評価益</td></tr>
+              <tr><td>税引前利益</td><td>138.75</td><td>営業外で大きく押し上げ</td></tr>
+              <tr><td>法人税</td><td>-26.56</td><td>実効税率約19.1%</td></tr>
+              <tr><td>純利益</td><td>112.19</td><td>営業実力の代替には不適</td></tr>
+              <tr><td>希薄化後EPS</td><td>$9.11</td><td>評価益を含むGAAP値</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="danger">
+          <h3>約$99bnの株式評価益がヘッドラインを歪める</h3>
+          <p>その他収益の内訳では、株式有価証券の純益が$99.03bnでした。利息収入$1.43bn、利息費用-$1.28bn、為替差損-$0.16bn、その他項目を上回る規模です。評価益は実現・未実現を含むため、四半期営業利益やAI事業の収益化を表すものではありません。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+          <p>会社はこの評価益の税引後・一株当たり影響をQ2リリースで個別には示していません。このため、単純に税率を当てはめた「正常化EPS」は作成しません。結論として、<strong>Q2のEPSは事業モメンタムを過大表示しており、営業利益とFCFを優先する</strong>のが妥当です。</p>
+        </div>
+      </div>
+      <p>希薄化後株式数は前年同期の12.198bn株から12.309bn株へ増加しました。Q2の自己株式取得はゼロ（前年同期$13.24bn）で、株式報酬は$7.96bnでした。評価益によるEPS押上げに加え、株主還元と希薄化の通常の相殺もこの四半期は弱く、EPSの質を一段と慎重に見る必要があります。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+    </section>
+
+    <section class="panel">
+      <h2>6. ガイダンス、経営陣コメント、規制・競争環境</h2>
+      <div class="two">
+        <div>
+          <h3>ガイダンス: 数値は not guided</h3>
+          <p>Q2 2026 Earnings Releaseには、売上高、営業利益、EPS、通期Capexの新たな数値ガイダンスは提示されていません。Q2の実績Capexは確認できる一方、通期レンジや次四半期の水準を発表資料だけで確定することはできません。従って、今回の実質的なガイダンスは、Cloudの高成長とAI需要が続いているという定性情報にとどまります。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+          <h3>確認できた経営陣コメント</h3>
+          <ul>
+            <li>AI機能がSearchのクエリ成長を後押ししている。</li>
+            <li>Gemini EnterpriseはFortune 100の約90%で利用されている。</li>
+            <li>Gemini APIの処理量は毎分220億トークン、Gemini Appの月間アクティブユーザーは9.5億人。</li>
+          </ul>
+          <p>上記は会社のCEOコメントに基づく利用・採用指標であり、売上や利益への直接換算ではありません。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1]</a></p>
+        </div>
+        <div>
+          <h3>決算説明会Q&amp;A: 書き起こし未取得</h3>
+          <div class="warning"><p><strong>Transcript source not found:</strong> 情報凍結時点で、Q2 2026 Earnings Callの公式または検証可能な書き起こしを取得できませんでした。したがって、Q&amp;Aの質問者名・発言のニュアンス・Capex見通しの口頭更新を推測して記載していません。公開後に確認すべき論点は、Cloud需要の持続性、AIの価格・採算、2026年Capex、Search広告収益化、規制救済措置の実施時期です。</p></div>
+          <h3>規制・訴訟リスク: 会社の最新10-Qに基づく整理</h3>
+          <p>Q1 2026 Form 10-Qでは、米国の検索訴訟で配信・データ共有・検索シンジケーションに関わる救済措置と控訴手続き、広告技術訴訟で構造的救済を含む提案、EUの競争政策案件が記載されています。検索配信契約、広告技術、データ利用が変われば、売上成長率だけでなくServicesの高い利益率と評価倍率に影響し得ます。法的結論や現在の進捗は、Q2 10-Q未提出のため断定しません。<a class="source" href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm">[S6]</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>7. 株価反応とバリュエーション</h2>
+      <div class="two">
+        <div>
+          <h3>時間外の小幅高は、営業面の強さを認めつつも冷静</h3>
+          <p>AP報道によると、決算発表後のGOOGLは時間外で$344.62、+$2.71でした。情報凍結時点では翌通常取引が始まっていないため、これは暫定的な反応です。市場は売上ビートとCloudの強さを評価する一方、巨額の評価益を除けばEPSの比較可能性が低く、Capex増とFCF赤字を同時に織り込んでいると読むのが自然です。<a class="source" href="https://apnews.com/article/google-results-revenue-profit-ai-alphabet-f914606d842d4c6848019083d667fc3a">[S7]</a></p>
+          <p><strong>評価:</strong> 時間外の小幅反応は過剰とは言いにくい。Cloudの大幅な上振れには再評価余地があるが、投資家が求めるのはAI売上の持続性とFCFの戻りであり、単発の評価益ではありません。翌通常取引の終値・出来高・決算後の推定値改定は未取得です。</p>
+        </div>
+        <div>
+          <h3>バリュエーション: GAAP PERで判断しない</h3>
+          <p>情報凍結時点の同一基準の予想PER、EV/EBIT、FCF利回り、オプションの予想変動率は取得できませんでした。Q2のGAAP EPSには大きな投資有価証券評価益が含まれるため、$9.11を分母とした単純PERは投資判断に使えません。</p>
+          <p>今回の結果は、Cloudの利益成長とSearchの耐久性という評価の支えを強めました。対して、Capex・減価償却・共有AI研究開発の増加は、将来のFCF利回りを下げ得ます。評価倍率が拡大するには、次の四半期でもCloudの売上成長と35%前後の採算、Searchの二桁成長、FCF悪化の底打ちが同時に確認される必要があります。</p>
+          <p class="small">GOOGLは議決権を持つClass A、GOOGは無議決権のClass Cです。業績は同一のAlphabet連結ベースであり、本レポートではクラス間の価格差や流動性を予測しません。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>8. 決算前プレビューからの投資仮説の変化</h2>
+      <table>
+        <thead><tr><th>決算前の重要論点</th><th>今回確認できたこと</th><th>変化 / 未解決</th></tr></thead>
+        <tbody>
+          <tr><td>CloudのAI需要は高成長と採算を両立できるか</td><td><span class="up">強く確認。</span> 売上+81.8%、営業利益率35.6%。</td><td>AI固有の売上、RPO・受注残、価格競争は未開示。高成長の持続性を次回確認。</td></tr>
+          <tr><td>Search/YouTubeはAI移行中も成長を維持するか</td><td><span class="up">確認が進展。</span> Search+16.8%、YouTube広告+12.9%。会社はAI機能がクエリ成長を牽引と説明。</td><td>クリック、単価、広告主ROI、シェアは未開示。AI収益化を完全に証明したわけではない。</td></tr>
+          <tr><td>Capex増はFCFと利益率を圧迫しないか</td><td><span class="watch">一部確認。</span> 連結営業利益率は改善したが、Capexは$44.92bn、四半期FCFは-$5.86bn。</td><td>回収の時期と通期Capex見通しが未提示。FCFは最重要の未解決点。</td></tr>
+          <tr><td>EPSは営業実力を正しく表すか</td><td><span class="down">否。</span> 株式評価益$99.03bnがGAAP EPSを大きく押し上げた。</td><td>営業利益・FCFを基準に評価する必要が一層高まった。</td></tr>
+          <tr><td>規制が高いServices利益率を損なうか</td><td><span class="watch">未解決。</span> Q2資料に更新は限定的。</td><td>検索・広告技術救済の実施内容、控訴、EU案件の進展を10-Qと当局資料で確認。</td></tr>
+        </tbody>
+      </table>
+      <p class="small">決算前の論点は、<a href="alphabet-googl-fy2026-q2-earnings-preview.html">Alphabet GOOGL FY2026 Q2 決算前プレビュー</a>を参照。今回の評価は会社開示に基づく分析上の判断であり、将来の株価を保証するものではありません。</p>
+    </section>
+
+    <section class="panel">
+      <h2>9. 強気・中立・弱気シナリオ、触媒、反証条件</h2>
+      <div class="three">
+        <div class="scenario bull"><h3>強気</h3><p>Cloudが高い成長率と35%前後の営業利益率を維持し、Search/YouTubeも二桁成長。AIの契約・収益化指標が開示され、Capex増にもかかわらずFCFが底打ちする。</p><p><strong>株価反応条件:</strong> 営業利益予想の上方修正と、AI投資回収への不確実性低下。</p></div>
+        <div class="scenario base"><h3>中立</h3><p>Cloudと広告は成長する一方、Capex・減価償却・共有AI R&amp;Dが増える。FCFの回復は後ろ倒しとなり、株価は成長期待と資本集約化の綱引きになる。</p><p><strong>確認指標:</strong> Cloud margin、Search成長、四半期FCF、Capexの口頭見通し。</p></div>
+        <div class="scenario bear"><h3>弱気</h3><p>Cloud成長が鈍化し、投資負担だけが残る。AI検索が広告単価・クリックを損ない、Search/YouTubeの成長も弱まる。規制対応が配信・広告技術の収益性を圧迫する。</p><p><strong>反証条件:</strong> Cloud採算とSearch収益化が同時に後退し、FCF悪化の説明がつかないこと。</p></div>
+      </div>
+      <div class="two">
+        <div>
+          <h3>次回決算までの触媒</h3>
+          <ul>
+            <li>CloudのAI案件、供給制約、RPO・受注残・採用の定量開示。</li>
+            <li>SearchのAI機能に関するクエリ、広告単価、クリック、広告主ROIの説明。</li>
+            <li>Capex、減価償却、FCFの方向と投資回収期間に関する経営陣コメント。</li>
+            <li>Q2 2026 Form 10-Qによる地域別売上、規制・訴訟リスクの更新。</li>
+          </ul>
+        </div>
+        <div>
+          <h3>ポジション判断の規律</h3>
+          <p><strong>買い材料:</strong> Cloud成長・採算の持続に加え、FCF悪化が投資フェーズのピークと確認できること。</p>
+          <p><strong>売り材料:</strong> Capexの増加を上回るAI収益・Search収益化が示されず、CloudマージンやServices成長が鈍化すること。</p>
+          <p><strong>現在地:</strong> 営業面は強化、FCFとAI収益化の可視性は証拠待ち。GAAP EPSの高さを理由にポジションを増やす判断は支持しません。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>10. 主なソース、未取得データ、確認待ち事項</h2>
+      <h3>主なソース</h3>
+      <ol class="source-list">
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">[S1] Alphabet Q2 2026 Earnings Release（SEC Exhibit 99.1、2026年7月22日）</a> - Q2実績、セグメント、キャッシュフロー、投資有価証券評価益、経営陣コメント。</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm">[S2] Alphabet Q1 2026 Earnings Release（SEC Exhibit 99.1）</a> - 前四半期比較。</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/googexhibit991q42025.htm">[S3] Alphabet Q4 2025 Earnings Release（SEC Exhibit 99.1）</a>、<a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204425000087/googexhibit991q32025.htm">[S4] Q3 2025 Earnings Release</a>、<a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204425000056/googexhibit991q22025.htm">[S5] Q2 2025 Earnings Release</a> - 5四半期推移。</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm">[S6] Alphabet Form 10-Q（2026年Q1、SEC）</a> - 検索・広告技術・EU関連の訴訟リスクの会社開示。</li>
+        <li><a href="https://apnews.com/article/google-results-revenue-profit-ai-alphabet-f914606d842d4c6848019083d667fc3a">[S7] Associated Press, Alphabet Q2 results coverage</a> - FactSet公開売上・調整後EPS予想、時間外株価（取得日時: 2026年7月23日 JST）。</li>
+        <li><a href="alphabet-googl-fy2026-q2-earnings-preview.html">[S8] Earnings Research: Alphabet GOOGL FY2026 Q2 決算前プレビュー</a> - 決算前の投資仮説との比較。</li>
+      </ol>
+      <div class="danger"><p><strong>未取得:</strong> セグメント別・営業利益・Capex・FCFのコンセンサス、予想PER・EV/EBIT・FCF利回り、オプションの予想変動率、翌通常取引の株価・出来高、Q2 2026の説明会書き起こしとQ&amp;A、AI固有の売上・RPO・受注残、広告のクリック・単価・広告主ROI、地域別売上の同一基準での再検証。</p><p><strong>確認待ち:</strong> Q2 2026 Form 10-Q、公式説明会書き起こしまたはQ&amp;A、翌通常取引の株価反応、決算後コンセンサス改定。これらが得られれば、Capex回収・規制リスク・評価倍率の判断を更新します。</p></div>
+    </section>
+  </main>
+  <footer>本レポートは公開情報に基づく投資リサーチであり、投資助言ではありません。会社開示、市場データ、分析上の判断を区別して記載しています。</footer>
+</body>
+</html>
+
