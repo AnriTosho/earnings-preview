@@ -1,0 +1,272 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW269ZH5CL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VW269ZH5CL');
+  </script>
+  <meta name="description" content="Alphabet（GOOGL）FY2026 Q2決算前プレビュー。Google Services、Google Cloud、AI投資、利益の質、バリュエーションの分岐点を整理。">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Earnings Research">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="https://anritosho.github.io/earnings-preview/alphabet-googl-fy2026-q2-earnings-preview.html">
+  <meta property="og:title" content="Alphabet GOOGL FY2026 Q2 決算前プレビュー | Earnings Research">
+  <meta property="og:description" content="検索広告、Google Cloud、AI投資の回収、EPS品質を中心に、決算通過時の株価分岐点を整理。">
+  <meta property="og:image" content="https://anritosho.github.io/earnings-preview/x-card.png">
+  <meta property="og:image:alt" content="Alphabet GOOGL FY2026 Q2 決算前プレビュー">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alphabet GOOGL FY2026 Q2 決算前プレビュー">
+  <meta name="twitter:description" content="検索広告、Google Cloud、AI投資の回収、EPS品質を中心に、決算通過時の株価分岐点を整理。">
+  <meta name="twitter:image" content="https://anritosho.github.io/earnings-preview/x-card.png">
+  <title>Alphabet GOOGL FY2026 Q2 決算前プレビュー | Earnings Research</title>
+  <style>
+    :root { --ink:#172033; --muted:#667085; --line:#d7dee8; --paper:#f6f8fb; --panel:#fff; --navy:#14365d; --blue:#2f6b9a; --teal:#127c73; --green:#176b4d; --amber:#9a6100; --red:#a33b3b; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Yu Gothic","Meiryo","Hiragino Kaku Gothic ProN",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.72; letter-spacing:0; }
+    a { color:var(--blue); }
+    .page { width:min(1120px,calc(100% - 32px)); margin:0 auto; padding:32px 0 56px; }
+    .back { display:inline-flex; margin-bottom:16px; font-size:14px; text-decoration:none; }
+    header,.panel { background:var(--panel); border:1px solid var(--line); border-radius:8px; box-shadow:0 10px 26px rgba(20,54,93,.07); }
+    header { padding:30px; }
+    .eyebrow { color:var(--teal); font-size:13px; font-weight:800; margin-bottom:9px; }
+    h1,h2,h3 { color:var(--navy); letter-spacing:0; }
+    h1 { margin:0; font-size:clamp(28px,5vw,46px); line-height:1.18; }
+    h2 { margin:0 0 14px; font-size:23px; line-height:1.3; }
+    h3 { margin:18px 0 8px; font-size:17px; }
+    p { margin:8px 0; }
+    .lede { max-width:850px; color:#36445d; font-size:17px; }
+    .asof { margin-top:16px; color:var(--muted); font-size:13px; }
+    .tag { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:3px 9px; color:var(--muted); background:#fbfcfe; font-size:12px; font-weight:700; }
+    .stance { display:grid; grid-template-columns:150px 1fr; gap:18px; align-items:center; margin-top:20px; padding:18px; background:#f2f8f6; border:1px solid #b9ded0; border-radius:8px; }
+    .stance strong { display:block; color:var(--green); font-size:24px; }
+    .grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:18px; }
+    .metric { padding:16px; background:#fbfcfe; border:1px solid var(--line); border-radius:8px; }
+    .metric .label { color:var(--muted); font-size:12px; font-weight:700; }
+    .metric .value { margin-top:4px; color:var(--navy); font-size:22px; font-weight:800; line-height:1.2; }
+    .metric .note { margin-top:5px; color:var(--muted); font-size:12px; }
+    .panel { margin-top:18px; padding:25px; }
+    .two { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .three { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    .callout { padding:15px 17px; border-left:4px solid var(--teal); background:#f4faf8; }
+    .warning { padding:15px 17px; border-left:4px solid var(--amber); background:#fff9ef; }
+    table { width:100%; border-collapse:collapse; margin-top:12px; font-size:14px; }
+    th,td { padding:10px; border-bottom:1px solid var(--line); text-align:right; vertical-align:top; }
+    th { color:var(--muted); background:#fbfcfe; font-size:12px; }
+    th:first-child,td:first-child { text-align:left; }
+    .up { color:var(--green); font-weight:800; } .down { color:var(--red); font-weight:800; }
+    ul { margin:8px 0; padding-left:21px; } li { margin:6px 0; }
+    .scenario { border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .scenario h3 { margin-top:0; } .bull h3 { color:var(--green); } .base h3 { color:var(--amber); } .bear h3 { color:var(--red); }
+    .source-list { font-size:13px; color:#46546c; } .source-list li { overflow-wrap:anywhere; }
+    .small { color:var(--muted); font-size:13px; }
+    footer { margin-top:24px; color:var(--muted); font-size:12px; text-align:center; }
+    @media (max-width:820px) { .grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .two,.three { grid-template-columns:1fr; } }
+    @media (max-width:600px) { .page { width:min(100% - 20px,1120px); padding-top:18px; } header,.panel { padding:20px; } .stance { grid-template-columns:1fr; gap:6px; } .grid { grid-template-columns:1fr; } table { font-size:12px; } th,td { padding:8px 6px; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Earnings Research 一覧へ</a>
+    <header>
+      <div class="eyebrow">PRE-EARNINGS PREVIEW · NASDAQ: GOOGL · CLASS A</div>
+      <h1>Alphabet GOOGL<br>FY2026 Q2 決算前プレビュー</h1>
+      <p class="lede">論点は「AIによる検索・クラウド成長の加速」が、急増する技術インフラ投資を上回って持続的な利益とFCFへつながるかです。Q1はGoogle Cloudの高成長とGoogle Servicesの利益率改善が強かった一方、GAAP EPSは巨額の株式評価益で大きく押し上げられました。</p>
+      <p class="asof">情報凍結: 2026年7月22日 JST。業績はAlphabet連結ベース。株価は2026年7月21日米国市場終値ベース。決算予定日は公開Yahoo Financeカレンダーで2026年7月22日（水）米国市場引け後と確認。Alphabet IRのイベント個別ページは本環境から403で取得できず、会社の当該イベントページでの再確認は要確認です。</p>
+      <div class="stance">
+        <div><span class="tag">決算前の見方</span><strong>ニュートラル</strong></div>
+        <div>事業モメンタムは強いものの、株価にはCloudのAI需要と検索収益化への期待が相当程度反映されています。Q2では、Cloud成長・利益率、Search/YouTubeの広告需要、資本支出とFCFのバランスを同時に満たす必要があります。</div>
+      </div>
+      <div class="grid">
+        <div class="metric"><div class="label">GOOGL株価</div><div class="value">$347.15</div><div class="note">7/21 NY終値、Yahoo Finance</div></div>
+        <div class="metric"><div class="label">Q2 2026 決算予定</div><div class="value">7月22日 AMC</div><div class="note">Yahoo Finance calendar。会社IRで要再確認</div></div>
+        <div class="metric"><div class="label">Q2 EPS予想</div><div class="value">$2.89</div><div class="note">Yahoo公開カレンダー。GAAP/調整後定義は未確認</div></div>
+        <div class="metric"><div class="label">52週高値から</div><div class="value">-15.0%</div><div class="note">高値 $408.61、Yahoo Finance</div></div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>1. 投資判断の結論と重要指標</h2>
+      <div class="two">
+        <div>
+          <h3>結論</h3>
+          <p><strong>ニュートラル。</strong> Q1のCloud売上は前年比63%増、Cloud営業利益率は32.9%へ上昇し、AI需要の商業化が実績として見え始めました。ただし、Q1純利益には株式評価益が大きく含まれ、営業外要因を除いた収益力と、技術インフラ投資によるFCF圧迫を分けて評価する必要があります。</p>
+          <h3>最重要の確認事項</h3>
+          <ul>
+            <li>Google Cloudが高成長を維持しつつ、営業利益率を守れるか。</li>
+            <li>Google Search &amp; other、YouTube広告の成長がAI検索移行で鈍化していないか。</li>
+            <li>資本支出の増加ペースと、経営陣が示す投資回収・FCFへの道筋。</li>
+            <li>TAC、減価償却、R&amp;D、人件費を含むAlphabet営業利益率の方向。</li>
+            <li>検索・広告技術の規制措置と配信契約が、中長期の収益性に与える影響。</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <h3>株価を動かす分岐点</h3>
+          <p><strong>上振れ:</strong> Cloud成長とCloudマージンの両立、Search/YouTubeの二桁成長、投資負担について納得感のある定性的説明。</p>
+          <p><strong>中立:</strong> EPSは予想近辺でも、Cloud採算改善と広告成長が確認でき、Capex増の理由と回収期間が整合的。</p>
+          <p><strong>下振れ:</strong> Cloud成長鈍化、広告の明確な軟化、または資本支出・減価償却の上振れに対しFCFや収益化の説明が乏しい場合。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>2. 決算前の期待値と株価反応の分岐点</h2>
+      <p>公開で検証できたQ2コンセンサスはEPS $2.89のみで、売上高・営業利益・セグメント別の市場予想は未取得です。従って、以下では会社開示の比較可能な実績を基準に、投資判断上の「見るべき方向」を明示します。数値未取得の推測によるビート/ミス判定は行いません。</p>
+      <table>
+        <thead><tr><th>指標（$bn、EPSは$）</th><th>Q2 2025 実績</th><th>Q1 2026 実績</th><th>Q2 2026 公開予想</th><th>決算での読み方</th></tr></thead>
+        <tbody>
+          <tr><td>連結売上高</td><td>96.43</td><td>109.90</td><td>未取得</td><td>Cloudと広告の寄与を分解する</td></tr>
+          <tr><td>営業利益</td><td>31.27</td><td>39.70</td><td>未取得</td><td>投資負担後のマージンを確認</td></tr>
+          <tr><td>GAAP 希薄化後EPS</td><td>2.31</td><td>5.11</td><td>2.89</td><td>Q1は株式評価益で大幅に押上げ</td></tr>
+          <tr><td>Google Cloud売上高</td><td>13.62</td><td>20.03</td><td>未取得</td><td>成長率と営業利益率をセットで評価</td></tr>
+        </tbody>
+      </table>
+      <p class="small">会社開示: Q2 2025は2025年7月23日リリース、Q1 2026は2026年4月30日10-Q。比較は季節性を含むため、前年比を主に参照します。</p>
+    </section>
+
+    <section class="panel">
+      <h2>3. 会社計画・前期実績の比較</h2>
+      <div class="warning"><strong>数値ガイダンス:</strong> Q1 2026の10-Qで、Alphabetは売上高・EPSの数値的な通期ガイダンスを提示していません。一方、2026年の技術インフラ投資は2025年比で「大幅に増加する」と説明しています。したがってQ2でのCapexの水準・方向性と、Cloud需要の持続性が実質的なガイダンスです。</div>
+      <table>
+        <thead><tr><th>Q1 2026セグメント（$bn）</th><th>売上高</th><th>前年比</th><th>営業利益</th><th>営業利益率</th></tr></thead>
+        <tbody>
+          <tr><td>Google Services</td><td>89.64</td><td class="up">+16.0%</td><td>40.59</td><td class="up">45.3%</td></tr>
+          <tr><td>Google Cloud</td><td>20.03</td><td class="up">+63.4%</td><td>6.60</td><td class="up">32.9%</td></tr>
+          <tr><td>Other Bets</td><td>0.41</td><td class="down">-8.7%</td><td>-2.10</td><td>n.m.</td></tr>
+          <tr><td>Alphabet連結</td><td>109.90</td><td class="up">+21.8%</td><td>39.70</td><td class="up">36.1%</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Alphabet activitiesはQ1営業損失$5.39bnを含む。各値は会社10-Qのセグメント情報から算出・整理。</p>
+    </section>
+
+    <section class="panel">
+      <h2>4. Google Services、Google Cloud、Other Bets別の注目点</h2>
+      <div class="two">
+        <div>
+          <h3>Google Services: 検索収益化の耐久性</h3>
+          <table>
+            <thead><tr><th>Q1 2026（$bn）</th><th>実績</th><th>前年比</th></tr></thead>
+            <tbody>
+              <tr><td>Google Search &amp; other</td><td>60.40</td><td class="up">+19.1%</td></tr>
+              <tr><td>YouTube advertising</td><td>9.88</td><td class="up">+10.7%</td></tr>
+              <tr><td>Google Network</td><td>6.97</td><td class="down">-3.9%</td></tr>
+              <tr><td>Subscriptions, platforms &amp; devices</td><td>12.38</td><td class="up">+19.3%</td></tr>
+            </tbody>
+          </table>
+          <p>Geminiなど生成AIの収益化は、検索クエリ、広告単価、広告主のROIを損なわずに検索体験を変えられるかが焦点です。会社が開示する範囲で、AI機能の利用、広告フォーマット、Search/YouTubeの需要コメントを確認します。ネットワーク広告の前年比減少が続くかも、広告市場の広がりを見る補助指標です。</p>
+        </div>
+        <div>
+          <h3>Google Cloud: 成長と採算の両立</h3>
+          <p>Q1のCloud売上は$20.03bn、前年比63.4%増、営業利益率32.9%でした。Q2では、AI関連需要・顧客採用を背景とする売上成長が、インフラ費用・価格競争を吸収できているかを見ます。</p>
+          <ul>
+            <li>Cloud売上成長率と営業利益率の方向</li>
+            <li>AIインフラ、Gemini、データ/分析製品への顧客採用の具体性</li>
+            <li>RPO・受注残など、会社が開示する契約指標の有無と推移</li>
+            <li>Microsoft Azure、AWSとの競争・価格についての定性コメント</li>
+          </ul>
+          <h3>Other BetsとAlphabet-level</h3>
+          <p>Other Betsは売上規模より損失規律を確認します。Alphabet-levelでは、研究開発費、株式報酬、減価償却、訴訟・規制関連費用がセグメント利益をどの程度相殺するかを見ます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>5. AI投資、マージン、FCF、EPS品質</h2>
+      <div class="two">
+        <div>
+          <h3>投資負担とFCF</h3>
+          <p>Q1 2026の営業キャッシュフローは$45.79bn、設備投資（有形固定資産取得）は$35.67bnでした。単純差引のFCFは約$10.12bnで、前年同期の約$18.95bnから縮小しています。AIインフラの先行投資が主因であり、短期のFCF低下自体を失敗とみなすのではなく、Cloud売上・マージン・投資回収の整合性を確認します。</p>
+          <ul>
+            <li>TAC: Q1は$15.23bn、前年比10.8%増。広告売上との伸び差を確認。</li>
+            <li>Capex・減価償却: データセンター投資増が連結営業利益率とFCFを圧迫する度合い。</li>
+            <li>R&amp;D・人件費: Q1人員は194,668人。生成AI開発とコスト規律の両立。</li>
+            <li>株式報酬: Q1は$6.75bn。希薄化と自己株式取得の関係を確認。</li>
+          </ul>
+        </div>
+        <div class="warning">
+          <h3>EPS品質: Q1の見かけを正規化する</h3>
+          <p>Q1純利益$62.58bn・EPS $5.11には、<strong>株式評価益$36.92bn</strong>を含むその他収益$37.72bnが寄与しました。これは主に市場性のない株式の未実現評価益で、営業利益・Cloud採算・広告需要とは別の要因です。</p>
+          <p>Q2で見るべきは、営業利益と税引前のその他損益を分けたEPSです。投資有価証券評価損益、税率、為替、訴訟費用、減価償却、自己株式取得を確認し、単四半期EPSだけで事業モメンタムを判断しないことが重要です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>6. ガイダンス、規制、バリュエーション</h2>
+      <div class="two">
+        <div>
+          <h3>規制・配信リスク</h3>
+          <p>Q1 10-Qでは、米国検索訴訟の救済措置として、配信制限、データ共有、競合への検索シンジケーション提供に関する最終判決と、その控訴手続きが記載されています。広告技術訴訟では、構造的救済を含む提案が重大な悪影響を与え得るとも記載されています。EUの広告技術関連の制裁金・控訴も含め、検索配信契約、広告技術、データ利用の変更は利益率と評価倍率のリスクです。</p>
+          <p>決算では新しい数値よりも、想定コスト・実施時期・収益化への含意についての経営陣コメントを確認します。</p>
+        </div>
+        <div>
+          <h3>バリュエーションの見方</h3>
+          <p>7月21日終値$347.15と公開TTM EPS $13.09からの単純計算では、TTM PERは約26.5倍です。EV/EBIT、FCF利回り、予想PER、オプションの予想変動率、過去決算後反応は、検証可能な同一時点データを取得できなかったため未掲載です。</p>
+          <p>この倍率を正当化するには、Cloudの高成長と利益率、Searchの収益化耐久性、AI投資後のFCF回復の3点が必要です。株式評価益で押し上がったQ1 EPSをそのまま年率換算して判断することは避けます。</p>
+          <p class="small">GOOGLは議決権を持つClass A。GOOG（Class C）は無議決権です。業績は同じAlphabet連結であり、本レポートではクラス間の株価差・流動性を個別に予測しません。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>7. 強気・中立・弱気シナリオ</h2>
+      <div class="three">
+        <div class="scenario bull"><h3>強気</h3><p>Cloudの高成長と30%台の営業利益率が続き、Search/YouTubeも堅調。AI投資の回収指標が具体化し、Capex増への懸念が後退。</p><p><strong>株価反応条件:</strong> 実質的な売上・営業利益の上振れと、投資規律への信頼回復。</p></div>
+        <div class="scenario base"><h3>中立</h3><p>広告・Cloudとも成長は維持するが、Capex・減価償却の負担も確認される。EPSは投資評価損益の影響を受け、方向感が限定的。</p><p><strong>確認指標:</strong> Cloud採算、TAC、FCF、AI投資の定性説明。</p></div>
+        <div class="scenario bear"><h3>弱気</h3><p>Cloud成長鈍化、検索・YouTubeの広告需要軟化、またはCapex上振れで利益率とFCFが悪化。規制対応の収益性リスクも顕在化。</p><p><strong>反証条件:</strong> Search収益化の耐久性とCloudの投資回収が同時に弱まること。</p></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>8. 決算説明会の質問、触媒、反証条件</h2>
+      <div class="two">
+        <div>
+          <h3>Listen-for</h3>
+          <ul>
+            <li>Gemini/AI Overviews等が検索クエリ、広告単価、広告主ROIへ与えた実測・方向性。</li>
+            <li>CloudのAI案件、供給制約、RPO・受注残について開示される定量・定性情報。</li>
+            <li>2026年Capexの水準、減価償却、FCFへの影響と投資回収のタイムライン。</li>
+            <li>TAC、YouTube、Google Networkの需要・価格・在庫感。</li>
+            <li>検索・広告技術の救済措置が配信契約・収益・費用に与える影響。</li>
+          </ul>
+        </div>
+        <div>
+          <h3>次回決算までの触媒と反証条件</h3>
+          <ul>
+            <li><strong>触媒:</strong> Cloud顧客事例、AI製品の有料化、広告需要の持続、Capexの明確化。</li>
+            <li><strong>反証:</strong> Cloud成長とマージンの同時悪化、Search収益化への明白な圧力、FCF低下に対する回収説明不足。</li>
+            <li><strong>競合・セクター:</strong> Microsoft、Amazon、MetaのAI投資・クラウド需要の決算コメントは重要な読み通し。ただし本レポートの情報凍結時点では、同一時点で検証済みの定量比較は未取得。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>9. 主なソース、未取得データ、確認待ち事項</h2>
+      <h3>主なソース</h3>
+      <ol class="source-list">
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm">Alphabet 2026年Q1 Form 10-Q（SEC、2026年4月30日）</a> - セグメント、キャッシュフロー、Capex、株式評価益、規制リスク。</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm">Alphabet Q1 2026 Earnings Release（SEC Exhibit 99.1）</a> - 四半期実績。</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204425000056/googexhibit991q22025.htm">Alphabet Q2 2025 Earnings Release（SEC Exhibit 99.1）</a> - 前年同期比較。</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/googexhibit991q42025.htm">Alphabet Q4 2025 Earnings Release（SEC Exhibit 99.1）</a> - 前四半期比較。</li>
+        <li><a href="https://finance.yahoo.com/quote/GOOGL/">Yahoo Finance GOOGL quote</a> および <a href="https://finance.yahoo.com/quote/GOOGL/earnings/">earnings calendar</a> - 株価、52週レンジ、決算予定日、公開EPS予想（取得日時: 2026年7月22日 JST）。</li>
+        <li><a href="https://abc.xyz/investor/">Alphabet Investor Relations</a> - 会社IRの入口。個別イベントページは本環境から403で未取得。</li>
+      </ol>
+      <h3>未取得データ・確認待ち事項</h3>
+      <ul>
+        <li>Q2 2026の売上高・営業利益・セグメント別コンセンサス、予想PER、EV/EBIT、FCF利回り。</li>
+        <li>オプションの予想変動率、同一条件での過去決算後株価反応。</li>
+        <li>Alphabet IRのQ2 2026イベント個別ページによる決算日・時刻の最終確認。</li>
+        <li>Q2で開示されるCloudのRPO・受注残、AI製品の収益化指標、および競合の最新決算との定量比較。</li>
+      </ul>
+    </section>
+    <footer>Static research artifact. Informational only; not investment advice.</footer>
+  </main>
+</body>
+</html>
+
