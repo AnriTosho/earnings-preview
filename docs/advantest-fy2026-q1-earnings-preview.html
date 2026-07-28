@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="アドバンテスト（6857）FY2026第1四半期（2027年3月期第1四半期）決算前プレビュー。AI/HPC、HBM、V93000、テスト強度、会社計画と株価反応を整理。">
+  <title>アドバンテスト FY2026 Q1 決算前プレビュー | Earnings Research</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW269ZH5CL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VW269ZH5CL');
+  </script>
+  <style>
+    :root {
+      --ink:#16212b; --muted:#617080; --line:#dfe5ea; --paper:#ffffff; --wash:#f4f7f9;
+      --navy:#142b3f; --navy-2:#203d55; --blue:#176aa6; --teal:#067d7a; --green:#16764e;
+      --red:#bd3d36; --orange:#b66b10; --soft-blue:#e8f2f9; --soft-red:#faecea;
+      --soft-green:#e9f5ee; --soft-orange:#fbf3e7; --shadow:0 10px 30px rgba(20,43,63,.08);
+    }
+    * { box-sizing:border-box; }
+    html { background:var(--wash); }
+    body { margin:0; color:var(--ink); background:var(--wash); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif; line-height:1.72; overflow-x:hidden; }
+    a { color:var(--blue); text-underline-offset:2px; }
+    .topline { height:6px; background:var(--red); }
+    header { color:#fff; background:linear-gradient(118deg,var(--navy),#0e2030); }
+    .inner, main { width:min(1180px,calc(100% - 28px)); margin:0 auto; }
+    .masthead { padding:28px 0 25px; }
+    .brand { font-size:.78rem; letter-spacing:.12em; font-weight:800; color:#b9d8ea; text-transform:uppercase; }
+    h1 { margin:7px 0 5px; font-size:clamp(1.72rem,4vw,2.75rem); letter-spacing:-.03em; line-height:1.27; }
+    .subtitle { margin:0; color:#d9e5ec; font-size:1rem; }
+    .meta-strip { display:flex; flex-wrap:wrap; gap:8px 20px; padding:14px 0; border-top:1px solid rgba(255,255,255,.18); font-size:.86rem; color:#dfeaf0; }
+    .meta-strip strong { color:#fff; }
+    nav { background:#fff; border-bottom:1px solid var(--line); box-shadow:0 2px 8px rgba(20,43,63,.04); }
+    nav .inner { display:flex; gap:16px; overflow-x:auto; padding:10px 0; white-space:nowrap; font-size:.84rem; }
+    nav a { color:#485866; text-decoration:none; }
+    nav a:hover { color:var(--blue); }
+    main { padding:22px 0 54px; }
+    section { margin:22px 0; }
+    .card, .panel { background:var(--paper); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); }
+    .card { padding:20px; }
+    .eyebrow { margin:0 0 5px; color:var(--red); font-size:.75rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+    h2 { margin:0 0 13px; font-size:clamp(1.28rem,2.6vw,1.7rem); letter-spacing:-.02em; line-height:1.35; }
+    h3 { margin:0 0 8px; font-size:1.04rem; line-height:1.45; }
+    p { margin:0 0 12px; }
+    .note { color:var(--muted); font-size:.88rem; }
+    .source { color:var(--muted); font-size:.79rem; line-height:1.55; }
+    .tag { display:inline-block; padding:2px 8px; margin:0 4px 3px 0; border-radius:999px; font-size:.72rem; font-weight:800; line-height:1.55; }
+    .tag.company { color:#075a72; background:#e2f3f5; }
+    .tag.market { color:#855200; background:#fff0d8; }
+    .tag.analysis { color:#4e3987; background:#eeeaff; }
+    .tag.missing { color:#8d302a; background:#f9e5e3; }
+    .tiles { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; }
+    .tile { min-width:0; padding:15px; border:1px solid var(--line); border-radius:11px; background:var(--paper); box-shadow:0 4px 15px rgba(20,43,63,.04); }
+    .tile .label { color:var(--muted); font-size:.75rem; font-weight:700; }
+    .tile .value { margin-top:5px; color:var(--navy); font-size:1.24rem; font-weight:800; line-height:1.25; letter-spacing:-.03em; overflow-wrap:anywhere; }
+    .tile .detail { margin-top:5px; color:var(--muted); font-size:.76rem; line-height:1.45; }
+    .verdict { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr); gap:16px; }
+    .verdict-main { padding:22px; border-radius:12px; background:linear-gradient(135deg,#17364d,#244d69); color:#fff; }
+    .verdict-main h2 { margin-bottom:8px; }
+    .verdict-main p { color:#e2eff5; }
+    .callout { padding:18px; border:1px solid #c9dae5; border-radius:12px; background:#f2f8fb; }
+    .callout strong { color:var(--navy); }
+    .grid-2, .grid-3 { display:grid; gap:16px; }
+    .grid-2 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .grid-3 { grid-template-columns:repeat(3,minmax(0,1fr)); }
+    .expectation { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:10px; margin:16px 0 8px; }
+    .expectation-item { min-width:0; padding:13px; border-radius:10px; border:1px solid var(--line); background:#fbfcfd; }
+    .expectation-item .k { color:var(--muted); font-size:.74rem; font-weight:800; line-height:1.38; }
+    .expectation-item .v { margin-top:6px; font-weight:800; font-size:1.05rem; line-height:1.35; overflow-wrap:anywhere; }
+    .expectation-item.company-plan { border-top:4px solid var(--teal); }
+    .expectation-item.history { border-top:4px solid var(--blue); }
+    .expectation-item.missing-box { border-top:4px solid var(--red); background:#fff8f7; }
+    .progress-wrap { margin-top:18px; }
+    .progress-label { display:flex; justify-content:space-between; gap:12px; font-size:.84rem; font-weight:700; }
+    .progress-track { height:15px; margin-top:6px; overflow:hidden; border-radius:99px; background:#e5ebef; }
+    .progress { height:100%; border-radius:99px; background:linear-gradient(90deg,#167d7c,#1d9a8f); }
+    .progress.blue { background:linear-gradient(90deg,#176aa6,#58a7d8); }
+    .alert { padding:13px 15px; border-left:4px solid var(--orange); border-radius:7px; background:var(--soft-orange); }
+    .alert.red { border-color:var(--red); background:var(--soft-red); }
+    .table-frame { width:100%; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+    table { width:100%; border-collapse:collapse; table-layout:fixed; font-size:.84rem; }
+    th, td { padding:10px 9px; border-bottom:1px solid var(--line); vertical-align:top; overflow-wrap:anywhere; word-break:normal; }
+    th { color:#405263; background:#f3f7f9; text-align:left; font-size:.75rem; line-height:1.4; }
+    tr:last-child td { border-bottom:0; }
+    .num { text-align:right; font-variant-numeric:tabular-nums; }
+    .positive { color:var(--green); font-weight:800; }
+    .negative { color:var(--red); font-weight:800; }
+    .debates { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    .debate { padding:17px; border:1px solid var(--line); border-radius:11px; background:var(--paper); }
+    .debate .n { display:inline-flex; align-items:center; justify-content:center; width:25px; height:25px; margin-right:7px; border-radius:50%; color:#fff; background:var(--navy-2); font-size:.78rem; font-weight:800; }
+    .debate h3 { display:inline; }
+    .debate p { margin:10px 0 0; }
+    .reaction { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    .reaction-box { padding:18px; border-radius:11px; }
+    .reaction-box.up { border:1px solid #bedecb; background:var(--soft-green); }
+    .reaction-box.down { border:1px solid #edc9c5; background:var(--soft-red); }
+    .reaction-box h3 { margin-bottom:7px; }
+    .reaction-box ul, .scenario ul, .question-list ul { margin:8px 0 0; padding-left:1.15rem; }
+    .reaction-box li, .scenario li, .question-list li { margin:5px 0; }
+    .scenario-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .scenario { min-width:0; padding:18px; border-radius:11px; border:1px solid var(--line); }
+    .scenario.bull { border-top:5px solid var(--green); background:#f7fcf8; }
+    .scenario.base { border-top:5px solid var(--blue); background:#f8fbfd; }
+    .scenario.bear { border-top:5px solid var(--red); background:#fff9f8; }
+    .scenario .state { font-size:.76rem; font-weight:800; letter-spacing:.08em; }
+    .scenario.bull .state { color:var(--green); }.scenario.base .state { color:var(--blue); }.scenario.bear .state { color:var(--red); }
+    .question-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:13px; }
+    .question { padding:16px; border:1px solid var(--line); border-radius:10px; background:#fff; }
+    .question .q { color:var(--navy); font-weight:800; }
+    .listen { margin-top:9px; padding:9px 10px; border-radius:7px; background:#f4f7f9; color:#405263; font-size:.84rem; }
+    .conditions { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    .condition { padding:15px; border-radius:10px; background:#f6f9fb; border:1px solid var(--line); }
+    .condition h3 { color:var(--navy); }
+    .source-list { margin:0; padding-left:1.25rem; }
+    .source-list li { margin:9px 0; overflow-wrap:anywhere; }
+    footer { padding:26px 0 34px; border-top:1px solid var(--line); color:var(--muted); font-size:.8rem; }
+    @media (max-width:980px) {
+      .tiles { grid-template-columns:repeat(3,minmax(0,1fr)); }
+      .expectation { grid-template-columns:repeat(3,minmax(0,1fr)); }
+      .grid-3, .scenario-grid, .conditions { grid-template-columns:1fr; }
+    }
+    @media (max-width:720px) {
+      .inner, main { width:min(100% - 20px,1180px); }
+      .masthead { padding:20px 0 18px; }
+      .subtitle { font-size:.9rem; }
+      nav .inner { gap:13px; font-size:.78rem; }
+      main { padding-top:14px; }
+      section { margin:15px 0; }
+      .card { padding:15px; border-radius:10px; }
+      .tiles, .grid-2, .verdict, .expectation, .debates, .reaction, .question-list { grid-template-columns:1fr; }
+      .tile { padding:13px; }
+      .verdict-main, .callout { padding:17px; }
+      .table-frame { border-radius:8px; }
+      table { font-size:.74rem; }
+      th, td { padding:8px 5px; line-height:1.42; }
+      th { font-size:.67rem; }
+      .num { text-align:left; }
+      .progress-label { display:block; }
+      .progress-label span:last-child { display:block; color:var(--muted); font-size:.78rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="inner masthead">
+      <div class="brand">Earnings Research / Pre-Earnings Preview</div>
+      <h1>アドバンテスト（6857）<br>FY2026 Q1 決算前プレビュー</h1>
+      <p class="subtitle">AI/HPC・HBMのテスト需要は強い。ただし今回の株価分岐点は「好調の確認」ではなく、FY2026計画を上回る需要の持続性と利益率の質である。</p>
+      <div class="meta-strip">
+        <span><strong>決算予定</strong> 2026年7月29日 15:30（日本時間）</span>
+        <span><strong>情報基準時刻</strong> 2026年7月28日 20:00（日本時間）</span>
+        <span><strong>対象年度</strong> FY2026 = 2027年3月期（2026年4月〜2027年3月）</span>
+      </div>
+    </div>
+  </header>
+  <nav aria-label="レポート内ナビゲーション"><div class="inner">
+    <a href="#summary">要約</a><a href="#expectations">期待値</a><a href="#kpi">KPI推移</a><a href="#debates">重要論点</a><a href="#reaction">株価反応</a><a href="#scenarios">シナリオ</a><a href="#questions">決算説明会</a><a href="#sources">出典</a>
+  </div></nav>
+
+  <main>
+    <section class="tiles" aria-label="決算前スナップショット">
+      <div class="tile"><div class="label">決算発表</div><div class="value">7/29 15:30</div><div class="detail">会社IRカレンダー。日本時間。</div></div>
+      <div class="tile"><div class="label">FY2026会社計画：売上高</div><div class="value">1兆4,200億円</div><div class="detail">前期比 +25.8%。通期計画。</div></div>
+      <div class="tile"><div class="label">FY2026会社計画：営業利益</div><div class="value">6,275億円</div><div class="detail">前期比 +25.7%、営業利益率 44.2%。</div></div>
+      <div class="tile"><div class="label">7/28 終値</div><div class="value">25,510円</div><div class="detail">前日比 -10.11%。市場データ、15:30取得。</div></div>
+      <div class="tile"><div class="label">四半期コンセンサス</div><div class="value">未取得</div><div class="detail">IFIS等の検証可能な数値は本稿では使用しない。</div></div>
+    </section>
+
+    <section id="summary" class="verdict">
+      <div class="verdict-main">
+        <p class="eyebrow" style="color:#9fd5e8">結論 / 投資スタンス</p>
+        <h2>ニュートラル：決算前は「上振れの証拠」を待つ</h2>
+        <p>AIアクセラレータ、HPC、先端メモリの需要方向は依然として追い風であり、会社計画もテスタ市場の拡大を前提としている。一方、FY2025 Q4の高利益率には製品ミックスとライセンス収入が寄与しており、FY2026の会社計画は営業利益率44.2%で前期と同水準である。今回、市場が見るのは単なる前年同期比の大幅増益ではなく、<strong>テスト強度の上昇が追加需要へ転換しているか、SoC／メモリの両輪が維持されるか、利益率の質がQ4の一過性要因に依存していないか</strong>である。</p>
+        <p>株価は7月28日に10.11%下落し、6月25日の年初来高値35,940円から約29%下にある。期待は一部調整された可能性があるが、検証可能な四半期コンセンサスを取得できていないため、「織り込み済み」の程度を断定しない。決算前の行動は<strong>待機（watchlist / wait for proof）</strong>が妥当と判断する。</p>
+      </div>
+      <aside class="callout">
+        <p class="eyebrow">最大のKPI</p>
+        <h2>需要の量ではなく、追加テスト需要の可視性</h2>
+        <p><strong>最重要確認点：</strong>経営陣が、AI半導体の複雑化・先端パッケージ化による「想定以上の追加テスト」が実際に受注・売上の上振れへつながっていると説明できるか。</p>
+        <p class="note">会社は4月のQ&amp;Aで、顧客の初期量産評価後にテストメニューが確定し、品質向上のため追加テストが発生すれば上振れになり得ると説明した。これは今回、数字以上に重要なコメントである。</p>
+      </aside>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">エグゼクティブサマリー</p>
+      <h2>何を確認し、何を織り込まないか</h2>
+      <div class="grid-3">
+        <div>
+          <h3>1. AI/HPCは構造的な柱</h3>
+          <p>会社はFY2026のSoCテスタ売上を9,995億円、メモリ・テスタを2,010億円と計画。AI関連用途をSoC成長の中心に置き、先端DRAM向けの高性能メモリ・テスタも増収を見込む。</p>
+        </div>
+        <div>
+          <h3>2. V93000は「台数×モジュール×SLT」</h3>
+          <p>新規テスタだけではない。高稼働の量産拠点で、計測モジュール、既設機のアップグレード、システムレベルテスト（SLT）が増えるかが、V93000の成長の持続性を左右する。</p>
+        </div>
+        <div>
+          <h3>3. 好決算の判定基準は上がった</h3>
+          <p>前年Q1は売上高2,637.8億円、営業利益1,239.5億円、営業利益率47.0%と既に高い。前年同期比だけでは不十分で、通期計画の確度、利益率、需給の先行きが重要になる。</p>
+        </div>
+      </div>
+      <p class="source"><span class="tag company">会社開示</span> FY2025通期決算資料・説明会資料・Q&amp;A（2026年4月27日）。数値は特記なき限りIFRS、百万円を億円表示に換算。</p>
+    </section>
+
+    <section id="expectations" class="card">
+      <p class="eyebrow">期待値バー / 会社計画・実績・市場予想の位置づけ</p>
+      <h2>Q1の数値バーは未取得。したがって、会社の通期計画に対する「質的な上振れ」を読む</h2>
+      <p>会社はFY2026 Q1の業績予想を開示していない。本稿では検証できるIFIS等の四半期コンセンサスを取得できなかったため、見かけ上もっともらしい市場予想を作らない。下記は、決算前に存在する確定した比較軸である。</p>
+      <div class="expectation">
+        <div class="expectation-item missing-box"><div class="k">市場予想：FY2026 Q1</div><div class="v">未取得</div><div class="note">数値比較は行わない。</div></div>
+        <div class="expectation-item company-plan"><div class="k">会社計画：FY2026通期 売上高</div><div class="v">1兆4,200億円</div><div class="note">前期比 +25.8%</div></div>
+        <div class="expectation-item company-plan"><div class="k">会社計画：FY2026通期 営業利益</div><div class="v">6,275億円</div><div class="note">前期比 +25.7%</div></div>
+        <div class="expectation-item history"><div class="k">前年同期：FY2025 Q1 売上高</div><div class="v">2,637.8億円</div><div class="note">前年同期比 +90.1%</div></div>
+        <div class="expectation-item history"><div class="k">直前四半期：FY2025 Q4 営業利益率</div><div class="v">46.7%</div><div class="note">製品ミックス・ライセンス寄与あり</div></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>FY2026会社計画の売上高水準</span><span>FY2025実績 1兆1,286億円 → FY2026計画 1兆4,200億円（+25.8%）</span></div>
+        <div class="progress-track"><div class="progress" style="width:100%"></div></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>FY2026会社計画の営業利益水準</span><span>FY2025実績 4,991億円 → FY2026計画 6,275億円（+25.7%）</span></div>
+        <div class="progress-track"><div class="progress blue" style="width:100%"></div></div>
+      </div>
+      <div class="alert" style="margin-top:17px"><strong>読み方：</strong>Q1に季節性だけを当てはめて通期進捗率を評価するのは危険である。注目すべきは、①SoCとメモリの需要の方向、②会社のCY2026テスタ市場見通し（SoC 87〜95億米ドル、メモリ22〜27億米ドル）に変更があるか、③通期計画の実現性を支える利益率・供給能力・顧客投資コメントである。</div>
+      <p class="source"><span class="tag company">会社開示</span> FY2025通期決算資料、2026年4月27日。<span class="tag missing">未取得</span> FY2026 Q1の検証可能な市場コンセンサス、会社の四半期ガイダンス、決算イベントに限定したオプション予想変動率。</p>
+    </section>
+
+    <section id="kpi" class="card">
+      <p class="eyebrow">過去8四半期のKPI推移</p>
+      <h2>FY2025は前年後半から売上規模・利益率が一段上がった</h2>
+      <div class="table-frame">
+        <table>
+          <thead><tr><th style="width:15%">四半期</th><th class="num" style="width:18%">売上高<br>（億円）</th><th class="num" style="width:18%">営業利益<br>（億円）</th><th class="num" style="width:15%">営業利益率</th><th class="num" style="width:17%">売上高<br>前年同期比</th><th style="width:17%">読み取り</th></tr></thead>
+          <tbody>
+            <tr><td>FY2024 Q1</td><td class="num">1,387.3</td><td class="num">313.3</td><td class="num">22.6%</td><td class="num">—</td><td>半導体サイクルの底入れ前。</td></tr>
+            <tr><td>FY2024 Q2</td><td class="num">1,904.8</td><td class="num">635.3</td><td class="num">33.4%</td><td class="num">—</td><td>H2に向け回復基調へ。</td></tr>
+            <tr><td>FY2024 Q3</td><td class="num">2,181.5</td><td class="num">692.7</td><td class="num">31.8%</td><td class="num">—</td><td>需要回復が継続。</td></tr>
+            <tr><td>FY2024 Q4</td><td class="num">2,323.5</td><td class="num">640.4</td><td class="num">27.6%</td><td class="num">—</td><td>FY2024通期の最終四半期。</td></tr>
+            <tr><td>FY2025 Q1</td><td class="num">2,637.8</td><td class="num">1,239.5</td><td class="num">47.0%</td><td class="num positive">+90.1%</td><td>AI/HPCを背景に急拡大。</td></tr>
+            <tr><td>FY2025 Q2</td><td class="num">2,629.6</td><td class="num">1,084.8</td><td class="num">41.3%</td><td class="num positive">+38.0%</td><td>高水準を維持。</td></tr>
+            <tr><td>FY2025 Q3</td><td class="num">2,738.0</td><td class="num">1,135.7</td><td class="num">41.5%</td><td class="num positive">+25.5%</td><td>売上はさらに拡大。</td></tr>
+            <tr><td>FY2025 Q4</td><td class="num">3,280.7</td><td class="num">1,531.1</td><td class="num">46.7%</td><td class="num positive">+41.2%</td><td>最適な製品ミックスとライセンス寄与。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note" style="margin-top:12px">注：Q2〜Q4の単四半期値は、会社開示の累計値から算出した分析上の計算値。四半期ごとの受注高・受注残は、会社が本レポートの確認対象資料で継続開示していないため掲載しない。FY2025 Q4の利益率について会社は、最適な製品ミックスとライセンス収入が寄与したと説明している。</p>
+      <p class="source"><span class="tag company">会社開示</span> FY2025 Q1、Q3、通期決算資料。FY2024比較値はFY2025各決算資料の比較欄、FY2024通期実績を使用。算出値は端数処理のため資料表示とわずかに異なる場合がある。</p>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">事業別の会社計画と見るべき信号</p>
+      <h2>通期計画はSoCが主役、メモリとSLTが増分を支える設計</h2>
+      <div class="table-frame">
+        <table>
+          <thead><tr><th style="width:22%">区分</th><th class="num" style="width:18%">FY2025実績<br>（億円）</th><th class="num" style="width:18%">FY2026計画<br>（億円）</th><th class="num" style="width:16%">増減率</th><th style="width:26%">Q1での確認ポイント</th></tr></thead>
+          <tbody>
+            <tr><td>SoCテスタ</td><td class="num">7,674</td><td class="num">9,995</td><td class="num positive">+30.2%</td><td>AI/HPC、先端パッケージ、V93000のシステム・モジュール・アップグレードの広がり。</td></tr>
+            <tr><td>メモリ・テスタ</td><td class="num">1,715</td><td class="num">2,010</td><td class="num positive">+17.2%</td><td>高性能DRAM、HBM4以降を見据えたテスト需要、供給制約の有無。</td></tr>
+            <tr><td>その他テスタ（SLT等）</td><td class="num">805</td><td class="num">965</td><td class="num positive">+19.9%</td><td>高い品質保証が求められるHPC・スマホAP向けSLTの増加。</td></tr>
+            <tr><td>サポートサービス</td><td class="num">442</td><td class="num">525</td><td class="num positive">+18.8%</td><td>設置台数増に伴うストック性、稼働率の裏付け。</td></tr>
+            <tr><td>その他</td><td class="num">650</td><td class="num">705</td><td class="num positive">+8.5%</td><td>テスタ以外の寄与と利益率への影響。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note" style="margin-top:12px">注：会社開示の売上高区分。メカトロニクス単独の通期数値は、確認した資料では独立表示されていない。「その他テスタ」にはSLT等を含む会社の区分を用いた。受注高・受注残も会社開示範囲を超えて推定しない。</p>
+      <p class="source"><span class="tag company">会社開示</span> FY2025通期決算説明会資料（2026年4月27日）。</p>
+    </section>
+
+    <section id="debates" class="card">
+      <p class="eyebrow">株価を動かす5つの重要論点</p>
+      <h2>「AI需要がある」だけでは足りない。需要・供給・利益率を同時に確認する</h2>
+      <div class="debates">
+        <article class="debate"><span class="n">1</span><h3>AI/HPC向けSoCとV93000の持続性</h3><p>会社はFY2025のSoC用途をコンピューティング／通信95%、その他5%とし、FY2026もAI関連用途を成長の中心に置く。V93000が先端ロジックのデファクトスタンダードという会社認識を、顧客数、高稼働、モジュール／アップグレード需要が裏付けるかを確認する。</p></article>
+        <article class="debate"><span class="n">2</span><h3>HBM・先端メモリは数量と供給の綱引き</h3><p>会社は高性能メモリが先端パッケージに不可欠として、メモリ・テスタもSoCと同じ方向で能力を増やす方針。HBM・高性能DRAMの投資が追い風でも、メモリ半導体の供給動向が需要の上振れ・ボトルネックの双方になり得る。</p></article>
+        <article class="debate"><span class="n">3</span><h3>テスト時間短縮よりテスト総量が上回るか</h3><p>新モジュールは一部項目でデバイス当たりテスト時間を短縮し得る一方、会社は先端半導体の複雑化と生産量拡大により総テスタ需要には影響しないと説明する。チップレット、先端パッケージ、SLTで追加テストが増えることが上振れの鍵である。</p></article>
+        <article class="debate"><span class="n">4</span><h3>利益率の質：Q4を再現できるか</h3><p>FY2025 Q4の46.7%は最適な製品ミックスとライセンスが寄与した。FY2026会社計画は44.2%。Q1の営業利益率が高くても、ライセンスや一時的なミックスに偏るなら、通期利益の再評価には直結しにくい。</p></article>
+        <article class="debate"><span class="n">5</span><h3>供給能力と顧客投資の時間差</h3><p>会社はFY2026末までに年産5,000台以上、CY2028末〜CY2029に10,000台のSoCテスタ生産能力を目指す。顧客のウェハー能力、先端パッケージ能力、メモリ供給が計画通り拡大するか、同時に自社供給が制約にならないかを聞く。</p></article>
+        <article class="debate"><span class="n">補</span><h3>為替と競合は補助線</h3><p>会社計画の為替前提は1米ドル150円、1ユーロ170円。営業利益への感応度は対米ドルで円安1円につき約40億円の増益、対ユーロで約4億円の減益。Teradyneの結果は同日早朝に判明するが、顧客・製品構成が異なるため方向確認に限定する。</p></article>
+      </div>
+      <p class="source"><span class="tag company">会社開示</span> FY2025通期決算説明会資料、同Q&amp;A、セルサイド小規模ミーティングQ&amp;A（いずれも2026年4月27日）。為替感応度は会社の財務ハイライト。</p>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">外部リードスルー / ただし代替指標ではない</p>
+      <h2>TSMC・SK hynix・Teradyneから読むべきもの</h2>
+      <div class="grid-3">
+        <div class="panel" style="padding:16px"><h3>TSMC：先端ロジック投資の地合い</h3><p>TSMCは2026年Q2売上高402億米ドル、Q3売上高ガイダンス446〜458億米ドルを公表した。AI・先端ノードの強さは、先端ロジックテストの需要環境に対する追い風である。ただし、アドバンテストの受注・売上のタイミングを直接示すものではない。</p><p class="source"><span class="tag market">外部一次資料</span> TSMC 2026 Q2 results（2026年7月16日）。</p></div>
+        <div class="panel" style="padding:16px"><h3>SK hynix：高性能メモリの需要方向</h3><p>SK hynixは2026年Q1でHBMを含む高付加価値製品とサーバーDRAM／eSSDの強さを示した。HBM4Eのサンプル供給も公表している。これはメモリ・テスタの中長期需要の方向を補強するが、テスタ投資の四半期額を示すものではない。</p><p class="source"><span class="tag market">外部一次資料</span> SK hynix 2026 Q1 results、HBM4E sample release。</p></div>
+        <div class="panel" style="padding:16px"><h3>Teradyne：同日、比較可能性に注意</h3><p>Teradyneの2026年Q2決算は米東部時間7月28日16:30（日本時間7月29日5:30）公表予定であり、アドバンテスト発表の約10時間前に確認できる。半導体テストの需給コメントは参考になるが、製品・顧客構成と地域ミックスの差を越えて単純比較しない。</p><p class="source"><span class="tag market">外部一次資料</span> Teradyne earnings release notice。</p></div>
+      </div>
+    </section>
+
+    <section id="reaction" class="card">
+      <p class="eyebrow">決算後の株価反応フレーム</p>
+      <h2>好決算でも売られる条件／悪決算でも買われる条件</h2>
+      <div class="reaction">
+        <div class="reaction-box up">
+          <h3>上昇しやすい内容</h3>
+          <ul>
+            <li>FY2026通期計画を維持または引き上げ、AI/HPCと高性能メモリの需要可視性を具体的に強める。</li>
+            <li>SoCのV93000で新規システム、モジュール、アップグレード、SLTの複数の需要源が確認される。</li>
+            <li>半導体複雑化に伴う追加テストが、顧客の初期量産評価を経て実需要になっていると説明される。</li>
+            <li>営業利益率が会社計画44.2%を支える水準で、Q4のライセンス寄与を除いてもミックスが健全と示される。</li>
+            <li>供給能力・部材・顧客投資のどれもが短期の成長制約にならない。</li>
+          </ul>
+        </div>
+        <div class="reaction-box down">
+          <h3>好決算でも売られやすい内容</h3>
+          <ul>
+            <li>Q1実績が強くても、通期計画の据え置き理由が需要減速、顧客投資の後ろ倒し、供給制約である。</li>
+            <li>Q4の高利益率がライセンスや一時的なミックス中心で、FY2026のマージン改善に再現性がない。</li>
+            <li>AIアクセラレータの顧客集中、デュアルソース、地域・規制リスクに対する説明が後退する。</li>
+            <li>メモリ需要は強くても、供給不足または投資時期のずれでテスタ出荷の可視性が落ちる。</li>
+          </ul>
+        </div>
+        <div class="reaction-box down" style="background:#fffaf1;border-color:#efd9ad">
+          <h3>悪決算でも買われ得る内容</h3>
+          <ul>
+            <li>短期の売上・利益の弱さが為替、部材、出荷タイミングなど可逆的な要因で、CY2026のテスタ市場観とFY2026通期計画が崩れない。</li>
+            <li>追加テスト、先端パッケージ、HBM4以降に対する能力増強と顧客評価の進展が明確になる。</li>
+            <li>需要の可視性が複数年に延び、供給能力の拡張が受注機会を取りこぼさない説明がある。</li>
+          </ul>
+        </div>
+        <div class="reaction-box up" style="background:#f4f8fc;border-color:#c9ddea">
+          <h3>市場が最も嫌う組み合わせ</h3>
+          <ul>
+            <li>売上高は伸びるが、SoCの成長鈍化とメモリ供給制約が同時に示される。</li>
+            <li>利益率が低下し、会社計画の上方修正余地も示されない。</li>
+            <li>受注高・受注残の定量開示がないなかで、経営陣の需要コメントまで慎重化する。</li>
+          </ul>
+        </div>
+      </div>
+      <p class="alert red" style="margin-top:15px"><strong>バリュエーションの注意点：</strong>7月28日終値25,510円を会社のFY2026予想EPS641.61円で割ると、単純計算で約39.8倍となる。このEPSは会社計画であり市場予想ではない。高い成長期待を織り込む局面では、実績の絶対額よりも「将来の追加テスト需要」と「利益率」の変化率が反応を決めやすい。</p>
+      <p class="source"><span class="tag analysis">分析上の判断</span> 株価反応の条件は会社開示と市場データを基にした事前フレームであり、株価の方向を保証しない。株価・PER相当の単純計算は2026年7月28日15:30時点の市場データと会社予想EPSを使用。</p>
+    </section>
+
+    <section id="scenarios" class="card">
+      <p class="eyebrow">3シナリオ / 数字の創作はしない</p>
+      <h2>今回の分岐は、通期計画の上方修正そのものより「上方修正の根拠」があるか</h2>
+      <div class="scenario-grid">
+        <article class="scenario bull"><div class="state">強気シナリオ</div><h3>追加テストが実需に変わる</h3><ul><li>AI/HPCの量産、高性能メモリ、先端パッケージの需要が計画以上に強い。</li><li>SoC／メモリ／SLTで同時に強いコメントがあり、生産能力拡張もボトルネックにならない。</li><li>利益率の質が高く、通期計画の上方修正余地が明確になる。</li></ul><p class="note">株価への含意：高い期待にもかかわらず、利益予想の上方修正と持続性が再評価材料となる。</p></article>
+        <article class="scenario base"><div class="state">基本シナリオ</div><h3>強い環境を確認、ただし計画内</h3><ul><li>AI/HPC・HBMの方向感は変わらず、会社計画を支持する。</li><li>Q1の利益率は良好でも、Q4のライセンス／ミックス要因との比較には慎重な説明がある。</li><li>市場規模と供給能力の見通しは維持されるが、上方修正には時間を要する。</li></ul><p class="note">株価への含意：四半期コンセンサス未取得のため断定しないが、業績が「既知の強さ」の確認にとどまる場合は反応が限定的になり得る。</p></article>
+        <article class="scenario bear"><div class="state">弱気シナリオ</div><h3>需要の時間差またはマージンの質が悪化</h3><ul><li>顧客のウェハー・先端パッケージ投資、またはメモリ供給に遅れが出る。</li><li>SoC・メモリのどちらかで可視性が低下し、供給能力や部材が出荷を制約する。</li><li>利益率がQ4の一時要因から平常化し、通期計画の上振れ余地が縮む。</li></ul><p class="note">株価への含意：売上・利益が前年同期比で増えても、将来の期待値が下がれば売られ得る。</p></article>
+      </div>
+    </section>
+
+    <section id="questions" class="card">
+      <p class="eyebrow">決算説明会で確認すべき質問と注目表現</p>
+      <h2>数値が不足する局面ほど、経営陣の需要言語を構造化して聞く</h2>
+      <div class="question-list">
+        <div class="question"><div class="q">Q1. 4月時点のCY2026テスタ市場見通しに変化はあるか。SoCとメモリを分けると何が変わったか。</div><div class="listen"><strong>前向きな表現：</strong>「上限方向」「可視性が高まった」「AI関連の量産拡大」。<br><strong>警戒表現：</strong>「顧客投資のタイミング」「供給制約」「地域・用途のばらつき」。</div></div>
+        <div class="question"><div class="q">Q2. V93000の新規台数、モジュール、アップグレード、SLTのうち、現在の増分を最も牽引しているものは何か。</div><div class="listen"><strong>注目：</strong>単一製品の強さではなく、設置台数増と既設機の拡張が並走しているか。テスト需要の裾野が広いほど持続性が高い。</div></div>
+        <div class="question"><div class="q">Q3. 追加テスト需要は、顧客の初期量産評価を経て、どの用途・どの工程で顕在化しているか。</div><div class="listen"><strong>注目：</strong>「テストメニュー追加」「品質保証」「先端パッケージ」「実動作（mission mode）」が具体例を伴うか。抽象的なAI需要だけでは不十分。</div></div>
+        <div class="question"><div class="q">Q4. HBM・高性能DRAM向けのテスタ需要と供給能力を、HBM4以降も含めてどう見ているか。</div><div class="listen"><strong>注目：</strong>メモリの供給動向が需要を押し上げるのか、逆に投資を妨げるのか。高性能メモリ向け能力増強の時間軸。</div></div>
+        <div class="question"><div class="q">Q5. FY2025 Q4の高い利益率のうち、ライセンスと製品ミックスの寄与を除いた継続的な水準はどう見るか。</div><div class="listen"><strong>前向きな表現：</strong>「高付加価値ミックスが継続」「生産性改善」。<br><strong>警戒表現：</strong>「一時的」「コスト／部材インフレ」「メモリの供給不足」。</div></div>
+        <div class="question"><div class="q">Q6. 年産5,000台以上、将来10,000台の能力計画について、人員・部材・顧客認定のボトルネックはあるか。</div><div class="listen"><strong>注目：</strong>能力を増やす意思ではなく、実際の立ち上がり・稼働率・リードタイム。需要があっても供給できないリスクを切り分ける。</div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">投資判断を変える条件</p>
+      <h2>ニュートラルを強気・弱気へ移す観測可能な条件</h2>
+      <div class="conditions">
+        <div class="condition"><h3>強気へ</h3><p>通期計画の上方修正、またはそれに準ずる需要可視性の改善。特に、AI/HPCの追加テスト、先端パッケージ、HBMの3つが定性的な期待ではなく、出荷・能力・顧客量産の具体例で示されること。</p></div>
+        <div class="condition"><h3>継続保留</h3><p>会社計画は維持されるが、強さの根拠がQ4のライセンス／ミックスに偏り、SoC・メモリ・SLTの先行きが具体化しないこと。コンセンサスの検証可能な更新も待つ。</p></div>
+        <div class="condition"><h3>弱気へ</h3><p>CY2026市場観またはFY2026計画の後退、顧客投資・先端パッケージ・メモリ供給の明確な遅れ、あるいは利益率の悪化が同時に生じること。経営陣の需要言語が「可視性向上」から「不確実性」に移る場合。</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">取得できなかったデータ・確認待ち事項</p>
+      <h2>本稿で推測によって埋めないもの</h2>
+      <ul>
+        <li><strong>FY2026 Q1の売上高・営業利益・EPSの市場コンセンサス：</strong>検証可能なIFIS等の値を取得できなかったため未掲載。</li>
+        <li><strong>セグメント別の市場コンセンサス：</strong>SoC、メモリ、SLT／メカトロニクス、サービス別の外部予想は未取得。</li>
+        <li><strong>四半期の受注高・受注残：</strong>確認した会社資料では継続開示がなく、推定しない。</li>
+        <li><strong>決算イベントに限定したオプション予想変動率：</strong>信頼できるイベント分離データを取得できず、作成しない。</li>
+        <li><strong>決算後のアナリスト予想改定、目標株価、PTS・翌通常取引の株価反応：</strong>決算前のため確認待ち。</li>
+        <li><strong>顧客別のGPU／AI ASIC／HBMの発注量、V93000の台数、稼働率、リードタイム：</strong>競争上の理由から会社が詳細を非開示とする部分があり、決算説明会での定性的な更新を待つ。</li>
+      </ul>
+    </section>
+
+    <section id="sources" class="card">
+      <p class="eyebrow">出典一覧</p>
+      <h2>情報源とデータの扱い</h2>
+      <p>会社開示を最優先した。会社開示、市場データ、外部企業の一次資料、分析上の判断を本文中のタグで区別している。市場データは取得時点のスナップショットであり、リアルタイム値ではない。</p>
+      <ol class="source-list">
+        <li><span class="tag company">会社IR</span> <a href="https://www.advantest.com/ja/investors/ir-calendar/">アドバンテスト IRカレンダー</a> — FY2026 Q1決算発表予定：2026年7月29日15:30（日本時間）。確認日：2026年7月28日。</li>
+        <li><span class="tag company">会社IR</span> <a href="https://www.advantest.com/document/ja/investors/ir-library/result/J_FR_FY2025_FN.pdf">FY2025 通期決算短信</a> — FY2025実績、FY2026通期会社計画、会計年度表記。2026年4月27日公表。</li>
+        <li><span class="tag company">会社IR</span> <a href="https://www.advantest.com/document/ja/investors/ir-library/result/JE_BIZ_260427_slide.pdf">FY2025 通期決算説明会資料</a> — テスタ市場見通し、事業別売上計画、用途構成、生産能力。2026年4月27日公表。</li>
+        <li><span class="tag company">会社IR</span> <a href="https://www.advantest.com/document/ja/investors/ir-library/result/JE_BIZ_260427_QA.pdf">FY2025 通期決算説明会 Q&amp;A</a> — AI関連需要、供給能力、利益率、顧客・市場リスク。2026年4月27日公表。</li>
+        <li><span class="tag company">会社IR</span> <a href="https://www.advantest.com/document/ja/investors/ir-library/result/JE_Sell-Side%20Analyst%20Small%20Group%20Meeting_260427_QA.pdf">セルサイドアナリスト向け小規模ミーティング Q&amp;A</a> — 追加テスト、V93000モジュール、HBM4以降、SLT、生産能力。2026年4月27日公表。</li>
+        <li><span class="tag company">会社IR</span> <a href="https://www.advantest.com/ja/investors/financial-highlights/forecast/">業績予想・為替前提</a> — FY2026の為替前提と営業利益感応度。確認日：2026年7月28日。</li>
+        <li><span class="tag company">会社IR</span> <a href="https://www.advantest.com/document/ja/investors/ir-library/result/J_FR_FY2025_1Q.pdf">FY2025 Q1決算短信</a> および <a href="https://www.advantest.com/document/ja/investors/ir-library/result/J_FR_FY2025_3Q.pdf">FY2025 Q3決算短信</a> — 過去四半期実績と比較値。</li>
+        <li><span class="tag market">市場データ</span> <a href="https://finance.yahoo.co.jp/quote/6857.T/history">Yahoo!ファイナンス 6857.T 株価履歴</a> — 2026年7月28日15:30の終値25,510円、前日比-10.11%。年初来高値等は同履歴の確認範囲。取得日：2026年7月28日。</li>
+        <li><span class="tag market">外部一次資料</span> <a href="https://investor.tsmc.com/english/quarterly-results/2026/q2">TSMC 2026 Q2 Results</a> — 先端ロジック・AI投資の補助的リードスルー。2026年7月16日公表。</li>
+        <li><span class="tag market">外部一次資料</span> <a href="https://news.skhynix.com/q1-2026-business-results/">SK hynix 2026 Q1 Business Results</a>、<a href="https://news.skhynix.com/12-layer-hbm4e-sample/">HBM4E sample release</a> — 高性能メモリの補助的リードスルー。確認日：2026年7月28日。</li>
+        <li><span class="tag market">外部一次資料</span> <a href="https://investors.teradyne.com/news-events/press-releases/detail/444/teradyne-to-announce-second-quarter-2026-results">Teradyne Q2 2026 release notice</a> — 同日比較企業の決算時刻。確認日：2026年7月28日。</li>
+      </ol>
+    </section>
+  </main>
+  <footer><div class="inner">Earnings Research ｜ 本資料は情報提供を目的とした決算前の分析であり、投資助言または売買推奨ではありません。将来見通しには不確実性があり、投資判断はご自身の責任で行ってください。</div></footer>
+</body>
+</html>
