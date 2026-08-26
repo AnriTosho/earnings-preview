@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NVIDIA（NVDA）FY2027 Q2 決算後ディープダイブ | Earnings Research</title>
+  <meta name="description" content="NVIDIA Corporation（NASDAQ: NVDA）のFY2027年第2四半期決算後ディープダイブ。一次資料、SEC提出書類、コンセンサス、市場反応、EPS品質、Q&A、次の確認事項を日本語で整理。">
+  <style>
+    :root{--ink:#16212b;--muted:#617080;--line:#dfe5ea;--wash:#f4f7f9;--navy:#142b3f;--blue:#176aa6;--green:#16764e;--red:#bd3d36;--orange:#a85e0d;--purple:#5c4a9d;--shadow:0 10px 30px #142b3f14}
+    *{box-sizing:border-box}
+    html,body{max-width:100%;overflow-x:hidden}
+    body{margin:0;background:var(--wash);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic",Meiryo,sans-serif;line-height:1.72}
+    .top{height:6px;background:var(--green)}
+    header{background:linear-gradient(118deg,var(--navy),#0e2030);color:#fff}
+    .inner,main{width:min(1180px,calc(100% - 28px));margin:auto}
+    .head{padding:28px 0 24px}
+    .brand,.eyebrow{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .brand{color:#b9d8ea}
+    .eyebrow{margin:0 0 5px;color:#bce4d1}
+    h1{margin:7px 0 5px;font-size:clamp(1.72rem,4vw,2.75rem);line-height:1.27}
+    h2{margin:0 0 13px;font-size:clamp(1.28rem,2.6vw,1.7rem);line-height:1.35}
+    h3{margin:0 0 8px;font-size:1.04rem;line-height:1.45}
+    p{margin:0 0 12px}
+    .sub{margin:0;color:#d9e5ec}
+    .meta{display:flex;flex-wrap:wrap;gap:8px 20px;padding-top:14px;margin-top:14px;border-top:1px solid #fff3;font-size:.86rem;color:#dfeaf0}
+    .meta strong{color:#fff}
+    nav{background:#fff;border-bottom:1px solid var(--line)}
+    nav .inner{display:flex;flex-wrap:wrap;gap:8px 16px;padding:10px 0;font-size:.84rem}
+    nav a{color:#485866;text-decoration:none}
+    main{padding:22px 0 54px}
+    section{margin:22px 0;scroll-margin-top:55px}
+    .card,.panel{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+    .card{padding:20px}
+    .tiles,.grid2,.grid3,.verdict,.scenario{display:grid;gap:14px}
+    .tiles{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .tile{min-width:0;padding:15px;background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:0 4px 15px #142b3f0a}
+    .label,.note,.source{color:var(--muted)}
+    .label{font-size:.75rem;font-weight:700}
+    .value{margin-top:5px;color:var(--navy);font-size:1.22rem;font-weight:800;line-height:1.25;overflow-wrap:anywhere}
+    .detail{margin-top:5px;color:var(--muted);font-size:.76rem;line-height:1.45}
+    .verdict{grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr)}
+    .vmain{padding:22px;border-radius:12px;background:linear-gradient(135deg,#17364d,#244d69);color:#fff}
+    .vmain p{color:#e2eff5}
+    .call{padding:18px;border:1px solid #c9dae5;border-radius:12px;background:#f2f8fb}
+    .grid2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid3,.scenario{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .panel{padding:16px}
+    .tag{display:inline-block;padding:2px 8px;margin:0 4px 3px 0;border-radius:999px;font-size:.72rem;font-weight:800}
+    .company{color:#075a72;background:#e2f3f5}
+    .marketdata{color:#7a4a00;background:#fff0cf}
+    .consensus{color:#6d3e77;background:#f3e6f6}
+    .analysis{color:#4e3987;background:#eeeaff}
+    .missing{color:#8d302a;background:#f9e5e3}
+    .calc{color:#365d3f;background:#e4f3e7}
+    .alert{padding:13px 15px;border-left:4px solid var(--orange);border-radius:7px;background:#fbf3e7}
+    .green{border-left-color:var(--green);background:#e9f5ee}
+    .blue{border-left-color:var(--blue);background:#edf6fb}
+    .frame{width:100%;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+    table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.84rem}
+    th,td{padding:10px 9px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}
+    th{background:#f3f7f9;color:#405263;text-align:left;font-size:.75rem;line-height:1.4}
+    tr:last-child td{border-bottom:0}
+    .num{text-align:right;font-variant-numeric:tabular-nums}
+    .pos{color:var(--green);font-weight:800}
+    .neg{color:var(--red);font-weight:800}
+    .warn{color:var(--orange);font-weight:800}
+    .box{padding:17px;border:1px solid var(--line);border-radius:11px}
+    .up{border-color:#bedecb;background:#e9f5ee}
+    .down{border-color:#edc9c5;background:#faecea}
+    .state{font-size:.76rem;font-weight:800;letter-spacing:.08em}
+    .list-tight{margin:8px 0 0;padding-left:1.15rem}
+    .list-tight li{margin:5px 0}
+    .small{font-size:.83rem}
+    .sources{margin:0;padding-left:1.25rem}
+    .sources li{margin:9px 0;overflow-wrap:anywhere}
+    .source-tag{color:var(--blue);font-weight:800;text-decoration:none;white-space:nowrap}
+    .bar-row{display:grid;grid-template-columns:100px minmax(0,1fr) 98px;gap:10px;align-items:center;margin:10px 0;font-size:.8rem}
+    .bar-track{height:13px;border-radius:99px;background:#e8eef2;overflow:hidden}
+    .bar-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#176aa6,#22a06b)}
+    .bar-value{text-align:right;font-variant-numeric:tabular-nums;font-weight:800;color:#34485a}
+    .cash-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .cash{padding:14px;border:1px solid var(--line);border-radius:10px;background:#f9fbfc}
+    .cash strong{display:block;color:var(--navy);font-size:1.22rem}
+    .fiscal{background:#f5faf8;border-left:4px solid var(--green);padding:12px 14px;border-radius:7px}
+    .divider{height:1px;margin:18px 0;background:var(--line)}
+    .legend{display:flex;flex-wrap:wrap;gap:5px 8px;margin:8px 0 0}
+    .chart{padding:14px 16px 10px;background:#fbfdfe;border:1px solid var(--line);border-radius:11px}
+    .chart svg{display:block;width:100%;height:auto}
+    .chart text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic",Meiryo,sans-serif;fill:#405263}
+    a{color:#12639c}
+    footer{padding:26px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}
+    .earnings-research-home{position:fixed;top:14px;right:14px;z-index:9999;display:inline-flex;align-items:center;max-width:calc(100vw - 28px);padding:7px 11px;border:1px solid rgba(255,255,255,.5);border-radius:999px;background:rgba(20,43,63,.94);box-shadow:0 5px 16px rgba(20,43,63,.22);color:#fff!important;font:700 13px/1.25 -apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic",Meiryo,sans-serif;text-decoration:none!important;letter-spacing:0;white-space:nowrap}
+    @media(min-width:721px){#actual .frame th:not(:first-child),#guide .frame th:not(:first-child),#quarterly .frame th:not(:first-child),#segments .frame th:not(:first-child),#quality .frame th:not(:first-child),#market .frame th:not(:first-child){text-align:right}}
+    @media(max-width:980px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.grid3,.scenario{grid-template-columns:1fr}.cash-grid{grid-template-columns:1fr}}
+    @media(max-width:720px){.inner,main{width:min(100% - 20px,1180px)}.head{padding:20px 0 18px}.sub{font-size:.9rem}main{padding-top:14px}section{margin:15px 0}.card{padding:15px}.tiles,.grid2,.verdict,.scenario{grid-template-columns:1fr}.tile,.vmain,.call{padding:14px}table{font-size:.74rem}th,td{padding:8px 5px;line-height:1.42}th{font-size:.67rem}.num{text-align:left}.bar-row{grid-template-columns:82px minmax(0,1fr) 76px;gap:6px;font-size:.73rem}.earnings-research-home{top:9px;right:9px;padding:6px 9px;font-size:12px}.chart{padding:8px}#qna .frame{overflow-x:auto}#qna .frame table{min-width:900px;table-layout:auto}}
+  </style>
+</head>
+<body>
+<a class="earnings-research-home" href="index.html" aria-label="Earnings Research 一覧へ">Earnings Research 一覧へ</a>
+<div class="top"></div>
+<header>
+  <div class="inner head">
+    <div class="brand">Earnings Research</div>
+    <p class="eyebrow">Post-earnings deep dive / NASDAQ NVDA</p>
+    <h1>NVIDIA Corporation<br>FY2027 Q2 決算後ディープダイブ</h1>
+    <p class="sub">Blackwell Ultraで加速するAIインフラ需要を、業績の質・供給制約・中国規制・株価の織り込みに分解。公式開示を主軸に、第三者トランスクリプトとFactSetコンセンサスは出所と制約を明示します。</p>
+    <div class="meta">
+      <span><strong>決算発表日</strong> 2026年8月26日</span>
+      <span><strong>対象四半期</strong> FY2027 Q2（2026年7月26日終了）</span>
+      <span><strong>情報基準時刻</strong> 2026年8月27日 08:09 JST</span>
+      <span><strong>会計基準</strong> US GAAP / non-GAAP併記</span>
+    </div>
+  </div>
+</header>
+<nav><div class="inner">
+  <a href="#setup">対象確定</a><a href="#summary">結論</a><a href="#actual">実績</a><a href="#guide">ガイダンス</a><a href="#quarterly">5四半期</a><a href="#segments">事業別KPI</a><a href="#quality">EPSの質</a><a href="#qna">Q&A</a><a href="#industry">読み通し</a><a href="#market">市場反応</a><a href="#risks">カタリスト・リスク</a><a href="#sources">出所</a>
+</div></nav>
+
+<main>
+  <section id="setup" class="fiscal">
+    <strong>対象・基準時刻を先に固定</strong>
+    <p>対象はNVIDIAの直近の公式発表済み決算であるFY2027年第2四半期。四半期末は2026年7月26日、決算発表と10-Q提出は2026年8月26日です。情報基準時刻は2026年8月27日08:09 JST。米国株は8月26日通常取引終値と時間外反応までを含み、8月27日の通常取引データは未収録です。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#s10">[S10]</a></p>
+    <div class="legend">
+      <span class="tag company">会社開示 / GAAP・non-GAAP</span>
+      <span class="tag consensus">コンセンサス / FactSet</span>
+      <span class="tag marketdata">市場データ</span>
+      <span class="tag calc">当サイト計算</span>
+      <span class="tag analysis">分析判断</span>
+      <span class="tag missing">未確認・未開示</span>
+    </div>
+  </section>
+
+  <section id="summary">
+    <div class="verdict">
+      <div class="vmain">
+        <span class="tag company">PM結論</span>
+        <h2>業績は強い。株価は「高成長の継続」を前提に評価。</h2>
+        <p>Q2売上高は$96.221B、Data Centerは$89.023Bで、FactSetの売上高・non-GAAP EPSを上回りました。Q3売上高ガイダンス$108.0BもFactSet平均を上回ります。需要が弱いというより供給・実装能力が制約になっている、という経営陣の説明が続いています。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s9">[S9]</a><a class="source-tag" href="#s10">[S10]</a></p>
+        <p>一方、GAAP EPSの上振れは$7.771Bの株式評価益を含むため、営業利益とFCFを軸に評価すべきです。Q3粗利率ガイダンスは74.0%±50bpへ低下し、メモリを中心とした供給契約、売掛金の支払条件、顧客・金融保証の増加は、成長の裏側にあるリスクです。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a><span class="tag analysis">分析判断</span></p>
+      </div>
+      <div class="call">
+        <h3>PM向けの読み方</h3>
+        <ul class="list-tight">
+          <li><strong>事業仮説：</strong><span class="pos">強まった</span> — Blackwell Ultra、AI Cloud・企業・ソブリン顧客の広がり、Q3ガイド。</li>
+          <li><strong>株価仮説：</strong>短期反応は<span class="pos">好感</span>。ただし成長率だけでなく、粗利率の底・供給の実現・運転資本を確認。</li>
+          <li><strong>最大の反証：</strong>Q3売上高未達、粗利率74%を下回る推移、メモリ高・在庫評価損・顧客信用の悪化。</li>
+          <li><strong>次のイベント：</strong>Q3 FY27決算説明会は2026年11月17日予定。<a class="source-tag" href="#s10">[S10]</a></li>
+        </ul>
+        <p class="note small">これは投資助言ではなく、公開情報に基づくリサーチ整理です。<span class="tag analysis">分析判断</span></p>
+      </div>
+    </div>
+    <div class="tiles" style="margin-top:14px">
+      <div class="tile"><div class="label">Q2 売上高</div><div class="value">$96.221B</div><div class="detail">前四半期比 +18% / 前年同期比 +106% <a class="source-tag" href="#s1">[S1]</a></div></div>
+      <div class="tile"><div class="label">Data Center</div><div class="value">$89.023B</div><div class="detail">前四半期比 +18% / 前年同期比 +117% <a class="source-tag" href="#s2">[S2]</a></div></div>
+      <div class="tile"><div class="label">希薄化EPS</div><div class="value">$2.46 / $2.22</div><div class="detail">GAAP / non-GAAP <a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s2">[S2]</a></div></div>
+      <div class="tile"><div class="label">フリーCF</div><div class="value">$21.341B</div><div class="detail">Q2、会社定義 <a class="source-tag" href="#s2">[S2]</a></div></div>
+      <div class="tile"><div class="label">Q3売上高ガイド</div><div class="value">$108.0B ±2%</div><div class="detail">中国Data Center計算売上を含めず <a class="source-tag" href="#s1">[S1]</a></div></div>
+    </div>
+  </section>
+
+  <section id="actual">
+    <h2>1. 決算実績 — コンセンサスと会社計画をともに上回る</h2>
+    <p class="note">金額は$B、EPSは1株当たり。FactSetコンセンサスはAPが報じた2026年8月26日時点の集計で、会社計画はQ1 FY27時点のQ2ガイドです。差額と比率は当サイト計算です。</p>
+    <div class="frame">
+      <table>
+        <thead><tr><th style="width:22%">指標</th><th class="num">Q2 FY27実績</th><th class="num">FactSet</th><th class="num">対コンセンサス</th><th class="num">Q1時点Q2計画</th></tr></thead>
+        <tbody>
+          <tr><td>売上高</td><td class="num">$96.221 <a class="source-tag" href="#s1">[S1]</a></td><td class="num">$92.27 <a class="source-tag" href="#s9">[S9]</a></td><td class="num pos">+$3.951 / +4.3% <a class="source-tag" href="#calculations">[C1]</a></td><td class="num">$91.0±2% <a class="source-tag" href="#s5">[S5]</a></td></tr>
+          <tr><td>希薄化EPS（non-GAAP）</td><td class="num">$2.22 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">$2.09 <a class="source-tag" href="#s9">[S9]</a></td><td class="num pos">+$0.13 / +6.2% <a class="source-tag" href="#calculations">[C1]</a></td><td class="num">未開示 <a class="source-tag" href="#s5">[S5]</a></td></tr>
+          <tr><td>粗利率（GAAP）</td><td class="num">75.0% <a class="source-tag" href="#s1">[S1]</a></td><td class="num">未確認</td><td class="num">—</td><td class="num">74.9%±50bp <a class="source-tag" href="#s5">[S5]</a></td></tr>
+          <tr><td>粗利率（non-GAAP）</td><td class="num">75.0% <a class="source-tag" href="#s1">[S1]</a></td><td class="num">未確認</td><td class="num">—</td><td class="num">75.0%±50bp <a class="source-tag" href="#s5">[S5]</a></td></tr>
+          <tr><td>営業費用（GAAP）</td><td class="num">$8.408 <a class="source-tag" href="#s1">[S1]</a></td><td class="num">未確認</td><td class="num">—</td><td class="num">$8.5 <a class="source-tag" href="#s5">[S5]</a></td></tr>
+          <tr><td>営業費用（non-GAAP）</td><td class="num">$8.232 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">未確認</td><td class="num">—</td><td class="num">$8.3 <a class="source-tag" href="#s5">[S5]</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="box up"><div class="state pos">BEAT</div><h3>売上高とnon-GAAP EPSの両方が上振れ</h3><p>売上高はFactSet平均を4.3%、non-GAAP EPSは6.2%上回りました。売上高はQ1時点のQ2計画中央値を$5.221B、5.7%上回り、Q2計画レンジ上限$92.82Bも$3.401B上回ります。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s5">[S5]</a><a class="source-tag" href="#s9">[S9]</a><a class="source-tag" href="#calculations">[C1]</a></p></div>
+      <div class="box down"><div class="state warn">QUALITY CHECK</div><h3>GAAP EPSの上振れを営業レバレッジと混同しない</h3><p>GAAP純利益には株式評価益$7.771Bが含まれます。営業利益のGAAPとnon-GAAPの差は$0.222Bにとどまり、Q2の業務運営は強い一方、GAAP EPSの差額$0.24は非営業項目の影響を含みます。<a class="source-tag" href="#s2">[S2]</a><span class="tag analysis">分析判断</span></p></div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <h2>2. ガイダンス — Q3は売上高を上げ、粗利率は供給コストを織り込む</h2>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Q2実績 vs Q1時点の会社計画</h3>
+        <div class="frame">
+          <table>
+            <thead><tr><th>指標</th><th class="num">Q2実績</th><th class="num">計画中央値</th><th class="num">差</th></tr></thead>
+            <tbody>
+              <tr><td>売上高</td><td class="num">$96.221 <a class="source-tag" href="#s1">[S1]</a></td><td class="num">$91.0 <a class="source-tag" href="#s5">[S5]</a></td><td class="num pos">+$5.221 / +5.7% <a class="source-tag" href="#calculations">[C1]</a></td></tr>
+              <tr><td>GAAP粗利率</td><td class="num">75.0% <a class="source-tag" href="#s1">[S1]</a></td><td class="num">74.9% <a class="source-tag" href="#s5">[S5]</a></td><td class="num pos">+10bp <a class="source-tag" href="#calculations">[C1]</a></td></tr>
+              <tr><td>non-GAAP粗利率</td><td class="num">75.0% <a class="source-tag" href="#s1">[S1]</a></td><td class="num">75.0% <a class="source-tag" href="#s5">[S5]</a></td><td class="num">0bp <a class="source-tag" href="#calculations">[C1]</a></td></tr>
+              <tr><td>GAAP営業費用</td><td class="num">$8.408 <a class="source-tag" href="#s1">[S1]</a></td><td class="num">$8.5 <a class="source-tag" href="#s5">[S5]</a></td><td class="num pos">-$0.092 / -1.1% <a class="source-tag" href="#calculations">[C1]</a></td></tr>
+              <tr><td>non-GAAP営業費用</td><td class="num">$8.232 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">$8.3 <a class="source-tag" href="#s5">[S5]</a></td><td class="num pos">-$0.068 / -0.8% <a class="source-tag" href="#calculations">[C1]</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Q3 FY27会社ガイド vs FactSet平均</h3>
+        <div class="frame">
+          <table>
+            <thead><tr><th>指標</th><th class="num">Q3ガイド</th><th class="num">FactSet</th><th class="num">差</th></tr></thead>
+            <tbody>
+              <tr><td>売上高</td><td class="num">$108.0±2% <a class="source-tag" href="#s1">[S1]</a></td><td class="num">$104.86 <a class="source-tag" href="#s9">[S9]</a></td><td class="num pos">+$3.14 / +3.0% <a class="source-tag" href="#calculations">[C1]</a></td></tr>
+              <tr><td>前四半期比</td><td class="num">+12.2% <a class="source-tag" href="#calculations">[C1]</a></td><td class="num">未確認</td><td class="num">—</td></tr>
+              <tr><td>GAAP / non-GAAP粗利率</td><td class="num">74.0%±50bp <a class="source-tag" href="#s1">[S1]</a></td><td class="num">未確認</td><td class="num neg">Q2比 -100bp <a class="source-tag" href="#calculations">[C1]</a></td></tr>
+              <tr><td>GAAP営業費用</td><td class="num">約$9.2 <a class="source-tag" href="#s1">[S1]</a></td><td class="num">未確認</td><td class="num">—</td></tr>
+              <tr><td>non-GAAP営業費用</td><td class="num">約$9.0 <a class="source-tag" href="#s1">[S1]</a></td><td class="num">未確認</td><td class="num">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="alert blue" style="margin-top:14px">
+      <strong>ガイドの読み筋：</strong>Q3売上高ガイドは中国Data Center計算売上をゼロとして作られています。FY27通期の売上高・EPSガイダンスは会社から開示されておらず、税率ガイド16–18%のみ確認でき、Q1時点からの変更はありません。粗利率の低下は、Blackwellを含む製品ミックスとメモリを中心とする供給コストの圧力が、売上成長の一部を吸収する可能性を示します。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s5">[S5]</a><span class="tag missing">通期売上高・EPS未開示</span><span class="tag analysis">分析判断</span>
+    </div>
+  </section>
+
+  <section id="quarterly">
+    <h2>3. 過去5四半期 — 売上高・Data Center・利益率が連続上昇</h2>
+    <p class="note">Q2 FY26からQ2 FY27。Data CenterはQ1 FY27の新しい市場プラットフォーム区分に合わせた比較表示。営業利益率のみ当サイト計算で、その他は会社開示です。</p>
+    <div class="chart" aria-label="過去5四半期の売上高とData Center売上高">
+      <svg viewBox="0 0 800 286" role="img">
+        <title>過去5四半期の売上高とData Center売上高</title>
+        <desc>売上高は46.743、57.006、68.127、81.615、96.221。Data Centerは41.096、51.215、62.314、75.246、89.023。単位は10億ドル。</desc>
+        <line x1="92" y1="228" x2="760" y2="228" stroke="#b9c7d0" stroke-width="1"/>
+        <line x1="92" y1="32" x2="92" y2="228" stroke="#b9c7d0" stroke-width="1"/>
+        <line x1="92" y1="130" x2="760" y2="130" stroke="#e2e9ed" stroke-width="1"/>
+        <text x="18" y="233" font-size="13">0</text><text x="10" y="135" font-size="13">50</text><text x="10" y="37" font-size="13">100</text>
+        <rect x="130" y="136.3" width="54" height="91.7" rx="4" fill="#176aa6"/><rect x="130" y="147.2" width="54" height="80.8" rx="4" fill="#2aa071"/>
+        <rect x="260" y="116.1" width="54" height="111.9" rx="4" fill="#176aa6"/><rect x="260" y="127.5" width="54" height="99.5" rx="4" fill="#2aa071"/>
+        <rect x="390" y="94.2" width="54" height="133.8" rx="4" fill="#176aa6"/><rect x="390" y="105.7" width="54" height="122.3" rx="4" fill="#2aa071"/>
+        <rect x="520" y="67.9" width="54" height="160.1" rx="4" fill="#176aa6"/><rect x="520" y="80.5" width="54" height="147.5" rx="4" fill="#2aa071"/>
+        <rect x="650" y="39.5" width="54" height="188.5" rx="4" fill="#176aa6"/><rect x="650" y="53.4" width="54" height="174.6" rx="4" fill="#2aa071"/>
+        <text x="131" y="252" font-size="13">Q2 FY26</text><text x="261" y="252" font-size="13">Q3 FY26</text><text x="391" y="252" font-size="13">Q4 FY26</text><text x="521" y="252" font-size="13">Q1 FY27</text><text x="651" y="252" font-size="13">Q2 FY27</text>
+        <rect x="548" y="12" width="12" height="12" rx="2" fill="#176aa6"/><text x="566" y="23" font-size="13">売上高</text><rect x="630" y="12" width="12" height="12" rx="2" fill="#2aa071"/><text x="648" y="23" font-size="13">Data Center</text>
+      </svg>
+      <p class="note small">各バーの数値は以下の表と会社開示に対応します。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s5">[S5]</a><a class="source-tag" href="#s6">[S6]</a><a class="source-tag" href="#s7">[S7]</a></p>
+    </div>
+    <div class="frame" style="margin-top:14px">
+      <table>
+        <thead><tr><th style="width:16%">四半期</th><th class="num">売上高<br>($B)</th><th class="num">Data Center<br>($B)</th><th class="num">GAAP粗利率</th><th class="num">GAAP営業利益率</th><th class="num">GAAP EPS</th><th class="num">non-GAAP EPS</th></tr></thead>
+        <tbody>
+          <tr><td>Q2 FY26 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">46.743 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">41.096 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">72.4% <a class="source-tag" href="#s7">[S7]</a></td><td class="num">60.8% <a class="source-tag" href="#calculations">[C1]</a></td><td class="num">$1.08 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">$1.01 <a class="source-tag" href="#s7">[S7]</a></td></tr>
+          <tr><td>Q3 FY26 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">57.006 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">51.215 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">73.4% <a class="source-tag" href="#s7">[S7]</a></td><td class="num">63.2% <a class="source-tag" href="#calculations">[C1]</a></td><td class="num">$1.30 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">$1.30 <a class="source-tag" href="#s7">[S7]</a></td></tr>
+          <tr><td>Q4 FY26 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">68.127 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">62.314 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">75.0% <a class="source-tag" href="#s6">[S6]</a></td><td class="num">65.0% <a class="source-tag" href="#calculations">[C1]</a></td><td class="num">$1.76 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">$1.62 <a class="source-tag" href="#s6">[S6]</a></td></tr>
+          <tr><td>Q1 FY27 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">81.615 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">75.246 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">74.9% <a class="source-tag" href="#s5">[S5]</a></td><td class="num">65.6% <a class="source-tag" href="#calculations">[C1]</a></td><td class="num">$2.39 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">$1.87 <a class="source-tag" href="#s5">[S5]</a></td></tr>
+          <tr><td>Q2 FY27 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">96.221 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">89.023 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">75.0% <a class="source-tag" href="#s2">[S2]</a></td><td class="num">66.2% <a class="source-tag" href="#calculations">[C1]</a></td><td class="num">$2.46 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">$2.22 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="alert green" style="margin-top:14px"><strong>軌道の含意：</strong>5四半期で売上高は$46.743Bから$96.221B、Data Centerは$41.096Bから$89.023Bへ拡大。GAAP営業利益率も60.8%から66.2%へ上昇しました。これは需要・規模・ミックスの組み合わせを示す一方、Q3ガイドの粗利率74.0%±50bpは、成長率が利益率に先行して低下する局面が始まる可能性を示します。<a class="source-tag" href="#calculations">[C1]</a><span class="tag analysis">分析判断</span></div>
+  </section>
+
+  <section id="segments">
+    <h2>4. 事業別KPI — 新区分ではAI顧客の裾野、旧区分ではネットワーキングが焦点</h2>
+    <div class="alert"><strong>開示区分の変更：</strong>FY27 Q1から市場プラットフォームの区分が変更され、過去期間は比較用に組み替えられています。Q2 FY27ではGaming、Professional Visualization、Automotive、Roboticsの単独売上高は開示されていません。Edge Computingの合計以外を推定分解しません。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a><span class="tag missing">未開示</span></div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="panel">
+        <h3>Q2 FY27 新市場プラットフォーム</h3>
+        <div class="frame">
+          <table>
+            <thead><tr><th>区分</th><th class="num">売上高</th><th class="num">前四半期比</th><th class="num">前年同期比</th></tr></thead>
+            <tbody>
+              <tr><td>Data Center</td><td class="num">$89.023B <a class="source-tag" href="#s2">[S2]</a></td><td class="num pos">+18% <a class="source-tag" href="#s2">[S2]</a></td><td class="num pos">+117% <a class="source-tag" href="#s2">[S2]</a></td></tr>
+              <tr><td>└ Hyperscale</td><td class="num">$48.710B <a class="source-tag" href="#s2">[S2]</a></td><td class="num pos">+13% <a class="source-tag" href="#s2">[S2]</a></td><td class="num pos">+102% <a class="source-tag" href="#s2">[S2]</a></td></tr>
+              <tr><td>└ AI Cloud・企業・ソブリン（ACIE）</td><td class="num">$40.313B <a class="source-tag" href="#s2">[S2]</a></td><td class="num pos">+25% <a class="source-tag" href="#s2">[S2]</a></td><td class="num pos">+138% <a class="source-tag" href="#s2">[S2]</a></td></tr>
+              <tr><td>Edge Computing</td><td class="num">$7.198B <a class="source-tag" href="#s2">[S2]</a></td><td class="num pos">+13% <a class="source-tag" href="#s2">[S2]</a></td><td class="num pos">+27% <a class="source-tag" href="#s2">[S2]</a></td></tr>
+              <tr><td>Data Center売上高比率</td><td class="num">92.5% <a class="source-tag" href="#calculations">[C1]</a></td><td class="num">—</td><td class="num">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note small">Data Center内のHyperscaleとACIEの合計がData Centerです。ACIEの伸びはAIネイティブ、企業、ソブリン顧客およびAI Cloud利用の広がりが寄与したと会社は説明しています。<a class="source-tag" href="#s2">[S2]</a></p>
+      </div>
+      <div class="panel">
+        <h3>Q2 FY27 レポータブル・セグメント</h3>
+        <div class="frame">
+          <table>
+            <thead><tr><th>区分</th><th class="num">売上高</th><th>読み方</th></tr></thead>
+            <tbody>
+              <tr><td>Compute &amp; Networking</td><td class="num">$88.299B <a class="source-tag" href="#s3">[S3]</a></td><td>AI計算・ネットワーキングの合計</td></tr>
+              <tr><td>Graphics</td><td class="num">$7.922B <a class="source-tag" href="#s3">[S3]</a></td><td>Edge等を含む旧来区分との連続比較に注意</td></tr>
+              <tr><td>Gaming</td><td class="num">未開示 <a class="source-tag" href="#s2">[S2]</a></td><td class="missing">Q2の単独値なし</td></tr>
+              <tr><td>Professional Visualization</td><td class="num">未開示 <a class="source-tag" href="#s2">[S2]</a></td><td class="missing">Q2の単独値なし</td></tr>
+              <tr><td>Automotive &amp; Robotics</td><td class="num">未開示 <a class="source-tag" href="#s2">[S2]</a></td><td class="missing">Robotics単独値なし</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note small">Q2のEdge Computingには、Blackwellワークステーション、コンシューマーPC、AI-RAN、ロボティクス、オートモーティブ等が含まれます。Blackwellワークステーションは強かった一方、メモリ・システム価格の上昇でコンシューマーPCは減速したと会社は説明しています。<a class="source-tag" href="#s2">[S2]</a></p>
+      </div>
+    </div>
+    <div class="grid3" style="margin-top:14px">
+      <div class="box"><h3>GPU・システム</h3><p>Blackwell UltraがData Centerを牽引し、Vera RubinはQ3 FY27に生産出荷を開始。BlackwellとRubinを並行出荷する計画です。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a></p><span class="tag company">会社開示</span></div>
+      <div class="box"><h3>ネットワーキング</h3><p>Q4 FY26の旧区分ではNetworkingが$10.980B、前年同期比+263%。NVLinkのコンピュートファブリック、Ethernet、InfiniBandが寄与しました。Q2の単独値は新区分では未開示です。<a class="source-tag" href="#s6">[S6]</a><span class="tag missing">Q2単独値未開示</span></p></div>
+      <div class="box"><h3>供給制約</h3><p>Q2末の供給・キャパシティコミットメントは$279Bで、主にメモリ。経営陣は需要が供給を大幅に上回り、サプライチェーン全体が制約されていると説明しました。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s10">[S10]</a><span class="tag analysis">会社発言の分析</span></p></div>
+    </div>
+    <div class="frame" style="margin-top:14px">
+      <table>
+        <thead><tr><th>旧市場プラットフォーム</th><th class="num">Q2 FY26</th><th class="num">Q3 FY26</th><th class="num">Q4 FY26</th><th>Q2 FY27</th></tr></thead>
+        <tbody>
+          <tr><td>Gaming</td><td class="num">$4.287B <a class="source-tag" href="#s7">[S7]</a></td><td class="num">$4.265B <a class="source-tag" href="#s7">[S7]</a></td><td class="num">$3.727B <a class="source-tag" href="#s6">[S6]</a></td><td>未開示 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+          <tr><td>Professional Visualization</td><td class="num">$0.601B <a class="source-tag" href="#s7">[S7]</a></td><td class="num">$0.760B <a class="source-tag" href="#s7">[S7]</a></td><td class="num">$1.321B <a class="source-tag" href="#s6">[S6]</a></td><td>未開示 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+          <tr><td>Automotive</td><td class="num">$0.586B <a class="source-tag" href="#s7">[S7]</a></td><td class="num">$0.592B <a class="source-tag" href="#s7">[S7]</a></td><td class="num">$0.604B <a class="source-tag" href="#s6">[S6]</a></td><td>未開示 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+          <tr><td>OEM &amp; Other</td><td class="num">$0.173B <a class="source-tag" href="#s7">[S7]</a></td><td class="num">$0.174B <a class="source-tag" href="#s7">[S7]</a></td><td class="num">$0.161B <a class="source-tag" href="#s6">[S6]</a></td><td>新区分で未開示 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="quality">
+    <h2>5. EPSの質 — 営業利益は堅いが、株式評価益と運転資本を分離</h2>
+    <div class="grid3">
+      <div class="tile"><div class="label">GAAP純利益</div><div class="value">$59.688B</div><div class="detail">Q2、株式評価益を含む <a class="source-tag" href="#s2">[S2]</a></div></div>
+      <div class="tile"><div class="label">non-GAAP純利益</div><div class="value">$53.954B</div><div class="detail">Q2、評価益を除外 <a class="source-tag" href="#s2">[S2]</a></div></div>
+      <div class="tile"><div class="label">株式評価益</div><div class="value">$7.771B</div><div class="detail">Q2のGAAPその他損益への影響 <a class="source-tag" href="#s2">[S2]</a></div></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="panel">
+        <h3>GAAPからnon-GAAPへの純利益ブリッジ</h3>
+        <div class="frame">
+          <table>
+            <thead><tr><th>項目</th><th class="num">影響額</th><th>意味</th></tr></thead>
+            <tbody>
+              <tr><td>GAAP純利益</td><td class="num">$59.688B <a class="source-tag" href="#s2">[S2]</a></td><td>出発点</td></tr>
+              <tr><td>non-GAAP税前調整合計</td><td class="num neg">-$7.251B <a class="source-tag" href="#s2">[S2]</a></td><td>株式評価益の除外等</td></tr>
+              <tr><td>税効果</td><td class="num">+$1.517B <a class="source-tag" href="#s2">[S2]</a></td><td>non-GAAP税金への調整</td></tr>
+              <tr><td><strong>non-GAAP純利益</strong></td><td class="num"><strong>$53.954B</strong> <a class="source-tag" href="#s2">[S2]</a></td><td>会社定義</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note small">営業利益はGAAP $63.734B、non-GAAP $63.956Bで差額は$0.222B。Q2のEPS差$0.24は、主に営業外の株式評価益を含むかどうかの差です。<a class="source-tag" href="#s2">[S2]</a><span class="tag analysis">分析判断</span></p>
+      </div>
+      <div class="panel">
+        <h3>キャッシュ・運転資本の変換</h3>
+        <div class="cash-grid">
+          <div class="cash"><span class="label">営業CF</span><strong>$24.077B</strong><span class="note small">Q2 <a class="source-tag" href="#s2">[S2]</a></span></div>
+          <div class="cash"><span class="label">設備等支出</span><strong>-$2.677B</strong><span class="note small">Q2 <a class="source-tag" href="#s2">[S2]</a></span></div>
+          <div class="cash"><span class="label">フリーCF</span><strong>$21.341B</strong><span class="note small">会社定義 <a class="source-tag" href="#s2">[S2]</a></span></div>
+        </div>
+        <p style="margin-top:14px">FCFはGAAP純利益の35.8%、non-GAAP純利益の39.6%。営業CFはQ1の$50.3Bから減少し、売掛金と在庫の増加がキャッシュを吸収しました。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#calculations">[C1]</a><span class="tag analysis">分析判断</span></p>
+        <p class="note small">6か月累計FCFは$69.895B。Q2単独のFCF転換率は高水準ではあるものの、売上高が急拡大する局面では回収条件と在庫先行投入を四半期ごとに追います。<a class="source-tag" href="#s2">[S2]</a><span class="tag analysis">分析判断</span></p>
+      </div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="panel">
+        <h3>貸借対照表・コミットメント</h3>
+        <div class="frame">
+          <table>
+            <thead><tr><th>項目</th><th class="num">Q2 FY27</th><th class="num">比較</th><th>品質シグナル</th></tr></thead>
+            <tbody>
+              <tr><td>現金等</td><td class="num">$56.6B <a class="source-tag" href="#s2">[S2]</a></td><td>—</td><td>流動性は厚い</td></tr>
+              <tr><td>売掛金</td><td class="num">$63.1B <a class="source-tag" href="#s2">[S2]</a></td><td class="num">DSO 60日 vs 45日 <a class="source-tag" href="#s2">[S2]</a></td><td class="warn">大型顧客の長期契約条件</td></tr>
+              <tr><td>在庫</td><td class="num">$31.6B <a class="source-tag" href="#s2">[S2]</a></td><td class="num">前四半期$25.8B <a class="source-tag" href="#s2">[S2]</a></td><td class="warn">Vera Rubin準備・評価損</td></tr>
+              <tr><td>供給・キャパシティ契約</td><td class="num">$279B <a class="source-tag" href="#s2">[S2]</a></td><td>前四半期$119B <a class="source-tag" href="#s5">[S5]</a></td><td class="warn">主にメモリ</td></tr>
+              <tr><td>AI Cloud等の追加コミットメント</td><td class="num">$56B <a class="source-tag" href="#s2">[S2]</a></td><td>契約等</td><td class="warn">実行・信用リスク</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note small">最大保証額はAI Cloud $3.5BとSB Energy $105Bを合わせて$108.5B。SB Energy分は条件付きの20年リース関連で、最大総額をそのまま損失見積りとは扱いません。<a class="source-tag" href="#s2">[S2]</a><span class="tag analysis">分析判断</span></p>
+      </div>
+      <div class="panel">
+        <h3>在庫・株式報酬・希薄化</h3>
+        <ul class="list-tight">
+          <li>Q2在庫評価引当は$0.784Bで、粗利率への悪影響は0.8ポイント。FY27上期の引当は$1.6B。<a class="source-tag" href="#s3">[S3]</a></li>
+          <li>H200の余剰在庫・購入義務に伴う費用はFY27上期$0.4B。中国向けライセンス品の出荷は直近Data Center売上高の1%未満。<a class="source-tag" href="#s3">[S3]</a></li>
+          <li>株式報酬費用はQ2 $2.027B、上期$3.954B。未認識残高は$19.4B、加重平均認識期間は2.6年。FY27 Q1からnon-GAAPでもSBCを除外しない新しい方針です。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s3">[S3]</a></li>
+          <li>希薄化後平均株式数は24.285B、前年同期24.532Bから約1.0%減。自社株買いが希薄化を上回った計算ですが、SBCの経済的コストが消えるわけではありません。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#calculations">[C1]</a><span class="tag analysis">分析判断</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="alert" style="margin-top:14px"><strong>EPS品質の結論：</strong>「営業利益・FCF・現金創出」は強い。一方で、GAAP EPSの評価益、売掛金の長期化、在庫の先行投入、メモリ価格、SBC、条件付き保証を別々に追う必要があります。Q2のnon-GAAP EPSはSBC除外前提ではないため、旧四半期との単純なnon-GAAP比較は会社の新定義に合わせて読む必要があります。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a><span class="tag analysis">分析判断</span></div>
+  </section>
+
+  <section id="qna">
+    <h2>6. 決算説明会Q&amp;A — 供給が売上を抑えるのか、需要が剥落するのか</h2>
+    <div class="alert blue"><strong>トランスクリプトの制約：</strong>NVIDIA公式IRページではウェブキャストとリプレイを確認しましたが、公式の全文文字起こしは確認できませんでした。以下はQuartr提供としてStockAnalysisに掲載された第三者トランスクリプトの要約です。発言の語句・編集は公式議事録と一致しない可能性があるため、経営陣の発言・会社開示として扱い、外部検証された需要データとは区別します。<a class="source-tag" href="#s8">[S8]</a><a class="source-tag" href="#s10">[S10]</a></div>
+    <div class="frame" style="margin-top:14px">
+      <table>
+        <thead><tr><th style="width:13%">質問者</th><th style="width:13%">回答者</th><th style="width:22%">論点・発言の要約</th><th style="width:24%">強気の含意</th><th style="width:24%">弱気・反証条件</th><th style="width:4%">出所</th></tr></thead>
+        <tbody>
+          <tr><td>Joseph Moore<br>モルガン・スタンレー</td><td>Jensen Huang<br>CEO</td><td>70%成長の先行きについて、AIエージェントは大量の計算を必要とし、非ハイパースケーラー側も年率100%程度で伸びていると説明。需要は供給を上回るとの趣旨。</td><td>需要が不足しているのではなく、供給制約が短期の売上上限になる。ACIEの広がりが持続。</td><td>供給増強が遅れればガイド未達。年率成長の発言が実際の出荷・顧客投資に変わらない場合。</td><td><a class="source-tag" href="#s10">[S10]</a></td></tr>
+          <tr><td>C.J. Muse<br>カンター・フィッツジェラルド</td><td>Jensen Huang<br>CEO</td><td>推論・エージェント・Groqについて、ラックスケールで用途が広がり、世代ごとの1GW売上機会をHopper約$18B、Grace Blackwell約$25B、Vera Rubin約$40Bと説明。</td><td>学習から推論への移行が単なる置換でなく、計算量と単価を押し上げる可能性。</td><td>1GW当たり売上は会社の機会見積りであり、受注・粗利・出荷数量ではない。Groq統合の収益化や競争優位は未確認。</td><td><a class="source-tag" href="#s10">[S10]</a></td></tr>
+          <tr><td>Stacy Rasgon<br>バーンスタイン</td><td>Jensen Huang<br>CEO</td><td>FY28の成長寄与を制約なしで問われ、現在の供給水準より需要はさらに高く、バックログは$2T超との説明。</td><td>現在のガイドは需要上限ではなく供給・実装上限という解釈を支援。</td><td>バックログは契約済み売上・回収済み現金とは同義でない。顧客の資金調達、電力、稼働率がボトルネックになり得る。</td><td><a class="source-tag" href="#s10">[S10]</a></td></tr>
+          <tr><td>Vivek Arya<br>バンク・オブ・アメリカ</td><td>Jensen Huang<br>CEO<br>Colette Kress<br>CFO</td><td>AIエコシステムへの$500B超の投資枠とカスタムチップについて、NVIDIAはAIのライフサイクル全体を支えると説明。CFOは供給コミットメントが重要と回答。</td><td>資本・クラウド・顧客を巻き込むエコシステムが、単一GPU製品からプラットフォームへ広がる。</td><td>資金調達、リース、保証、顧客信用が循環的に結びつく。definitive agreement前の構想は売上の裏付けではない。</td><td><a class="source-tag" href="#s10">[S10]</a></td></tr>
+          <tr><td>Jim Schneider<br>ゴールドマン・サックス</td><td>Jensen Huang<br>CEO</td><td>データセンター、電力、DRAM、ファウンドリーなどの制約を問われ、サプライチェーン全体が厳しいと説明。</td><td>DRAM・電力・実装の制約は需要の強さと整合し、供給拡大後の売上可視性を高める。</td><td>メモリ高・歩留まり・電力不足が粗利率と出荷時期を同時に悪化させる。Q3粗利率74%ガイドが下振れる場合。</td><td><a class="source-tag" href="#s10">[S10]</a></td></tr>
+          <tr><td>Aaron Rakers<br>ウェルズ・ファーゴ</td><td>Jensen Huang<br>CEO</td><td>Vera Rubinの1GW売上機会約$40Bが60GW・80GWへ拡大するか問われ、方向としてはさらに高くなる可能性を示唆。</td><td>ラックスケール化・推論増加・顧客の生産性向上により、単価と総需要が同時に伸びる。</td><td>1GW売上は価格・構成・時期に依存する管理部の見立て。実際のASP、台数、顧客別受注は未開示。</td><td><a class="source-tag" href="#s10">[S10]</a></td></tr>
+          <tr><td>Timothy Arcuri<br>UBS</td><td>Jensen Huang<br>CEO</td><td>オープンモデルとクローズドモデルの需要を問われ、両方が成長し、オープンモデルのほぼ全てがNVIDIAで動くとの趣旨。</td><td>CUDAのソフトウェア・開発者基盤がモデル形式を問わず需要を取り込む。</td><td>「ほぼ全て」は経営陣の主張で、独立した市場シェアデータではない。カスタムASIC・競合GPUへの移行が進む場合。</td><td><a class="source-tag" href="#s10">[S10]</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="industry">
+    <h2>7. 周辺企業・顧客への読み通し — 直接証拠と推測を分離</h2>
+    <p class="note">NVIDIA Q2資料から直接確認できる読み通しだけを「確認」とし、個別企業の競争シェアやサプライヤー売上は推測しません。</p>
+    <div class="frame">
+      <table>
+        <thead><tr><th style="width:16%">対象</th><th style="width:29%">確認できる情報</th><th style="width:28%">投資上の読み通し</th><th style="width:27%">未確認・反証</th></tr></thead>
+        <tbody>
+          <tr><td>メモリ</td><td>Q2の供給・キャパシティコミットメント$279Bは主にメモリ。Q&AでもDRAM等の供給制約と価格圧力に言及。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s10">[S10]</a></td><td>メモリ企業には需要・価格の追い風。ただしNVIDIA側ではQ3粗利率低下として表面化する可能性。</td><td>個別メモリ会社別の数量・価格・シェア・納期は未開示。誰がどの程度恩恵を受けるかは未確認。</td></tr>
+          <tr><td>ハイパースケーラー</td><td>HyperscaleはQ2 $48.710B、前年同期比+102%。経営陣は大手5社の2026年CapEx約$800B、2027年約$1.3T等を説明。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s10">[S10]</a></td><td>顧客投資が続く限り、GPU・ネットワーク・ラックの複合需要は強い。</td><td>CapEx計画は将来計画で、NVIDIAの受注・売上・回収を保証しない。顧客の自社ASIC比率や稼働率は未確認。</td></tr>
+          <tr><td>TSMC</td><td>NVIDIA Q2資料では、同社のウェハー配分・先端パッケージの納期・取引先別数量を定量開示していない。<a class="source-tag" href="#s3">[S3]</a></td><td>製造・実装能力がNVIDIAの供給拡大の外部制約になり得る、という一般的な構造のみ確認。</td><td>Q2決算からTSMCの業績、価格、供給割当を推定する直接根拠は未確認。</td></tr>
+          <tr><td>AMD</td><td>NVIDIA Q2資料にAMDとの競争シェアや顧客置換を定量化した記載は確認できない。<span class="tag missing">未確認</span></td><td>AIアクセラレーター競争が続くという一般論にとどめ、NVIDIAのQ2からAMDの業績を読み替えない。</td><td>AMDの受注・MIシリーズの採用・価格差は別資料で検証が必要。</td></tr>
+          <tr><td>Broadcom</td><td>NVIDIA Q2資料にBroadcomのカスタムASIC受注・競争影響を定量化した記載は確認できない。<span class="tag missing">未確認</span></td><td>カスタムASICが存在することとNVIDIAの売上を奪うことは別。Q2資料だけでは結論を出さない。</td><td>ASICの顧客別量産、NVIDIAとの総保有コスト比較は未確認。</td></tr>
+          <tr><td>SK hynix等</td><td>NVIDIAはSK hynixとの協業を発表したが、Q2資料では数量・価格・売上寄与を開示していない。<a class="source-tag" href="#s1">[S1]</a></td><td>メモリ供給の長期安定化を意図するシグナル。</td><td>協業発表は契約済み売上や粗利を意味しない。実装・歩留まり・供給時期を次回確認。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="market">
+    <h2>8. 決算後の株価反応とバリュエーション</h2>
+    <div class="grid2">
+      <div class="panel">
+        <h3>市場反応</h3>
+        <div class="cash-grid">
+          <div class="cash"><span class="label">8/26通常取引終値</span><strong>$209.66</strong><span class="note small">前日比 -1.59% <a class="source-tag" href="#s10">[S10]</a></span></div>
+          <div class="cash"><span class="label">時間外 18:48 EDT</span><strong>$218.88</strong><span class="note small">+4.40% <a class="source-tag" href="#s10">[S10]</a></span></div>
+          <div class="cash"><span class="label">通常取引→時間外</span><strong>+$9.22</strong><span class="note small">+4.40%、当サイト計算 <a class="source-tag" href="#s10">[S10]</a><a class="source-tag" href="#calculations">[C1]</a></span></div>
+        </div>
+        <p style="margin-top:14px">通常取引では決算前の期待やポジション調整で下落し、発表後は売上高・Q3ガイド・需要コメントが好感された構図です。1日未満の時間外反応であり、翌営業日の確認が必要です。<a class="source-tag" href="#s9">[S9]</a><a class="source-tag" href="#s10">[S10]</a><span class="tag analysis">分析判断</span></p>
+      </div>
+      <div class="panel">
+        <h3>推定EPSと評価のフレーム</h3>
+        <div class="frame">
+          <table>
+            <thead><tr><th>項目</th><th class="num">数値</th><th>扱い</th></tr></thead>
+            <tbody>
+              <tr><td>Q2 non-GAAP EPS</td><td class="num">$2.22 <a class="source-tag" href="#s2">[S2]</a></td><td>実績</td></tr>
+              <tr><td>FY27上期 non-GAAP EPS</td><td class="num">$4.09 <a class="source-tag" href="#calculations">[C2]</a></td><td>Q1+$1.87、Q2+$2.22の合算</td></tr>
+              <tr><td>機械的通期ランレート</td><td class="num">$8.18 <a class="source-tag" href="#calculations">[C2]</a></td><td>上期EPS×2、予想ではない</td></tr>
+              <tr><td>$209.66 ÷ ランレートEPS</td><td class="num">約25.6倍 <a class="source-tag" href="#calculations">[C2]</a></td><td>機械的PER、価格は終値</td></tr>
+              <tr><td>外部のFY27 EPS・目標株価</td><td class="num">未確認</td><td class="missing">検証できた資料に未収録</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note small">ランレートはQ3・Q4の季節性、粗利率、税率、評価損益、株式数を反映しないため、会社予想やコンセンサスではありません。$209.66は市場データのスナップショットです。<a class="source-tag" href="#s5">[S5]</a><a class="source-tag" href="#s10">[S10]</a><span class="tag calc">当サイト計算</span></p>
+      </div>
+    </div>
+    <div class="alert blue" style="margin-top:14px"><strong>何が織り込まれているか：</strong>市場は、Q3 $108Bガイド、Data Centerの三桁成長、Blackwell/Rubinの供給継続、粗利率が74%近辺で底打ちする可能性を少なくとも意識していると見るのが自然です。ただし、公開された検証可能なオプション・コンセンサス分布・株価インプライド成長率は本レポートの資料範囲では確認できません。従って「何%が織り込み済み」という精密な逆算は行いません。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s9">[S9]</a><a class="source-tag" href="#s10">[S10]</a><span class="tag analysis">分析判断</span><span class="tag missing">精密な織り込み度は未確認</span></div>
+  </section>
+
+  <section id="risks">
+    <h2>9. カタリスト、リスク、投資仮説の条件</h2>
+    <div class="scenario">
+      <div class="box up">
+        <div class="state pos">仮説を強める</div>
+        <ul class="list-tight">
+          <li>Q3売上高が$108Bガイドを上回り、Data CenterのHyperscale・ACIE双方が伸びる。<a class="source-tag" href="#s1">[S1]</a></li>
+          <li>粗利率が74%ガイドを維持し、メモリ高・在庫引当を吸収。</li>
+          <li>Vera Rubinの生産出荷、ネットワーキング・システムの添付率、顧客の稼働率が確認できる。</li>
+          <li>売掛金DSOが正常化し、在庫増加が売上出荷に変わる。</li>
+        </ul>
+        <span class="tag analysis">分析判断</span>
+      </div>
+      <div class="box down">
+        <div class="state neg">仮説を壊す</div>
+        <ul class="list-tight">
+          <li>Q3売上高未達、または中国を除く前提でもガイドを維持できない。</li>
+          <li>粗利率が74%を下回り、メモリ・システム価格・在庫評価損が継続。<a class="source-tag" href="#s1">[S1]</a></li>
+          <li>大口顧客の長期支払条件、保証、リース関連コミットメントがキャッシュ回収を圧迫。</li>
+          <li>カスタムASIC・競合GPUがACIEの伸びやNVIDIAのネットワーク添付を侵食。</li>
+        </ul>
+        <span class="tag analysis">分析判断</span>
+      </div>
+      <div class="box">
+        <div class="state warn">構造リスク</div>
+        <ul class="list-tight">
+          <li>中国Data Center市場は現行規制下で実質的に閉ざされ、H200はライセンス・関税・購入義務の制約を受ける。<a class="source-tag" href="#s3">[S3]</a></li>
+          <li>最大$108.5Bの保証・条件付きリース関連エクスポージャーは、損失確定ではないが監視対象。<a class="source-tag" href="#s2">[S2]</a></li>
+          <li>株式評価益は四半期ごとに振れ、GAAP EPSの比較可能性を損なう。<a class="source-tag" href="#s2">[S2]</a></li>
+        </ul>
+        <span class="tag analysis">分析判断</span>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:14px">
+      <h3>次回決算までの確認事項</h3>
+      <div class="frame">
+        <table>
+          <thead><tr><th style="width:27%">確認項目</th><th style="width:40%">見るべき数値・開示</th><th style="width:33%">判断への影響</th></tr></thead>
+          <tbody>
+            <tr><td>Q3実績</td><td>売上高$108B±2%、GAAP/non-GAAP粗利率74.0%±50bp、営業費用$9.2B/$9.0B。<a class="source-tag" href="#s1">[S1]</a></td><td>上振れなら供給拡大、下振れなら需要・実行の反証。</td></tr>
+            <tr><td>Data Center構成</td><td>Hyperscale $48.710B、ACIE $40.313Bの成長継続と、ネットワーキング・システムの開示。<a class="source-tag" href="#s2">[S2]</a></td><td>GPU単体からラック・ネットワークへ広がるか。</td></tr>
+            <tr><td>粗利率と供給</td><td>メモリ価格、在庫引当、Vera Rubinの生産出荷、供給コミットメント$279Bの実行。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a></td><td>成長の現金化と利益率のトレードオフ。</td></tr>
+            <tr><td>運転資本</td><td>DSO 60日、売掛金$63.1B、在庫$31.6Bからの正常化。<a class="source-tag" href="#s2">[S2]</a></td><td>売上の質、顧客の資金余力、在庫評価損を判定。</td></tr>
+            <tr><td>EPSの質</td><td>株式評価益、SBC、希薄化後株式数、FCF、税率16–18%。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s3">[S3]</a></td><td>GAAP・non-GAAP・キャッシュのどれが実力を表すか。</td></tr>
+            <tr><td>政策・顧客投資</td><td>H200の輸出許可・関税、Q3ガイドの中国前提、主要クラウドのCapExと自社ASIC。</td><td>中国損失を除いても需要が供給を上回るか。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note small">次回決算説明会予定日は2026年11月17日。<a class="source-tag" href="#s10">[S10]</a></p>
+    </div>
+  </section>
+
+  <section id="sources">
+    <h2>10. 情報源と制約</h2>
+    <ol class="sources">
+      <li id="s1"><strong>[S1]</strong> <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm" target="_blank" rel="noopener">NVIDIA / SEC Exhibit 99.1, Q2 FY27 Earnings Release</a>（2026年8月26日）。売上高、Data Center、GAAP/non-GAAP EPS、Q3ガイダンス、株主還元。</li>
+      <li id="s2"><strong>[S2]</strong> <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm" target="_blank" rel="noopener">NVIDIA / SEC Exhibit 99.2, Q2 FY27 CFO Commentary</a>（2026年8月26日）。市場プラットフォーム、粗利、FCF、売掛金、在庫、コミットメント、非GAAP調整。</li>
+      <li id="s3"><strong>[S3]</strong> <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm" target="_blank" rel="noopener">NVIDIA / SEC Form 10-Q for quarter ended July 26, 2026</a>（2026年8月26日受理）。貸借対照表、CF、SBC、在庫引当、中国・H200、顧客集中、リスク。</li>
+      <li id="s4"><strong>[S4]</strong> <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm" target="_blank" rel="noopener">NVIDIA / SEC Exhibit 99.1, Q1 FY27 Earnings Release</a>（2026年5月20日）。Q2計画の会社発表時点とFY27税率。</li>
+      <li id="s5"><strong>[S5]</strong> <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27cfocommentary.htm" target="_blank" rel="noopener">NVIDIA / SEC Exhibit 99.2, Q1 FY27 CFO Commentary</a>（2026年5月20日）。Q1実績、Q2会社ガイド、新市場プラットフォームの比較系列。</li>
+      <li id="s6"><strong>[S6]</strong> <a href="https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf" target="_blank" rel="noopener">NVIDIA Q4 FY26 CFO Commentary</a>（2026年2月25日）。旧市場プラットフォーム、Gaming、Professional Visualization、Automotive、Networking。</li>
+      <li id="s7"><strong>[S7]</strong> <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26cfocommentary.htm" target="_blank" rel="noopener">NVIDIA / SEC Q3 FY26 CFO Commentary</a>（2025年11月19日）。Q2・Q3 FY26の旧市場プラットフォームと利益系列。</li>
+      <li id="s8"><strong>[S8]</strong> <a href="https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx" target="_blank" rel="noopener">NVIDIA Investor Relations, Q2 FY27 Financial Results event page</a>（2026年8月26日）。公式ウェブキャスト・リプレイの案内。</li>
+      <li id="s9"><strong>[S9]</strong> <a href="https://apnews.com/article/dc8d556e709b50915cca9217a60b1991" target="_blank" rel="noopener">AP News, NVIDIA reports Q2 FY27 results</a>（2026年8月26日）。FactSetのQ2売上高・EPSコンセンサス、Q3売上高平均、初期株価反応。</li>
+      <li id="s10"><strong>[S10]</strong> <a href="https://stockanalysis.com/stocks/nvda/transcripts/676136-q2-2027/" target="_blank" rel="noopener">StockAnalysis / Quartr, NVIDIA Q2 2027 Earnings Call Transcript</a>（2026年8月26日）。第三者トランスクリプト、質問者・回答者、Q&amp;A、時間外株価、次回決算予定。</li>
+    </ol>
+    <div id="calculations" class="alert green">
+      <strong>当サイト計算の定義：</strong>[C1]は上記会社開示数値からの差額、成長率、営業利益率、FCF転換率、比率の計算。表示は丸めています。[C2]はQ1 non-GAAP EPS $1.87とQ2 $2.22の合算を2倍した機械的ランレートで、会社予想・コンセンサス・投資推奨ではありません。すべての分析判断は会社発言・公開数値からの推論であり、独立した需要調査ではありません。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s5">[S5]</a><span class="tag calc">当サイト計算</span>
+    </div>
+    <div class="alert" style="margin-top:14px">
+      <strong>未確認情報：</strong>公式全文トランスクリプト、FY27通期の外部EPSコンセンサスと目標株価、8月27日通常取引の株価、Q2のGaming・Professional Visualization・Automotive・Robotics単独値、TSMC・AMD・BroadcomのQ2直接読み通し、顧客別受注・ASP・GPU数量。これらは推測で補っていません。<span class="tag missing">未確認・未開示</span>
+    </div>
+  </section>
+</main>
+
+<footer><div class="inner">Earnings Research｜上場企業の決算プレビューと決算後ディープダイブ<br>本ページは公開情報を基にした調査・整理であり、投資助言ではありません。投資判断はご自身の責任で行ってください。</div></footer>
+</body>
+</html>
