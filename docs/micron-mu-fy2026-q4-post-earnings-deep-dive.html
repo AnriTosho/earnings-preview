@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Micron（MU）FY2026 Q4 決算後ディープダイブ | Earnings Research</title>
+<meta name="description" content="MicronのFY2026 Q4・通期決算を、HBM、DRAM・NAND価格、長期契約、EPS品質、設備投資、キャッシュフロー、Q&Aと株価の織り込みから検証する日本語レポート。">
+<link rel="canonical" href="https://anritosho.github.io/earnings-preview/micron-mu-fy2026-q4-post-earnings-deep-dive.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Earnings Research">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://anritosho.github.io/earnings-preview/micron-mu-fy2026-q4-post-earnings-deep-dive.html">
+<meta property="og:title" content="Micron（MU）FY2026 Q4 決算後ディープダイブ | Earnings Research">
+<meta property="og:description" content="価格上昇とAI需要で伸びたMicron。HBMの契約、Q1ガイド、報酬の在庫計上、FCFの定義、利益の持続性と株価の織り込みを検証。">
+<meta property="og:image" content="https://anritosho.github.io/earnings-preview/x-card.png">
+<meta property="og:image:secure_url" content="https://anritosho.github.io/earnings-preview/x-card.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1731">
+<meta property="og:image:height" content="909">
+<meta property="og:image:alt" content="Earnings Research共通のX共有用カード画像">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Micron（MU）FY2026 Q4 決算後ディープダイブ | Earnings Research">
+<meta name="twitter:description" content="HBM、DRAM・NAND価格、長期契約、EPS品質、設備投資、FCFと株価の織り込みを日本語で整理。">
+<meta name="twitter:image" content="https://anritosho.github.io/earnings-preview/x-card.png">
+<meta name="twitter:image:alt" content="Earnings Research共通のX共有用カード画像">
+<style>
+:root{--ink:#16212b;--muted:#617080;--line:#dfe5ea;--wash:#f4f7f9;--navy:#142b3f;--blue:#176aa6;--green:#16764e;--red:#bd3d36;--orange:#a85e0d;--purple:#5c4a9d;--shadow:0 10px 30px #142b3f14}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic",Meiryo,sans-serif;line-height:1.72}a{color:#12639c}p{margin:0 0 12px}strong{font-weight:750}h1{margin:7px 0 9px;font-size:clamp(1.72rem,4vw,2.75rem);line-height:1.27}h2{margin:0 0 14px;font-size:clamp(1.28rem,2.6vw,1.7rem);line-height:1.35}h3{margin:15px 0 9px;font-size:1.04rem;line-height:1.45}
+.top{height:6px;background:var(--green)}header{background:linear-gradient(118deg,var(--navy),#0e2030);color:white}.inner,main{width:min(1180px,calc(100% - 28px));margin:auto}.head{padding:48px 0 26px}.brand,.eyebrow{font-size:.75rem;font-weight:800;letter-spacing:.1em}.brand{color:#b9d8ea}.eyebrow{margin-top:8px;color:#bce4d1}.sub{color:#d9e5ec}.meta{display:flex;flex-wrap:wrap;gap:8px 18px;padding-top:14px;border-top:1px solid #fff3;font-size:.84rem;color:#dfeaf0}.meta strong{color:white}header .source-tag{color:#bde6ff}
+nav{background:#fff;border-bottom:1px solid var(--line)}nav .inner{display:flex;flex-wrap:wrap;gap:8px 16px;padding:12px 0;font-size:.84rem}nav a{color:#485866;text-decoration:none}main{padding:22px 0 54px}section{margin:24px 0;scroll-margin-top:25px}
+.card,.panel{background:white;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);min-width:0}.card{padding:22px}.panel{padding:17px}.tiles,.grid2,.grid3,.verdict,.scenario{display:grid;gap:14px}.tiles{grid-template-columns:repeat(5,minmax(0,1fr));margin-top:14px}.tile{min-width:0;padding:15px;background:white;border:1px solid var(--line);border-radius:11px}.label{font-size:.75rem;font-weight:700;color:var(--muted)}.value{margin-top:6px;font-size:1.35rem;line-height:1.25;font-weight:800;color:var(--navy)}.detail{font-size:.76rem;color:var(--muted);margin-top:7px}.verdict{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}.vmain{padding:23px;border-radius:12px;background:linear-gradient(135deg,#17364d,#244d69);color:white}.vmain p{color:#e2eff5}.vmain .source-tag{color:#bde6ff}.call{padding:20px;border:1px solid #c9dae5;border-radius:12px;background:#f2f8fb}.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3,.scenario{grid-template-columns:repeat(3,minmax(0,1fr))}
+.tag{display:inline-block;padding:2px 8px;margin:0 4px 3px 0;border-radius:999px;font-size:.7rem;font-weight:800}.company{color:#075a72;background:#e2f3f5}.marketdata{color:#7a4a00;background:#fff0cf}.consensus{color:#6d3e77;background:#f3e6f6}.analysis{color:#4e3987;background:#eeeaff}.missing{color:#8d302a;background:#f9e5e3}.calc{color:#365d3f;background:#e4f3e7}.source-tag{color:var(--blue);font-size:.78rem;font-weight:800;text-decoration:none;white-space:nowrap}.note,.source{color:var(--muted)}.small{font-size:.83rem}.pos{color:var(--green);font-weight:800}.neg{color:var(--red);font-weight:800}.alert,.fiscal{padding:14px 16px;border-left:4px solid var(--orange);border-radius:7px;background:#fbf3e7}.fiscal,.green{border-left-color:var(--green);background:#e9f5ee}.blue{border-left-color:var(--blue);background:#edf6fb}
+.frame{width:100%;border:1px solid var(--line);border-radius:10px;overflow-x:auto;margin:12px 0;overscroll-behavior-x:contain}.frame:focus-visible{outline:3px solid #176aa6;outline-offset:2px}table{width:100%;border-collapse:collapse;font-size:.82rem;table-layout:fixed}th,td{padding:10px 9px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}th{background:#f3f7f9;color:#405263;text-align:left;font-size:.76rem;line-height:1.45}tr:last-child td{border-bottom:0}.num{text-align:right;font-variant-numeric:tabular-nums}.wide{min-width:880px}.qtable{min-width:1060px}.qtable th:nth-child(1){width:16%}.qtable th:nth-child(2){width:28%}.qtable th:nth-child(3){width:28%}.qtable th:nth-child(4){width:28%}.table-note{font-size:.78rem;color:var(--muted)}caption{text-align:left;padding:10px;color:var(--navy);font-weight:750;background:#f8fbfd}
+ .chart{overflow-x:auto;padding:14px 16px 10px;background:#fbfdfe;border:1px solid var(--line);border-radius:11px;min-width:0}.chart svg{display:block;width:100%;min-width:0;height:auto}.chart text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic",Meiryo,sans-serif;fill:#405263}.chart p{margin:6px 0;font-size:.77rem;color:var(--muted)}.list-tight{margin:8px 0 12px;padding-left:1.2rem}.list-tight li{margin:7px 0}.box{padding:17px;border:1px solid var(--line);border-radius:11px;background:#f9fbfc}.up{border-color:#bedecb;background:#e9f5ee}.down{border-color:#edc9c5;background:#faecea}.legend{display:flex;flex-wrap:wrap;gap:5px 8px}.sources td{font-size:.78rem}.sources a{overflow-wrap:anywhere}.divider{height:1px;margin:18px 0;background:var(--line)}footer{padding:26px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}.earnings-research-home{position:absolute;top:14px;right:14px;z-index:99;display:inline-flex;max-width:calc(100vw - 28px);padding:7px 11px;border:1px solid #ffffff80;border-radius:999px;background:#142b3ff0;color:#fff;font-size:13px;font-weight:750;text-decoration:none;white-space:nowrap}
+@media(max-width:980px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.scenario,.grid3{grid-template-columns:1fr}}@media(max-width:720px){.inner,main{width:calc(100% - 20px)}.head{padding:46px 0 20px}.sub{font-size:.9rem}.tiles,.grid2,.verdict{grid-template-columns:1fr}.card{padding:16px}.vmain,.call{padding:17px}section{margin:18px 0}table{font-size:.77rem}th,td{padding:9px 7px}.chart{padding:8px}.chart svg{min-width:560px}.earnings-research-home{top:9px;right:9px;font-size:12px}.value{font-size:1.32rem}}
+@media print{.earnings-research-home,nav{display:none}body{background:white}.inner,main{width:100%}.card,.panel,.tile{box-shadow:none}.frame{overflow:visible}.wide,.qtable{min-width:0}table{font-size:8pt}section{break-inside:avoid}a{color:inherit}}
+</style>
+</head>
+<body>
+<a class="earnings-research-home" href="index.html">Earnings Research 一覧へ</a>
+<div class="top"></div>
+<header><div class="inner head">
+<div class="brand">Earnings Research</div><p class="eyebrow">POST-EARNINGS DEEP DIVE / NASDAQ MU</p>
+<h1>Micron Technology, Inc.<br>FY2026 Q4 決算後ディープダイブ</h1>
+<p class="sub">AIメモリ需要、価格上昇、長期契約の持続性を検証。好業績と株価の上昇余地を分け、利益の質・在庫・顧客預り金・設備投資まで追う。</p>
+<div class="meta"><span><strong>対象</strong> FY2026 Q4・通期</span><span><strong>期末</strong> 2026年9月3日 <a class="source-tag" href="#s1">[S1]</a></span><span><strong>発表</strong> 2026年9月30日 <a class="source-tag" href="#s1">[S1]</a></span><span><strong>情報基準</strong> 2026年9月30日 23:59:56 EDT / 10月1日 12:59:56 JST</span></div>
+</div></header>
+<nav aria-label="レポート目次"><div class="inner">
+<a href="#setup">対象・基準</a><a href="#summary">PM結論</a><a href="#actual">実績と期待</a><a href="#guide">ガイダンス</a><a href="#segments">事業・製品</a><a href="#hbm">HBM</a><a href="#cycle">メモリサイクル</a><a href="#quality">EPS・CF</a><a href="#capex">設備投資</a><a href="#quarterly">5四半期</a><a href="#qna">Q&amp;A</a><a href="#industry">他社への含意</a><a href="#market">株価・評価</a><a href="#risks">反証・カタリスト</a><a href="#events">ニュース</a><a href="#sources">出所・制約</a>
+</div></nav><main>
+<section id="setup" class="fiscal">
+<h2>対象と情報基準を先に固定</h2>
+<p><span class="tag company">会社開示</span>直近の公式発表済み決算は<strong>FY2026第4四半期・通期（2026年9月3日終了）</strong>、発表日は<strong>2026年9月30日</strong>。決算説明会は同日16:30 EDT＝10月1日05:30 JST。FY2026を暦年2026年10–12月期と混同しない。リリース掲載日の公式確認はできたが、掲載分単位の時刻は<strong>未確認</strong>。<a class="source-tag" href="#s1">[S1]</a></p>
+<p><span class="tag calc">基準時刻</span>取得情報の上限を<strong>2026年9月30日23:59:56 EDT（UTC−4）／10月1日12:59:56 JST（UTC＋9）</strong>に固定。時刻は作成時のUTC時計03:59:56から換算。市場価格は、この基準までに取得できた9月30日終値・時間外最終表示を使用し、10月1日通常取引はまだ始まっていない。<a class="source-tag" href="#s12">[S12]</a></p>
+<p class="small"><span class="tag calc">期間差に注意</span>Q3期末5月28日からQ4期末9月3日までは98日＝14週相当。Q2→Q3は91日＝13週相当。これは期末差による当サイト計算で、週数の法定注記はFY2026 10-Kで再確認する。Q4売上の前期比は報告値で＋30.81%、週当たり換算では＋21.47%となる。比較に季節性・価格・ミックス差は残る。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s4">[S4]</a><a class="source-tag" href="#s5">[S5]</a><a class="source-tag" href="#c1">[C1]</a></p>
+<p class="note small">スマートフォンでは、幅の広い表・図を枠内で横にスクロールできます。</p>
+<div class="legend"><span class="tag company">会社開示 / GAAP・non-GAAPを併記</span><span class="tag consensus">コンセンサス / 公開記事の事前値</span><span class="tag marketdata">市場データ / 時刻付き</span><span class="tag calc">当サイト計算 / 式を開示</span><span class="tag analysis">分析判断 / 将来の保証ではない</span><span class="tag missing">未確認・未開示・会社ガイダンスなし</span></div>
+</section>
+<section id="summary">
+<div class="verdict"><div class="vmain">
+<span class="tag analysis">PM結論</span><h2>利益予想は上向き。<br>株価の軸は「最高益」より「持続性」。</h2>
+<p>Q4売上・調整後EPSは事前期待を超え、Q1ガイダンスも増収増益を示す。従来の短期メモリサイクルだけでは説明しにくい長期契約・AI需要の裏付けが増えた。ただし契約の床・天井、製品構成、実際のキャッシュ回収を検証して初めて、構造的な収益力改善と評価できる。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#s10">[S10]</a><span class="tag analysis">分析判断</span></p>
+<p>HBMが伸びれば無条件に粗利率が上がるわけではない。既存のHBM契約価格が通常DRAMの急騰に追いつかず、Q4ではHBM構成比上昇がCMBUの粗利改善を相殺した。次の評価ポイントは、価格改定による差の縮小と、報酬増・供給増を吸収した利益率の維持である。<a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#s13">[S13]</a><span class="tag analysis">分析判断</span></p>
+</div><div class="call">
+<h3>PM向け意思決定メモ</h3>
+<ul class="list-tight">
+<li><strong>事業仮説：</strong><span class="pos">強まった</span>。価格、データセンターSSD、長期契約が複数の支え。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a></li>
+<li><strong>利益予想：</strong>短期は上方修正方向。ただし正式なFY2027コンセンサスEPSは未取得。年率換算を通期予想に置き換えない。<a class="source-tag" href="#s1">[S1]</a><span class="tag analysis">分析判断</span></li>
+<li><strong>株価仮説：</strong>強い業績≠即時上昇。9月30日19:59 EDTの時間外は終値比＋0.37%にとどまり、通常取引での評価は未了。<a class="source-tag" href="#s12">[S12]</a><a class="source-tag" href="#c4">[C4]</a></li>
+<li><strong>強気の条件：</strong>Q1の粗利率が底となり、価格改定と契約履行が設備投資増を吸収する。</li>
+<li><strong>反証：</strong>数量・契約履行・利益率のいずれかが悪化し、在庫と総設備支出だけが増える。</li>
+</ul><span class="tag analysis">上記条件は当サイト判断</span>
+</div></div>
+<div class="tiles">
+<div class="tile"><div class="label">Q4 売上高 / 実績</div><div class="value">$54.229B</div><div class="detail">QoQ ＋30.81% / YoY ＋379.27%<br><a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#c1">[C1]</a></div></div>
+<div class="tile"><div class="label">Q4 EPS / 希薄化後</div><div class="value">$32.87 / $33.42</div><div class="detail">GAAP / non-GAAP。調整差＋$0.55<br><a class="source-tag" href="#s2">[S2]</a></div></div>
+<div class="tile"><div class="label">Q4 粗利率</div><div class="value">86.8% / 87.0%</div><div class="detail">GAAP / non-GAAP（会社丸め値）<br><a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s2">[S2]</a></div></div>
+<div class="tile"><div class="label">Q4 キャッシュ創出</div><div class="value">$32.863B</div><div class="detail">単純FCF。会社定義の調整後FCFは$33.199B<br><a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#c3">[C3]</a></div></div>
+<div class="tile"><div class="label">次四半期 / Q1 FY2027</div><div class="value">$61.5B / $38.15</div><div class="detail">売上 / non-GAAP EPSガイド中央値。幅は下表参照<br><a class="source-tag" href="#s2">[S2]</a></div></div>
+</div>
+</section>
+<section id="actual" class="card">
+<h2>1. 実績は期待を超えた。ただし期待値の時点を固定</h2>
+<p><span class="tag consensus">事前ベンチマーク</span>主比較は<strong>9月29日公開のTipRanks記事</strong>に記載されたQ4売上$51.33B、調整後EPS$31.73。記事の公開日は決算前だが、元データ提供者、集計締切・取得分時刻・構成銘柄数は<strong>未確認</strong>。売上はGAAPとの調整差なし、EPSはadjusted基準として比較する。粗利率・営業利益の同時点コンセンサスは取得できなかった。<a class="source-tag" href="#s10">[S10]</a></p>
+<div class="frame" tabindex="0"><table class="wide">
+<caption>Q4 FY2026実績と期待（USD billion、EPSはUSD/share）</caption>
+<thead><tr><th style="width:22%">指標・会計基準</th><th>実績<br>9/30会社発表</th><th>前回会社計画<br>6/24発表</th><th>決算前期待<br>9/29記事</th><th>差分 / 当サイト計算</th></tr></thead><tbody>
+<tr><td>売上高</td><td class="num">54.229 <a class="source-tag" href="#s1">[S1]</a></td><td class="num">50.0 ±1.0 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">51.33 <a class="source-tag" href="#s10">[S10]</a></td><td>計画中央値＋8.46%、上限＋3.229B。事前期待＋5.65%。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>粗利率 / GAAP</td><td class="num">86.8% <a class="source-tag" href="#s1">[S1]</a></td><td class="num">約86% <a class="source-tag" href="#s4">[S4]</a></td><td>未確認</td><td>丸め値で約＋0.8pt。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>粗利率 / non-GAAP</td><td class="num">87.0% <a class="source-tag" href="#s2">[S2]</a></td><td class="num">約86% <a class="source-tag" href="#s4">[S4]</a></td><td>未確認</td><td>約＋1.0pt。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>営業利益 / GAAP</td><td class="num">43.751 <a class="source-tag" href="#s1">[S1]</a></td><td>直接ガイダンスなし</td><td>未確認</td><td>営業利益率80.68%。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>営業利益 / non-GAAP</td><td class="num">44.636 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">計画から算出41.350 <a class="source-tag" href="#c1">[C1]</a></td><td>未確認</td><td>算出計画比＋3.286B / ＋7.95%。会社の直接OI予想ではない。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>営業費用 / non-GAAP</td><td class="num">2.568 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">約1.650 <a class="source-tag" href="#s4">[S4]</a></td><td>未確認</td><td>約＋0.918B。好業績に伴う費用増も発生。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>希薄化後EPS / GAAP</td><td class="num">32.87 <a class="source-tag" href="#s1">[S1]</a></td><td class="num">30.73 ±1.00 <a class="source-tag" href="#s4">[S4]</a></td><td>未確認</td><td>中央値＋2.14。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>希薄化後EPS / non-GAAP</td><td class="num">33.42 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">31.00 ±1.00 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">31.73 <a class="source-tag" href="#s10">[S10]</a></td><td>計画＋7.81%、事前期待＋5.33%。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+</tbody></table></div>
+<p class="table-note">計画営業利益＝50.0×86%−1.650＝41.350B。差率＝（実績÷比較値−1）×100、ptは百分率の差。入力の丸め・会社ガイドの「約」による誤差を含む。<a class="source-tag" href="#s4">[S4]</a><a class="source-tag" href="#c1">[C1]</a></p>
+<p class="alert small">決算後のDow Jones記事はFactSetのQ4 EPS$31.72・売上$51.33Bを記載。事前記事と近いがEPSが異なるため、両者を混ぜない。同記事のQ1期待は比較用参考値にとどめる。公開記事内で整合しない目標株価や、後日更新される履歴ページを、凍結済みコンセンサスとして採用していない。<a class="source-tag" href="#s10">[S10]</a><a class="source-tag" href="#s11">[S11]</a></p>
+</section>
+<section id="guide" class="card">
+<h2>2. Q1ガイダンス：増収増益、粗利率は一旦低下</h2>
+<div class="frame" tabindex="0"><table class="wide">
+<caption>Q1 FY2027会社見通し（9/30公表）とQ4実績</caption>
+<thead><tr><th style="width:24%">指標</th><th>Q4 FY2026実績</th><th>Q1 FY2027ガイド</th><th>変化・制約</th></tr></thead><tbody>
+<tr><td>売上高 / USD billion</td><td class="num">54.229 <a class="source-tag" href="#s1">[S1]</a></td><td class="num">61.5 ±1.5（60.0–63.0）<a class="source-tag" href="#s2">[S2]</a></td><td>中央値QoQ＋13.41%。次期の正式な週数注記は未確認。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>粗利率 / GAAP</td><td class="num">86.8% <a class="source-tag" href="#s1">[S1]</a></td><td class="num">約85.95% <a class="source-tag" href="#s2">[S2]</a></td><td>丸め値差約−0.85pt。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>粗利率 / non-GAAP</td><td class="num">87.0% <a class="source-tag" href="#s2">[S2]</a></td><td class="num">約86.25% <a class="source-tag" href="#s2">[S2]</a></td><td>−0.75pt。FY2027の底を想定するという経営陣の見方。<a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>営業費用 / GAAP・non-GAAP<br>USD billion</td><td class="num">3.296 / 2.568 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">約2.31 / 約2.06 <a class="source-tag" href="#s2">[S2]</a></td><td>Q4の特許費用等がなくなる想定。報酬・研究開発の負担は継続。<a class="source-tag" href="#s3">[S3]</a></td></tr>
+<tr><td>EPS / GAAP・non-GAAP<br>USD/share</td><td class="num">32.87 / 33.42 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">37.84 ±1.00 / 38.15 ±1.00 <a class="source-tag" href="#s2">[S2]</a></td><td>non-GAAP中央値QoQ＋14.15%。<a class="source-tag" href="#c1">[C1]</a></td></tr>
+<tr><td>non-GAAP税率・希薄化株数</td><td>税率約15% <a class="source-tag" href="#s3">[S3]</a></td><td>税率約15.5%、株数約1.15B <a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a></td><td>税率上昇はEPSの抑制要因。<span class="tag analysis">分析判断</span></td></tr>
+<tr><td>純設備投資 / USD billion</td><td class="num">10.774 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">約11.5 <a class="source-tag" href="#s3">[S3]</a></td><td>政府補助金控除後。総支出のガイダンスではない。</td></tr>
+</tbody></table></div>
+<p><span class="tag consensus">参考比較・厳密な事前スナップショットなし</span>9月30日16:36–16:37 EDTの決算後Dow Jones記事は、FactSetのQ1売上期待$57.4B・EPS期待$35.47を記載。会社中央値はそれぞれ＋7.14%、＋7.56%だが、集計締切とEPS調整項目の完全一致が未確認で、これを「固定された決算前期待値」とは断定しない。<a class="source-tag" href="#s11">[S11]</a><a class="source-tag" href="#c1">[C1]</a></p>
+<div class="grid2"><div class="box">
+<h3>前回から何が変わったか</h3>
+<p>前回発表はQ4の数値ガイド。今回初めてQ1 FY2027の数値ガイドが提示されたため、同一期間の公式ガイド「引上げ幅」は<strong>会社ガイダンスなし</strong>。実績→次期ガイドの比較と、前回Q4ガイド→Q4実績の比較を分離した。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s4">[S4]</a></p>
+</div><div class="box">
+<h3>通期の数値と方向性を分離</h3>
+<p>FY2027売上・EPS・FCFの数値通期計画は<strong>会社ガイダンスなし</strong>。会社は四半期ごとの増収、Q1後の粗利率改善、営業費用約$2.5B増を見込む。純設備投資は上期約$25B、下期は上期を上回る。したがって通期「概ね$50B超」は文言からの推論で、確定額ではない。<a class="source-tag" href="#s3">[S3]</a><span class="tag calc">25＋25超</span></p>
+</div></div>
+<p class="alert small"><span class="tag analysis">利益予想への含意</span>売上と価格が上方修正を支える一方、報酬・研究開発・税率・設備投資負担も増える。Q1だけを機械的に年率換算したEPSをFY2027コンセンサスや目標株価の根拠にしない。</p>
+</section>
+<section id="segments" class="card">
+<h2>3. 現行4事業と製品別KPI：HBM以外にも利益が広がる</h2>
+<p><span class="tag company">セグメント基準</span>CMBUは大手クラウド向けメモリと全データセンター顧客向けHBM、CDBUはその他データセンター向けメモリと全データセンター向けストレージ、MCBUはモバイル・クライアント、AEBUは自動車・産業・消費者向けを含む。CMBU売上をHBM売上と同一視しない。<a class="source-tag" href="#s8">[S8]</a></p>
+<div class="frame" tabindex="0"><table class="wide">
+<caption>Q4 FY2026事業別（売上はUSD million、利益率は会社表示の丸め値）</caption>
+<thead><tr><th style="width:24%">事業</th><th>売上高</th><th>QoQ / YoY<br>当サイト計算</th><th>粗利率<br>Q4 / Q3</th><th>営業利益率<br>Q4 / Q3</th></tr></thead><tbody>
+<tr><td>Cloud Memory / CMBU</td><td class="num">16,283 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">＋18.26% / ＋258.42% <a class="source-tag" href="#c1">[C1]</a></td><td class="num">83% / 83% <a class="source-tag" href="#s2">[S2]</a></td><td class="num">76% / 78% <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>Core Data Center / CDBU</td><td class="num">18,002 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">＋56.21% / ＋1,041.53% <a class="source-tag" href="#c1">[C1]</a></td><td class="num">90% / 87% <a class="source-tag" href="#s2">[S2]</a></td><td class="num">85% / 83% <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>Mobile &amp; Client / MCBU</td><td class="num">13,114 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">＋13.83% / ＋248.78% <a class="source-tag" href="#c1">[C1]</a></td><td class="num">90% / 87% <a class="source-tag" href="#s2">[S2]</a></td><td class="num">88% / 86% <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>Automotive &amp; Embedded / AEBU</td><td class="num">6,824 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">＋47.26% / ＋375.87% <a class="source-tag" href="#c1">[C1]</a></td><td class="num">84% / 79% <a class="source-tag" href="#s2">[S2]</a></td><td class="num">79% / 75% <a class="source-tag" href="#s2">[S2]</a></td></tr>
+</tbody></table></div>
+<p class="table-note">4事業売上合計54,223Mと連結54,229Mの差6Mは連結表との差分。Q3 10-QではAll Otherと未配賦費用を別表示し、SBC等の多くを事業に配賦していない。上表の事業利益率は連結GAAP/non-GAAP利益率と同一基準ではなく、合計から連結利益を逆算しない。Q4の詳細配賦・事業利益の金額は10-Kで再照合する。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s8">[S8]</a><a class="source-tag" href="#c1">[C1]</a></p>
+<p><span class="tag analysis">事業上の読み</span>CDBUの拡大は、AI需要をHBMだけで捉える仮説を修正する材料。MCBUではビット数量減を価格上昇が補っており、売上増をPC・スマートフォンの台数回復と読み替えられない。AEBUも価格が主な利益率押上げ要因で、自動車の数量好調を示す独立データは不足している。<a class="source-tag" href="#s3">[S3]</a></p>
+<div class="frame" tabindex="0"><table>
+<caption>製品別売上と価格・数量（会社開示、対象はQ4）</caption>
+<thead><tr><th>製品</th><th>売上 / 構成比</th><th>前期比・ビット・ASP</th></tr></thead><tbody>
+<tr><td>DRAM</td><td>$39.771B / 73% <a class="source-tag" href="#s2">[S2]</a></td><td>売上＋27%（会社丸め）、ビット出荷は一桁台半ば増、価格は10%台後半増。<a class="source-tag" href="#s3">[S3]</a></td></tr>
+<tr><td>NAND</td><td>$14.102B / 26% <a class="source-tag" href="#s2">[S2]</a></td><td>売上＋42%、ビット約＋10%、価格約＋30%。<a class="source-tag" href="#s3">[S3]</a></td></tr>
+<tr><td>Other（主にNOR）</td><td>$0.356B / 会社丸め1% <a class="source-tag" href="#s2">[S2]</a></td><td>細分化した数量・価格・原価の定量値は使用資料では未開示。</td></tr>
+<tr><td>Data Center SSD / SOCAMM</td><td>SSDは約$10B、NAND売上の3分の2超。SOCAMM売上はQoQ2倍超。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s3">[S3]</a></td><td>SSDはYoY10倍超。製品世代別利益率・顧客別売上・ビット当たりコストは未開示。<a class="source-tag" href="#s3">[S3]</a></td></tr>
+</tbody></table></div>
+<p class="small"><span class="tag calc">寄与分解の限界</span>NANDの概数を掛けると1.10×1.30−1＝43%で、売上増約42%に近い。だが丸め、製品ミックス、売上・出荷タイミングを含むため、厳密な「価格寄与30%＋数量寄与10%」の足し算や、差額をコスト低下と決めつける分析はしない。<a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#c1">[C1]</a></p>
+<p class="small"><span class="tag company">比較可能性</span>過去5期は会社が現行CMBU/CDBU/MCBU/AEBUとして提示した値を使用。旧CNBU/MBU/SBU/EBUとの系列接続は行わない。再編前区分の比較表や配賦変更の詳細は本稿の対象外であり、継続比較時は10-Kのセグメント注記を確認する。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s4">[S4]</a><a class="source-tag" href="#s5">[S5]</a><a class="source-tag" href="#s6">[S6]</a><a class="source-tag" href="#s7">[S7]</a></p>
+</section>
+<section id="hbm" class="card">
+<h2>4. HBM・AI需要：契約の強さと売上認識を区別</h2>
+<div class="grid2">
+<div class="panel"><h3>開示された進捗</h3>
+<p>HBM売上はQ4に連結売上より速く伸びたとの会社説明。HBM3E・HBM4の製品展開を進め、HBM4Eを開発。NVIDIAとのカスタムHBM4E「NVHBM」協業を会社が明記している。顧客名を推測したものではないが、SKU別売上やNVIDIA向けシェアの裏付けにはならない。<a class="source-tag" href="#s3">[S3]</a></p>
+<p class="note small">HBM単独のQ4売上額、粗利率、歩留まり、ウエハ投入量、顧客別認定スケジュール、市場シェアは<strong>使用資料では未開示</strong>。製品ロードマップは量産・実装・採用の保証ではない。</p>
+</div>
+<div class="panel"><h3>粗利率への含意</h3>
+<p>会社は2027年のHBM供給量の大部分について契約を完了し、前年より高い価格で通常DRAMとの利益率差縮小を見込む。一方Q4はHBMの構成比上昇がCMBU粗利改善を相殺した。HBM量の拡大とHBM利益率の改善は、別々の検証項目である。<a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#s13">[S13]</a><span class="tag analysis">分析判断</span></p>
+</div></div>
+<div class="frame" tabindex="0"><table>
+<caption>混同しないための契約・資金・売上の状態整理</caption>
+<thead><tr><th style="width:26%">状態</th><th>確認できた内容</th><th>意味しないこと</th></tr></thead><tbody>
+<tr><td>供給割当・価格合意 / HBM</td><td>暦年2027供給の大部分の合意、価格は前年比大幅上昇と説明。<a class="source-tag" href="#s3">[S3]</a></td><td>供給全量の「100%売切れ」、認定完了、出荷完了、売上計上済みとはいえない。</td></tr>
+<tr><td>SCA / 全製品を含む長期契約</td><td>26件、2030年までの会社想定売上の35%超。うち約4分の3に価格枠組み、残りは定期的な市場価格交渉。<a class="source-tag" href="#s3">[S3]</a></td><td>HBMだけの受注ではない。全社売上の4分の3が固定価格でもない。</td></tr>
+<tr><td>RPO / 残存履行義務</td><td>約$150B。価格枠組みが定まったSCAの契約数量・最低価格に基づく。<a class="source-tag" href="#s3">[S3]</a></td><td>翌年度売上、単年受注残、全契約の時価、全量固定価格とは異なる。</td></tr>
+<tr><td>顧客の金融コミットメント</td><td>約$32B、大半が現金預り金に関する約束。期末に実際に受領した預り金は約$12.7B。<a class="source-tag" href="#s3">[S3]</a></td><td>$32Bを現金残高・営業CF・売上に加算しない。</td></tr>
+<tr><td>売上計上</td><td>DRAM全体は$39.771B。HBM単独売上額は未開示。<a class="source-tag" href="#s2">[S2]</a></td><td>CMBU売上$16.283BをそのままHBM売上としない。<a class="source-tag" href="#s2">[S2]</a></td></tr>
+</tbody></table></div>
+<p class="alert small"><span class="tag analysis">何が仮説を強め、何が壊すか</span>価格の床は収益安定性を高め得るが、天井価格は市況急騰時の上値を制限し得る。履行、契約改定、返金条件、価格の下限の採算性は10-Kで確認する。HBM増産が顧客の認定・システム稼働に結び付かず、通常DRAMへの生産再配分が進むなら、価格とHBMの両方に逆風となる。</p>
+</section>
+<section id="cycle" class="card">
+<h2>5. メモリサイクル：価格主導の改善、消費者需要に歪み</h2>
+<div class="frame" tabindex="0"><table>
+<thead><tr><th>ドライバー</th><th>観測・会社説明</th><th>投資上の読み / 分析判断</th></tr></thead><tbody>
+<tr><td>価格</td><td>Q4 ASP：DRAMは10%台後半増、NAND約30%増。連結粗利改善の主因は価格。<a class="source-tag" href="#s3">[S3]</a></td><td>短期利益は市況敏感。価格上昇の減速でも利益率が維持できるかが核心。</td></tr>
+<tr><td>数量</td><td>DRAMビットは一桁台半ば増、NAND約10%増。一方MCBUビットは減少。<a class="source-tag" href="#s3">[S3]</a></td><td>全市場が一様に数量成長しているわけではない。</td></tr>
+<tr><td>ミックス</td><td>CDBUは有利なミックス。CMBUはHBM比率上昇が粗利率改善を相殺。<a class="source-tag" href="#s3">[S3]</a></td><td>「高付加価値製品＝常に高い粗利率」という単純化を避ける。</td></tr>
+<tr><td>コスト・ノード移行</td><td>1γ DRAM・G9 NANDが主要生産ノード。定量的なビット当たりコスト低下率は未開示。<a class="source-tag" href="#s3">[S3]</a></td><td>ノード効率化と、立上げ費用・報酬増・減価償却増を分離して追う。</td></tr>
+<tr><td>供給・在庫</td><td>在庫$10.372B、会社DIO129日。先行生産と報酬の原価計上でDIOは前期比9日増。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s3">[S3]</a></td><td>「需給逼迫」でも帳簿在庫は増える。製品別在庫と評価額の質が必要。</td></tr>
+<tr><td>最終需要</td><td>会社は暦年2026・2027サーバー台数成長を10%台後半と見込む一方、PC・モバイルは2桁台減少の可能性を説明。<a class="source-tag" href="#s3">[S3]</a></td><td>高価格による容量削減・台数減が遅れてビット需要を侵食し得る。</td></tr>
+</tbody></table></div>
+<p><span class="tag marketdata">独立調査の予測 / 実測ではない</span>TrendForceの9月30日公表予測は、<strong>暦年Q4 2026</strong>の通常DRAM契約価格QoQ＋10–15%、NAND契約価格＋15–20%。消費者需要の圧力と企業SSDの強さを併記している。MicronのFY2026 Q4 ASP実績やHBM契約価格と対象期間・製品母集団が異なるため、系列を接続しない。公表日は決算日と同じだが分時刻は未確認。<a class="source-tag" href="#s14">[S14]</a></p>
+<p class="small">スポット価格はその時点の小口市場取引・提示価格、契約価格は顧客と供給者の条件付き交渉価格、会社ASPは実際の製品構成を含む加重平均である。今回、同一仕様・数量・通貨のスポット価格時系列は<strong>未確認</strong>。無料の断片を契約価格や会社ASPの代用にしていない。<span class="tag analysis">指標の定義と分析上の区別</span></p>
+<p class="small"><span class="tag company">業界ビット成長の会社見通し</span>暦年2026はDRAMが20%台半ば、NANDが20%台前半。暦年2027・2028はDRAMが20%台前半、NANDが20%台半ばを想定する。Micron自身の2026供給はDRAMが業界並み、NANDが業界を下回る見込み。いずれも会社による業界予測で、独立調査の実績値ではない。HBM・サーバー向けへの配分と前後工程の制約は価格を支え得るが、HBMのウエハ配分比率・通常DRAM能力の減少量は未開示で、定量換算していない。<a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#s14">[S14]</a><span class="tag analysis">最後の需給含意は当サイト判断</span></p>
+<p class="alert small"><span class="tag analysis">供給規律の検証</span>会社の「供給不足が続く」という見解は重要だが独立した実測ではない。新工場、競合のHBM4/4E量産、容量削減、顧客の二重発注が同時に変化するため、契約価格・顧客在庫・設備稼働の複数の指標で反証可能にする。</p>
+</section>
+<section id="quality" class="card">
+<h2>6. EPS品質とキャッシュ：営業の強さは本物、調整とタイミングを割り引く</h2>
+<p><span class="tag analysis">品質判定：営業利益が主軸。ただし最高利益率を恒常値とは置かない。</span>GAAP営業利益$43.751Bに対し、受取利息$0.575B、その他非営業損益−$0.088B、持分法利益$0.046B。営業外が利益増の主因ではない。一方、特許費用の除外、株式報酬、在庫に吸収された製造報酬は調整・費用認識時期の検証対象となる。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a></p>
+<div class="grid2"><div>
+<h3>GAAP純利益→会社non-GAAP純利益</h3>
+<div class="frame" tabindex="0"><table><caption>Q4調整ブリッジ / USD million</caption><thead><tr><th>項目</th><th class="num">金額</th></tr></thead><tbody>
+<tr><td>GAAP純利益</td><td class="num">37,701 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>株式報酬を除外</td><td class="num">＋364 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>特許ライセンス費用を除外</td><td class="num">＋500 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>債務期限前返済損失を除外</td><td class="num">＋9 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>その他調整</td><td class="num">＋22 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>調整の税効果・その他税調整</td><td class="num">−198 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td><strong>non-GAAP純利益</strong></td><td class="num"><strong>38,398</strong> <a class="source-tag" href="#s2">[S2]</a></td></tr>
+</tbody></table></div>
+<p class="table-note">37,701＋364＋500＋9＋22−198＝38,398M。営業利益の「その他」調整21Mと純利益の22Mは異なる。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#c2">[C2]</a></p>
+</div><div>
+<h3>EPSを額面どおり比較しない</h3>
+<ul class="list-tight small">
+<li>GAAP EPS$32.87、non-GAAP EPS$33.42。計算株数はそれぞれ1,147Mと1,149M。純利益調整＋697Mだけでなく分母も変わる。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#c2">[C2]</a></li>
+<li>GAAP実効税率は6,583÷44,238＝14.88%。将来のnon-GAAP税率ガイド約15.5%とは基準が異なる。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#c2">[C2]</a></li>
+<li>SBCは売上の0.67%。希薄化後平均株数は前年1,131M→1,147M、＋1.41%。低いSBC率でも株数増を無視しない。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#c2">[C2]</a></li>
+<li>Q4の製造関連報酬増の大部分は在庫に吸収され、売却時のQ1原価を押し上げると会社説明。製造関連の増額に限った説明であり、全従業員報酬の大部分を資本化したとは解釈しない。<a class="source-tag" href="#s3">[S3]</a></li>
+<li>Q4の地域社会向け拠出$300Mはnon-GAAP費用にも残る。恒常費用とも無条件の一時要因とも決めず、将来方針を確認する。<a class="source-tag" href="#s3">[S3]</a><span class="tag analysis">分析判断</span></li>
+</ul></div></div>
+<div class="frame" tabindex="0"><table>
+<caption>継続的な利益の見方 / 当サイトの感度計算、公式EPSではない</caption>
+<thead><tr><th>見方</th><th>式と結果 / USD/share</th><th>残る制約</th></tr></thead><tbody>
+<tr><td>営業利益のみの税引後EPS目安</td><td>43,751×（1−6,583÷44,238）÷1,147＝<strong>32.47</strong> <a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#c2">[C2]</a></td><td>全社実効税率を営業利益に適用した代理値。営業外・持分法を除くが、個別税効果の厳密な調整ではない。</td></tr>
+<tr><td>SBCを残し、特許費用だけを除く目安</td><td>32.87＋500×（1−6,583÷44,238）÷1,147＝<strong>33.24</strong> <a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#c2">[C2]</a></td><td>特許費用に全社税率を仮置き。個別税効果・現金支出時点は未確認。その他調整を残す。</td></tr>
+</tbody></table></div>
+<p class="alert small"><span class="tag missing">未確認の会計論点</span>Q4調整表に在庫評価損・戻入、減損、補助金の損益認識が個別に表示されていないことを、それらの発生ゼロとは解釈しない。FY2026 10-Kの注記・税効果・特許費用の性質・資本化報酬の金額を未確認のため、「完全に平準化したEPS」を提示していない。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s9">[S9]</a></p>
+<h3>営業CF、設備支出、FCF、顧客預り金の分離</h3>
+<div class="frame" tabindex="0"><table>
+<caption>USD billion。キャッシュフローと貸借対照表を混ぜない</caption>
+<thead><tr><th style="width:39%">指標・定義</th><th>Q4 FY2026</th><th>FY2026通期</th></tr></thead><tbody>
+<tr><td>営業CF / GAAP</td><td class="num">43.973 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">89.675 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>総設備支出 / PP&amp;E支出</td><td class="num">11.110 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">30.712 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>政府インセンティブ受領 / 設備売却収入</td><td class="num">0.327 / 0.009 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">3.316 / 0.029 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>純設備投資 / 会社定義</td><td class="num">10.774 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">27.367 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td><strong>単純FCF＝営業CF−総設備支出</strong></td><td class="num"><strong>32.863</strong> <a class="source-tag" href="#c3">[C3]</a></td><td class="num"><strong>58.963</strong> <a class="source-tag" href="#c3">[C3]</a></td></tr>
+<tr><td>会社の調整後FCF＝営業CF−純設備投資</td><td class="num">33.199 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">62.308 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>顧客預り金流入 / 財務活動CF、概数</td><td class="num">約12.3 <a class="source-tag" href="#s3">[S3]</a></td><td class="num">12.747 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+</tbody></table></div>
+<p class="small"><span class="tag calc">FCFの式</span>Q4：43.973−11.110＝32.863B。会社FCFとの差0.336B＝補助金0.327＋設備売却0.009。通期：89.675−30.712＝58.963B、差3.345B＝3.316＋0.029。顧客預り金は財務活動で、どちらのFCFにも含まれない。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#c3">[C3]</a></p>
+<p><span class="tag analysis">キャッシュの質</span>Q4営業CF÷GAAP純利益は116.64%で、利益はキャッシュを伴う。ただし通期営業CFには、売掛金増による−$25.206B、在庫増−$2.017B、買掛金等増＋$8.707Bなどの運転資本変動が含まれる。利益だけでなく支払・回収時期に左右される。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#c3">[C3]</a></p>
+<div class="frame" tabindex="0"><table>
+<thead><tr><th>期末指標 / USD billion</th><th>Q4 / Q3</th><th>解釈と注意</th></tr></thead><tbody>
+<tr><td>在庫</td><td>10.372 / 8.567、＋21.07% <a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#c3">[C3]</a></td><td>会社DIO129日（Q3比＋9日）。DIO定義を勝手に期末在庫÷当期原価×実日数で置き換えない。<a class="source-tag" href="#s3">[S3]</a></td></tr>
+<tr><td>Receivables合計</td><td>36.197 / 31.025、＋16.67% <a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#c3">[C3]</a></td><td>Q3合計は売掛金だけでなく補助金・税等を含む。Q4内訳未確認のため、この合計から売掛金回転日数を作らない。<a class="source-tag" href="#s8">[S8]</a></td></tr>
+<tr><td>現金・投資・制限付現金 / 会社合計</td><td>73.480 / 30.155 <a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#c3">[C3]</a></td><td>Q4は現金38.364＋短期投資5.070＋長期投資30.019＋制限付現金0.027B。全て現金同等物ではない。<a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>有利子負債 / 会社純現金</td><td>5.179 / 68.301（Q4）<a class="source-tag" href="#s2">[S2]</a></td><td>純現金＝73.480−5.179。預り金残高約12.7Bを機械控除すると約55.601B。返還債務を意識した感度値で、会社指標ではない。<a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#c3">[C3]</a></td></tr>
+</tbody></table></div>
+<p class="small"><span class="tag company">預り金の性質</span>会社によると使用制限のないSCA預り金は、最低購入要件を満たした顧客に契約後半で返還される。恒久的な利益や無条件に株主へ返せる資金ではない。貸借対照表の非流動顧客契約負債$12.895Bと現金預り金約$12.7Bは定義が異なり、同額としない。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s3">[S3]</a></p>
+</section>
+<section id="capex" class="card">
+<h2>7. 設備投資：供給が増える前に現金と費用が動く</h2>
+<p>FY2026総設備支出$30.712Bに対し、補助金等を控除した純設備投資は$27.367B。FY2027は上期約$25B、下期は上期超を見込み、建設投資の伸びが装置投資の伸びより高いという説明。DRAM・NAND・HBM別の完全な金額配分、総支出の通期額、将来の減価償却額は<strong>未開示／会社ガイダンスなし</strong>。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a></p>
+<div class="frame" tabindex="0"><table>
+<caption>供給増の工程表 / すべて会社の将来見通し、暦年表記</caption>
+<thead><tr><th>拠点・用途</th><th>会社の時期見通し</th><th>読み方</th></tr></thead><tbody>
+<tr><td>シンガポール / HBM先端パッケージ</td><td>初期生産は2027年初め <a class="source-tag" href="#s3">[S3]</a></td><td>後工程能力。DRAM前工程ウエハ能力の増加と同義ではない。</td></tr>
+<tr><td>台湾・銅鑼 / DRAM</td><td>意味のある製品出荷は2027年半ば <a class="source-tag" href="#s3">[S3]</a></td><td>既存施設の稼働と追加クリーンルームの工程を区別。</td></tr>
+<tr><td>Idaho 1 / DRAM</td><td>初期ウエハ生産は2027年半ば <a class="source-tag" href="#s3">[S3]</a></td><td>初期ウエハと顧客出荷、認定済み量産は異なる。</td></tr>
+<tr><td>Idaho 2・広島 / DRAM</td><td>初期生産は2028年後半 <a class="source-tag" href="#s3">[S3]</a></td><td>先端ノード移行を含む。設備搬入→量産の時間差がある。</td></tr>
+<tr><td>シンガポール / NAND</td><td>2028年下期に生産開始 <a class="source-tag" href="#s3">[S3]</a></td><td>市場への供給影響は初期稼働後、数四半期かけて増える。</td></tr>
+<tr><td>ニューヨーク / DRAM</td><td>初期ウエハ生産は2030年 <a class="source-tag" href="#s3">[S3]</a></td><td>次回決算までの供給増ではない。</td></tr>
+</tbody></table></div>
+<p><span class="tag company">補助金の時点を分ける</span>広島増設は7月4日に着工発表。日本政府の最大5,360億円支援は2025年9月12日の支援決定に基づくもので、Q4に全額受領した現金ではない。Q4の全社設備関連インセンティブ受領は$327Mであり、拠点別内訳と損益への償却タイミングは未確認。<a class="source-tag" href="#s18">[S18]</a><a class="source-tag" href="#s2">[S2]</a></p>
+<p class="alert"><span class="tag analysis">中期収益力の検証</span>建設支出は先行し、稼働後に減価償却・立上げ費用が増え、出荷量は段階的に立ち上がる。投資増を単純に翌期売上増へ変換しない。長期契約で稼働率と価格の下限がどこまで支えられるか、契約預り金の返還時期も含めてFCFを評価する。</p>
+</section>
+<section id="quarterly" class="card">
+<h2>8. 過去5四半期：価格と利益率が先行、FCFも拡大</h2>
+<p class="small">損益は<strong>GAAP</strong>で統一し、non-GAAP EPSのみ独立行に表示。金額はUSD million、EPSはUSD/share、在庫・債権は各期末。FY2026 Q4は期末差による14週相当、他のFY2026四半期は13週相当であり、グラフは未調整報告値。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s4">[S4]</a><a class="source-tag" href="#s5">[S5]</a><a class="source-tag" href="#s6">[S6]</a><a class="source-tag" href="#s7">[S7]</a><a class="source-tag" href="#c5">[C5]</a></p>
+<div class="grid2">
+<div class="chart"><h3>GAAP売上・粗利益・純利益</h3><svg viewBox="0 0 680 310" role="img" aria-label="過去5四半期のGAAP売上高・粗利益・純利益"><title>過去5四半期のGAAP売上高・粗利益・純利益</title><text x="58" y="22" font-size="12">USD million</text><line x1="58" y1="248" x2="654" y2="248" stroke="#dfe5ea"/><text x="49" y="252" text-anchor="end" font-size="11">0</text><line x1="58" y1="196" x2="654" y2="196" stroke="#dfe5ea"/><text x="49" y="200" text-anchor="end" font-size="11">15000</text><line x1="58" y1="144" x2="654" y2="144" stroke="#dfe5ea"/><text x="49" y="148" text-anchor="end" font-size="11">30000</text><line x1="58" y1="92" x2="654" y2="92" stroke="#dfe5ea"/><text x="49" y="96" text-anchor="end" font-size="11">45000</text><line x1="58" y1="40" x2="654" y2="40" stroke="#dfe5ea"/><text x="49" y="44" text-anchor="end" font-size="11">60000</text><text x="58" y="270" text-anchor="middle" font-size="11">FY25 Q4</text><text x="207" y="270" text-anchor="middle" font-size="11">FY26 Q1</text><text x="356" y="270" text-anchor="middle" font-size="11">FY26 Q2</text><text x="505" y="270" text-anchor="middle" font-size="11">FY26 Q3</text><text x="654" y="270" text-anchor="middle" font-size="11">FY26 Q4</text><polyline points="58.0,208.8 207.0,200.7 356.0,165.3 505.0,104.3 654.0,60.0" fill="none" stroke="#176aa6" stroke-width="3"/><circle cx="58" cy="208.77466666666666" r="4" fill="#176aa6"><title>FY25 Q4 売上高 11315.00 USD million</title></circle><circle cx="207" cy="200.70426666666668" r="4" fill="#176aa6"><title>FY26 Q1 売上高 13643.00 USD million</title></circle><circle cx="356" cy="165.2853333333333" r="4" fill="#176aa6"><title>FY26 Q2 売上高 23860.00 USD million</title></circle><circle cx="505" cy="104.28586666666666" r="4" fill="#176aa6"><title>FY26 Q3 売上高 41456.00 USD million</title></circle><circle cx="654" cy="60.00613333333334" r="4" fill="#176aa6"><title>FY26 Q4 売上高 54229.00 USD million</title></circle><line x1="58" y1="297" x2="78" y2="297" stroke="#176aa6" stroke-width="3"/><text x="84" y="301" font-size="11">売上高</text><polyline points="58.0,230.5 207.0,221.5 356.0,186.4 505.0,126.5 654.0,84.9" fill="none" stroke="#16764e" stroke-width="3"/><circle cx="58" cy="230.47946666666667" r="4" fill="#16764e"><title>FY25 Q4 粗利益 GAAP 5054.00 USD million</title></circle><circle cx="207" cy="221.49386666666666" r="4" fill="#16764e"><title>FY26 Q1 粗利益 GAAP 7646.00 USD million</title></circle><circle cx="356" cy="186.44933333333333" r="4" fill="#16764e"><title>FY26 Q2 粗利益 GAAP 17755.00 USD million</title></circle><circle cx="505" cy="126.47253333333333" r="4" fill="#16764e"><title>FY26 Q3 粗利益 GAAP 35056.00 USD million</title></circle><circle cx="654" cy="84.90373333333332" r="4" fill="#16764e"><title>FY26 Q4 粗利益 GAAP 47047.00 USD million</title></circle><line x1="238" y1="297" x2="258" y2="297" stroke="#16764e" stroke-width="3"/><text x="264" y="301" font-size="11">粗利益 GAAP</text><polyline points="58.0,236.9 207.0,229.8 356.0,200.2 505.0,150.1 654.0,117.3" fill="none" stroke="#5c4a9d" stroke-width="3"/><circle cx="58" cy="236.9032" r="4" fill="#5c4a9d"><title>FY25 Q4 純利益 GAAP 3201.00 USD million</title></circle><circle cx="207" cy="229.83466666666666" r="4" fill="#5c4a9d"><title>FY26 Q1 純利益 GAAP 5240.00 USD million</title></circle><circle cx="356" cy="200.212" r="4" fill="#5c4a9d"><title>FY26 Q2 純利益 GAAP 13785.00 USD million</title></circle><circle cx="505" cy="150.09093333333334" r="4" fill="#5c4a9d"><title>FY26 Q3 純利益 GAAP 28243.00 USD million</title></circle><circle cx="654" cy="117.3032" r="4" fill="#5c4a9d"><title>FY26 Q4 純利益 GAAP 37701.00 USD million</title></circle><line x1="418" y1="297" x2="438" y2="297" stroke="#5c4a9d" stroke-width="3"/><text x="444" y="301" font-size="11">純利益 GAAP</text></svg><p>報告値、USD million。横スクロールで拡大表示。系列入力は下表の同じGAAP値。<a class="source-tag" href="#c5">[C5]</a></p></div>
+<div class="chart"><h3>GAAP粗利率・営業利益率</h3><svg viewBox="0 0 680 310" role="img" aria-label="過去5四半期のGAAP粗利率と営業利益率"><title>過去5四半期のGAAP粗利率と営業利益率</title><text x="58" y="22" font-size="12">%</text><line x1="58" y1="248" x2="654" y2="248" stroke="#dfe5ea"/><text x="49" y="252" text-anchor="end" font-size="11">0</text><line x1="58" y1="196" x2="654" y2="196" stroke="#dfe5ea"/><text x="49" y="200" text-anchor="end" font-size="11">25</text><line x1="58" y1="144" x2="654" y2="144" stroke="#dfe5ea"/><text x="49" y="148" text-anchor="end" font-size="11">50</text><line x1="58" y1="92" x2="654" y2="92" stroke="#dfe5ea"/><text x="49" y="96" text-anchor="end" font-size="11">75</text><line x1="58" y1="40" x2="654" y2="40" stroke="#dfe5ea"/><text x="49" y="44" text-anchor="end" font-size="11">100</text><text x="58" y="270" text-anchor="middle" font-size="11">FY25 Q4</text><text x="207" y="270" text-anchor="middle" font-size="11">FY26 Q1</text><text x="356" y="270" text-anchor="middle" font-size="11">FY26 Q2</text><text x="505" y="270" text-anchor="middle" font-size="11">FY26 Q3</text><text x="654" y="270" text-anchor="middle" font-size="11">FY26 Q4</text><polyline points="58.0,155.1 207.0,131.4 356.0,93.2 505.0,72.1 654.0,67.5" fill="none" stroke="#16764e" stroke-width="3"/><circle cx="58" cy="155.09394608926203" r="4" fill="#16764e"><title>FY25 Q4 粗利率 GAAP 44.67%</title></circle><circle cx="207" cy="131.4297441911603" r="4" fill="#16764e"><title>FY26 Q1 粗利率 GAAP 56.04%</title></circle><circle cx="356" cy="93.22045264040236" r="4" fill="#16764e"><title>FY26 Q2 粗利率 GAAP 74.41%</title></circle><circle cx="505" cy="72.11115399459669" r="4" fill="#16764e"><title>FY26 Q3 粗利率 GAAP 84.56%</title></circle><circle cx="654" cy="67.54717955337549" r="4" fill="#16764e"><title>FY26 Q4 粗利率 GAAP 86.76%</title></circle><line x1="58" y1="297" x2="78" y2="297" stroke="#16764e" stroke-width="3"/><text x="84" y="301" font-size="11">粗利率 GAAP</text><polyline points="58.0,180.8 207.0,154.5 356.0,107.3 505.0,80.8 654.0,80.2" fill="none" stroke="#176aa6" stroke-width="3"/><circle cx="58" cy="180.82969509500663" r="4" fill="#176aa6"><title>FY25 Q4 営業利益率 GAAP 32.29%</title></circle><circle cx="207" cy="154.45107381074544" r="4" fill="#176aa6"><title>FY26 Q1 営業利益率 GAAP 44.98%</title></circle><circle cx="356" cy="107.34283319362947" r="4" fill="#176aa6"><title>FY26 Q2 営業利益率 GAAP 67.62%</title></circle><circle cx="505" cy="80.83133925125435" r="4" fill="#176aa6"><title>FY26 Q3 営業利益率 GAAP 80.37%</title></circle><circle cx="654" cy="80.18927142303932" r="4" fill="#176aa6"><title>FY26 Q4 営業利益率 GAAP 80.68%</title></circle><line x1="238" y1="297" x2="258" y2="297" stroke="#176aa6" stroke-width="3"/><text x="264" y="301" font-size="11">営業利益率 GAAP</text></svg><p>利益÷売上×100。営業利益率を主軸に、非営業損益・税効果と分けて評価。<a class="source-tag" href="#c5">[C5]</a></p></div>
+</div>
+<div class="frame" tabindex="0"><table class="wide"><caption>損益の5四半期比較 / GAAP（明示行を除く）</caption><thead><tr><th style="width:25%">指標</th><th class="num">FY25 Q4<br>2025-08-28<br><a class="source-tag" href="#s7">[S7]</a></th><th class="num">FY26 Q1<br>2025-11-27<br><a class="source-tag" href="#s6">[S6]</a></th><th class="num">FY26 Q2<br>2026-02-26<br><a class="source-tag" href="#s5">[S5]</a></th><th class="num">FY26 Q3<br>2026-05-28<br><a class="source-tag" href="#s4">[S4]</a></th><th class="num">FY26 Q4<br>2026-09-03<br><a class="source-tag" href="#s1">[S1]</a></th></tr></thead><tbody>
+<tr><td>売上高</td><td class="num">11,315 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">13,643 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">23,860 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">41,456 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">54,229 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>粗利益</td><td class="num">5,054 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">7,646 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">17,755 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">35,056 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">47,047 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>営業利益</td><td class="num">3,654 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">6,136 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">16,135 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">33,318 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">43,751 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>純利益</td><td class="num">3,201 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">5,240 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">13,785 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">28,243 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">37,701 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>希薄化後EPS / GAAP</td><td class="num">2.83 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">4.60 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">12.07 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">24.67 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">32.87 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>希薄化後EPS / non-GAAP</td><td class="num">3.03 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">4.78 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">12.20 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">25.11 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">33.42 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>粗利率 / GAAP</td><td class="num">44.67% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">56.04% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">74.41% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">84.56% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">86.76% <a class="source-tag" href="#c5">[C5]</a></td></tr>
+<tr><td>営業利益率 / GAAP</td><td class="num">32.29% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">44.98% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">67.62% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">80.37% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">80.68% <a class="source-tag" href="#c5">[C5]</a></td></tr>
+<tr><td>純利益率 / GAAP</td><td class="num">28.29% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">38.41% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">57.77% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">68.13% <a class="source-tag" href="#c5">[C5]</a></td><td class="num">69.52% <a class="source-tag" href="#c5">[C5]</a></td></tr>
+</tbody></table></div>
+<div class="chart"><h3>営業CFと設備投資、単純FCFの関係</h3><svg viewBox="0 0 680 310" role="img" aria-label="過去5四半期の営業CF・総設備支出・単純FCF"><title>過去5四半期の営業CF・総設備支出・単純FCF</title><text x="58" y="22" font-size="12">USD million</text><line x1="58" y1="248" x2="654" y2="248" stroke="#dfe5ea"/><text x="49" y="252" text-anchor="end" font-size="11">0</text><line x1="58" y1="196" x2="654" y2="196" stroke="#dfe5ea"/><text x="49" y="200" text-anchor="end" font-size="11">12500</text><line x1="58" y1="144" x2="654" y2="144" stroke="#dfe5ea"/><text x="49" y="148" text-anchor="end" font-size="11">25000</text><line x1="58" y1="92" x2="654" y2="92" stroke="#dfe5ea"/><text x="49" y="96" text-anchor="end" font-size="11">37500</text><line x1="58" y1="40" x2="654" y2="40" stroke="#dfe5ea"/><text x="49" y="44" text-anchor="end" font-size="11">50000</text><text x="58" y="270" text-anchor="middle" font-size="11">FY25 Q4</text><text x="207" y="270" text-anchor="middle" font-size="11">FY26 Q1</text><text x="356" y="270" text-anchor="middle" font-size="11">FY26 Q2</text><text x="505" y="270" text-anchor="middle" font-size="11">FY26 Q3</text><text x="654" y="270" text-anchor="middle" font-size="11">FY26 Q4</text><polyline points="58.0,224.2 207.0,213.0 356.0,198.5 505.0,142.4 654.0,65.1" fill="none" stroke="#176aa6" stroke-width="3"/><circle cx="58" cy="224.1632" r="4" fill="#176aa6"><title>FY25 Q4 営業CF 5730.00 USD million</title></circle><circle cx="207" cy="213.01024" r="4" fill="#176aa6"><title>FY26 Q1 営業CF 8411.00 USD million</title></circle><circle cx="356" cy="198.48352" r="4" fill="#176aa6"><title>FY26 Q2 営業CF 11903.00 USD million</title></circle><circle cx="505" cy="142.38592" r="4" fill="#176aa6"><title>FY26 Q3 営業CF 25388.00 USD million</title></circle><circle cx="654" cy="65.07231999999999" r="4" fill="#176aa6"><title>FY26 Q4 営業CF 43973.00 USD million</title></circle><line x1="58" y1="297" x2="78" y2="297" stroke="#176aa6" stroke-width="3"/><text x="84" y="301" font-size="11">営業CF</text><polyline points="58.0,224.5 207.0,225.6 356.0,221.4 505.0,215.4 654.0,201.8" fill="none" stroke="#a85e0d" stroke-width="3"/><circle cx="58" cy="224.46272" r="4" fill="#a85e0d"><title>FY25 Q4 総設備支出 5658.00 USD million</title></circle><circle cx="207" cy="225.58176" r="4" fill="#a85e0d"><title>FY26 Q1 総設備支出 5389.00 USD million</title></circle><circle cx="356" cy="221.43008" r="4" fill="#a85e0d"><title>FY26 Q2 総設備支出 6387.00 USD million</title></circle><circle cx="505" cy="215.44384" r="4" fill="#a85e0d"><title>FY26 Q3 総設備支出 7826.00 USD million</title></circle><circle cx="654" cy="201.7824" r="4" fill="#a85e0d"><title>FY26 Q4 総設備支出 11110.00 USD million</title></circle><line x1="238" y1="297" x2="258" y2="297" stroke="#a85e0d" stroke-width="3"/><text x="264" y="301" font-size="11">総設備支出</text><polyline points="58.0,247.7 207.0,235.4 356.0,225.1 505.0,174.9 654.0,111.3" fill="none" stroke="#16764e" stroke-width="3"/><circle cx="58" cy="247.70048" r="4" fill="#16764e"><title>FY25 Q4 単純FCF 72.00 USD million</title></circle><circle cx="207" cy="235.42848" r="4" fill="#16764e"><title>FY26 Q1 単純FCF 3022.00 USD million</title></circle><circle cx="356" cy="225.05344" r="4" fill="#16764e"><title>FY26 Q2 単純FCF 5516.00 USD million</title></circle><circle cx="505" cy="174.94208" r="4" fill="#16764e"><title>FY26 Q3 単純FCF 17562.00 USD million</title></circle><circle cx="654" cy="111.28992" r="4" fill="#16764e"><title>FY26 Q4 単純FCF 32863.00 USD million</title></circle><line x1="418" y1="297" x2="438" y2="297" stroke="#16764e" stroke-width="3"/><text x="444" y="301" font-size="11">単純FCF</text></svg><p>単純FCF＝営業CF−総設備支出。補助金等を足す会社FCFと別系列にする。FY25 Q4の単純FCFは72M、会社調整後FCF803Mで、定義差の影響が大きい。<a class="source-tag" href="#s7">[S7]</a><a class="source-tag" href="#c3">[C3]</a><a class="source-tag" href="#c5">[C5]</a></p></div>
+<div class="frame" tabindex="0"><table class="wide"><caption>キャッシュフロー・運転資本 / USD million</caption><thead><tr><th style="width:25%">指標</th><th class="num">FY25 Q4<br>2025-08-28<br><a class="source-tag" href="#s7">[S7]</a></th><th class="num">FY26 Q1<br>2025-11-27<br><a class="source-tag" href="#s6">[S6]</a></th><th class="num">FY26 Q2<br>2026-02-26<br><a class="source-tag" href="#s5">[S5]</a></th><th class="num">FY26 Q3<br>2026-05-28<br><a class="source-tag" href="#s4">[S4]</a></th><th class="num">FY26 Q4<br>2026-09-03<br><a class="source-tag" href="#s1">[S1]</a></th></tr></thead><tbody>
+<tr><td>営業CF / GAAP</td><td class="num">5,730 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">8,411 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">11,903 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">25,388 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">43,973 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>総設備支出</td><td class="num">5,658 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">5,389 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">6,387 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">7,826 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">11,110 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>純設備投資 / 会社定義</td><td class="num">4,927 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">4,505 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">5,004 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">7,084 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">10,774 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>調整後FCF / 会社定義</td><td class="num">803 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">3,906 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">6,899 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">18,304 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">33,199 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>単純FCF / 当サイト計算</td><td class="num">72 <a class="source-tag" href="#c5">[C5]</a></td><td class="num">3,022 <a class="source-tag" href="#c5">[C5]</a></td><td class="num">5,516 <a class="source-tag" href="#c5">[C5]</a></td><td class="num">17,562 <a class="source-tag" href="#c5">[C5]</a></td><td class="num">32,863 <a class="source-tag" href="#c5">[C5]</a></td></tr>
+<tr><td>在庫 / 期末</td><td class="num">8,355 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">8,205 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">8,267 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">8,567 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">10,372 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+<tr><td>Receivables合計 / 期末</td><td class="num">9,265 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">10,184 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">17,314 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">31,025 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">36,197 <a class="source-tag" href="#s1">[S1]</a></td></tr>
+</tbody></table></div>
+<div class="frame" tabindex="0"><table class="wide"><caption>現行事業区分の売上高 / USD million</caption><thead><tr><th style="width:25%">指標</th><th class="num">FY25 Q4<br>2025-08-28<br><a class="source-tag" href="#s7">[S7]</a></th><th class="num">FY26 Q1<br>2025-11-27<br><a class="source-tag" href="#s6">[S6]</a></th><th class="num">FY26 Q2<br>2026-02-26<br><a class="source-tag" href="#s5">[S5]</a></th><th class="num">FY26 Q3<br>2026-05-28<br><a class="source-tag" href="#s4">[S4]</a></th><th class="num">FY26 Q4<br>2026-09-03<br><a class="source-tag" href="#s1">[S1]</a></th></tr></thead><tbody>
+<tr><td>CMBU</td><td class="num">4,543 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">5,284 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">7,749 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">13,769 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">16,283 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>CDBU</td><td class="num">1,577 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">2,379 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">5,687 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">11,524 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">18,002 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>MCBU</td><td class="num">3,760 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">4,255 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">7,711 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">11,521 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">13,114 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>AEBU</td><td class="num">1,434 <a class="source-tag" href="#s7">[S7]</a></td><td class="num">1,720 <a class="source-tag" href="#s6">[S6]</a></td><td class="num">2,708 <a class="source-tag" href="#s5">[S5]</a></td><td class="num">4,634 <a class="source-tag" href="#s4">[S4]</a></td><td class="num">6,824 <a class="source-tag" href="#s2">[S2]</a></td></tr>
+</tbody></table></div>
+<p class="table-note">各期会社リリースの比較値とQ4資料を照合。利益率は丸め前の金額で再計算したため会社の一桁小数表示と差が生じ得る。FY2026各四半期の売上・粗利益・営業利益・純利益・営業CF・総設備支出の合計はFY2026通期に一致する。<a class="source-tag" href="#c5">[C5]</a></p>
+<p class="alert small"><span class="tag missing">過去5期の予想EPS対実績EPSグラフは非掲載</span>同一提供元・同一non-GAAP定義・決算前締切が検証できる履歴を取得できなかった。後日更新される履歴ページの数値は決算前凍結値と確認できないため、予想系列を捏造・混在させていない。実績EPSは上表に掲載した。</p>
+</section>
+<section id="qna" class="card">
+<h2>9. 決算説明会Q&amp;A：何が言われ、何は答えられなかったか</h2>
+<p><span class="tag company">発言の日本語要約 / 逐語引用ではない</span>本表はBenzinga掲載の第三者トランスクリプト（9月30日17:41 EDT掲載）による<strong>本決算説明会</strong>の要約。会社公式の準備済み発言は財務・契約の照合に使ったが、Q&amp;Aの公式全文ではない。原音の全編照合は未実施で、別開催のPost-Earnings Analyst Callを同じQ&amp;Aに混ぜていない。<a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#s13">[S13]</a></p>
+<div class="frame" tabindex="0"><table class="qtable">
+<caption>発言要旨と当サイトの含意・反証条件（右2列は分析判断）</caption>
+<thead><tr><th>質問者・所属<br>回答者</th><th>質問と回答 / 日本語要約</th><th>強気・弱気の含意</th><th>反証条件・次の確認</th></tr></thead><tbody>
+<tr><td>Timothy R. Curie*<br>UBS Securities LLC<br><br>Mark Murphy / CFO</td><td>必要現金と還元の目安を質問。CFOはQ1末に目標現金水準へ近づき、12月9日以降の還元増を意図と説明。具体的な最低現金額・還元額は示さず。<a class="source-tag" href="#s13">[S13]</a></td><td><span class="tag analysis">強気</span>余剰資金の株主還元に道筋。<br><span class="tag analysis">弱気</span>現時点で実行額・認可・速度は確定していない。</td><td>取締役会の追加認可、実際の買戻し額と株数を確認。予定開始日だけでEPS押上げを先取りしない。</td></tr>
+<tr><td>CJ Muse<br>Cantor Fitzgerald<br><br>Mark Murphy / CFO</td><td>Q1粗利率低下の要因を質問。Q4製造報酬の在庫吸収がQ1原価へ移ること、立上げ費用等も含むと回答。<a class="source-tag" href="#s13">[S13]</a><a class="source-tag" href="#s3">[S3]</a></td><td><span class="tag analysis">強気</span>低下の一部は時期要因。<br><span class="tag analysis">弱気</span>FY2027報酬増もあり、Q4利益率は無条件の基準値ではない。</td><td>Q1実績とQ2ガイドで「Q1が底」という説明を検証。資本化報酬額・原価への流出を10-Kで確認。</td></tr>
+<tr><td>CJ Muse<br>Cantor Fitzgerald<br><br>Sanjay Mehrotra / CEO</td><td>HBM値上げの時期と成長を質問。CEOは2027年価格上昇で通常DRAMとの利益率差が縮小すると説明。具体的なHBM売上額・利益率は示さず。<a class="source-tag" href="#s13">[S13]</a></td><td><span class="tag analysis">強気</span>価格改定で利益成長の余地。<br><span class="tag analysis">弱気</span>顧客認定・歩留まり・世代切替に実行リスク。</td><td>価格合意が実際の売上・粗利益に転換されるか。価格差縮小が遅れる、または量産遅延なら仮説を弱める。</td></tr>
+<tr><td>Vivek Arya<br>Bank of America Securities<br><br>Mark Murphy / CFO<br>Sanjay Mehrotra / CEO</td><td>巨額の現金・将来の需給ピークを質問。還元増の意向と長期需要の強さを回答。質問者の将来キャッシュ想定は会社の通期数値ガイドではない。<a class="source-tag" href="#s13">[S13]</a></td><td><span class="tag analysis">強気</span>長期需要への経営陣の自信。<br><span class="tag analysis">弱気</span>供給均衡の時期は経営陣の見通しに依存する。</td><td>顧客のAI投資・メモリ搭載量・契約価格を独立に追う。顧客の投資先送りや購入量減で見通しを反証。</td></tr>
+<tr><td>Krish Sankar<br>TD Cowen<br><br>Sanjay Mehrotra / CEO<br>Mark Murphy / CFO</td><td>HBMの仕様最適化・通常DRAMへの能力再配分、装置調達制約を質問。CEOは需要余地、CFOは新工場の長いリードタイムを説明。装置供給による定量的な投資上限は示さず。<a class="source-tag" href="#s13">[S13]</a></td><td><span class="tag analysis">強気</span>新設能力が一気に供給過剰を招くとの見方には反論。<br><span class="tag analysis">弱気</span>仕様削減がビット需要を減らすリスクは残る。</td><td>顧客のHBM容量・製品世代変更を確認。通常DRAM供給の急増・価格反落なら再配分リスクが顕在化。</td></tr>
+<tr><td>Harlan Sur<br>JPMorgan<br><br>Sanjay Mehrotra / CEO</td><td>SCAの将来売上カバー率を質問。CEOは2030年までの売上の約50%という目標は概ね維持と説明し、SCAとそれ以外の購入コミットメントを区別。<a class="source-tag" href="#s13">[S13]</a></td><td><span class="tag analysis">強気</span>投資・供給の可視性が改善。<br><span class="tag analysis">弱気</span>目標比率は将来売上の分母にも依存し、固定された達成保証ではない。</td><td>署名済み件数、価格枠組み、RPO・受領預り金を追う。比率だけが高まり価格・数量が落ちれば安定化効果を疑う。</td></tr>
+</tbody></table></div>
+<p class="table-note">* UBS質問者の氏名は第三者版の表記をそのまま採用。表記の正確さは原音未確認で、推測による訂正はしていない。Q&amp;A内の「2027年供給コミットメント」は、会計年度・暦年の表記を原音と照合できていないため、独立した数量KPIとして採用していない。<a class="source-tag" href="#s13">[S13]</a></p>
+</section>
+<section id="industry" class="card">
+<h2>10. 他社への読み通し：共通市況と固有の実行力を分ける</h2>
+<div class="frame" tabindex="0"><table>
+<thead><tr><th style="width:21%">企業・領域</th><th>確認した根拠</th><th>読み通し / 分析判断</th></tr></thead><tbody>
+<tr><td>SK hynix</td><td>公式Q2発表でHBM4量産出荷、HBM4Eサンプル、長期契約・増産計画を説明。<a class="source-tag" href="#s15">[S15]</a></td><td>AI需要はMU固有ではない。一方、顧客認定・供給増は競争リスク。MUの利益率を同社へ転用しない。</td></tr>
+<tr><td>Samsung</td><td>公式Q2発表でHBM4販売拡大、HBM4Eサンプル、サーバー需要の強さとモバイル・PCの圧力を併記。<a class="source-tag" href="#s16">[S16]</a></td><td>供給の増強・製品認定が進めば価格・シェアの分岐点。MUの長期契約だけで業界全体の供給規律は保証されない。</td></tr>
+<tr><td>NVIDIA</td><td>MUがNVHBMの協業を開示。HBM・LPメモリ・SSDにまたがる製品関係。<a class="source-tag" href="#s3">[S3]</a></td><td>メモリの帯域・容量・供給はシステム実装の条件。MUの価格上昇は顧客側コストでもあり、GPU売上・粗利率の増加へ直結させない。</td></tr>
+<tr><td>AMD</td><td>使用資料でAMD向けHBM売上、数量、契約価格、認定の独立した裏付けは未取得。</td><td>業界需要の一般的な含意に限定。顧客関係、シェア、利益予想の定量修正は行わない。</td></tr>
+<tr><td>半導体製造装置</td><td>MUはFY2027建設投資の伸びが装置投資の伸びを上回ると説明。<a class="source-tag" href="#s3">[S3]</a></td><td>総Capex増を各装置メーカー受注へ一括換算しない。工程・装置発注時期・個別サプライヤーの公式受注が必要。</td></tr>
+<tr><td>ハイパースケーラー / Alphabet</td><td>Alphabet公式Q2資料のPP&amp;E支出は$44.924B。MUはサーバー数量増とメモリ搭載量の制約を説明。<a class="source-tag" href="#s17">[S17]</a><a class="source-tag" href="#s3">[S3]</a></td><td>AI投資の継続は需要の外部確認になるが、Capex全額がメモリ購入でもMU受注でもない。顧客の収益化・投資採算と資金調達も追う。</td></tr>
+</tbody></table></div>
+<p class="small">競合の市場シェア、将来価格、サプライヤー別受注やMUの勝敗を推測で断定しない。K-IFRSとUS GAAP、暦年Q2とMicron FY2026 Q4の単純比較も行っていない。</p>
+</section>
+<section id="market" class="card">
+<h2>11. 株価反応とバリュエーション：低PERはサイクル頂点の錯覚か</h2>
+<div class="frame" tabindex="0"><table>
+<caption>価格はUSD/share。表示時刻と取得基準時刻を区別</caption>
+<thead><tr><th>観測</th><th>EDT / JST</th><th>価格・状態</th></tr></thead><tbody>
+<tr><td>前営業日終値</td><td>9/29 16:00 / 9/30 05:00</td><td class="num">1,065.08 <a class="source-tag" href="#s12">[S12]</a></td></tr>
+<tr><td>決算前終値 / 当日引け</td><td>9/30 16:00 / 10/1 05:00</td><td class="num">1,065.11 <a class="source-tag" href="#s12">[S12]</a></td></tr>
+<tr><td>決算後時間外 / 最終取得表示</td><td>9/30 19:59 / 10/1 08:59</td><td class="num">1,069.00、終値比＋0.37% <a class="source-tag" href="#s12">[S12]</a><a class="source-tag" href="#c4">[C4]</a></td></tr>
+<tr><td>翌営業日 / 10/1通常取引</td><td>開始予定10/1 09:30 / 10/1 22:30</td><td>基準時点では未開始。終値はまだ存在しない。</td></tr>
+<tr><td>情報基準までの最新収録価格</td><td>基準9/30 23:59:56 / 10/1 12:59:56</td><td>上記19:59 EDTの時間外表示。基準時刻と同時の新しい約定を確認したものではない。<a class="source-tag" href="#s12">[S12]</a></td></tr>
+</tbody></table></div>
+<div class="chart"><h3>直近の終値と発表タイミング</h3><svg viewBox="0 0 680 300" role="img" aria-label="9月18日から9月30日のMU終値と決算後時間外価格"><title>MU終値と決算後時間外。縦軸1000–1120 USD、ゼロ起点ではない</title><text x="58" y="22" font-size="12">USD / 縦軸はゼロ起点ではない</text><line x1="58" y1="225" x2="636" y2="225" stroke="#dfe5ea"/><text x="48" y="229" text-anchor="end" font-size="11">1000</text><line x1="58" y1="168.33333333333334" x2="636" y2="168.33333333333334" stroke="#dfe5ea"/><text x="48" y="172.33333333333334" text-anchor="end" font-size="11">1040</text><line x1="58" y1="111.66666666666667" x2="636" y2="111.66666666666667" stroke="#dfe5ea"/><text x="48" y="115.66666666666667" text-anchor="end" font-size="11">1080</text><line x1="58" y1="55" x2="636" y2="55" stroke="#dfe5ea"/><text x="48" y="59" text-anchor="end" font-size="11">1120</text><polyline points="58,202.61666666666673 128,162.7233333333333 198,88.77333333333323 268,123.16999999999986 338,110.91583333333337 408,108.43666666666671 478,148.5283333333333 548,132.80333333333343 618,132.76083333333347" fill="none" stroke="#176aa6" stroke-width="3"/><circle cx="58" cy="202.61666666666673" r="3" fill="#176aa6"><title>9/18 close 1015.8</title></circle><text x="58" y="249" text-anchor="middle" font-size="10">9/18</text><circle cx="128" cy="162.7233333333333" r="3" fill="#176aa6"><title>9/21 close 1043.96</title></circle><text x="128" y="249" text-anchor="middle" font-size="10">9/21</text><circle cx="198" cy="88.77333333333323" r="3" fill="#176aa6"><title>9/22 close 1096.16</title></circle><text x="198" y="249" text-anchor="middle" font-size="10">9/22</text><circle cx="268" cy="123.16999999999986" r="3" fill="#176aa6"><title>9/23 close 1071.88</title></circle><text x="268" y="249" text-anchor="middle" font-size="10">9/23</text><circle cx="338" cy="110.91583333333337" r="3" fill="#176aa6"><title>9/24 close 1080.53</title></circle><text x="338" y="249" text-anchor="middle" font-size="10">9/24</text><circle cx="408" cy="108.43666666666671" r="3" fill="#176aa6"><title>9/25 close 1082.28</title></circle><text x="408" y="249" text-anchor="middle" font-size="10">9/25</text><circle cx="478" cy="148.5283333333333" r="3" fill="#176aa6"><title>9/28 close 1053.98</title></circle><text x="478" y="249" text-anchor="middle" font-size="10">9/28</text><circle cx="548" cy="132.80333333333343" r="3" fill="#176aa6"><title>9/29 close 1065.08</title></circle><text x="548" y="249" text-anchor="middle" font-size="10">9/29</text><circle cx="618" cy="132.76083333333347" r="3" fill="#176aa6"><title>9/30 close 1065.11</title></circle><text x="618" y="249" text-anchor="middle" font-size="10">9/30</text><line x1="618" y1="44" x2="618" y2="229" stroke="#a85e0d" stroke-dasharray="4 4"/><circle cx="630" cy="127.25000000000001" r="5" fill="#16764e"><title>9/30 19:59 EDT 時間外1069.00</title></circle><text x="310" y="280" font-size="11">9/30 引け後決算 → 時間外 $1,069.00（緑点・別系列）</text></svg><p>取引日ごとの終値を接続。9/30引け後の決算を破線で注記し、時間外を別の緑点で表示。縦軸はゼロ起点ではない。本文の価格表と一致。<a class="source-tag" href="#s12">[S12]</a><a class="source-tag" href="#c4">[C4]</a></p></div>
+<p><span class="tag analysis">反応の解釈</span>高い実績・ガイドに対し、この時点の時間外反応は小幅。事前期待、還元条件、利益の持続性が論点と考えるが、ポジショニング・オプション・売買主体を確認していないため理由は断定しない。9/30終値は発表前なので決算反応ではない。翌日以降の指数・メモリ業界要因を調整した超過収益も未測定。</p>
+<div class="frame" tabindex="0"><table>
+<caption>PER感度。価格は決算前終値$1,065.11で統一 / 当サイト計算</caption>
+<thead><tr><th>EPSの期間・基準</th><th>式 / EPS（USD）</th><th>倍率</th><th>解釈</th></tr></thead><tbody>
+<tr><td>FY2026実績 / GAAP</td><td>1,065.11 ÷ 74.33 <a class="source-tag" href="#s1">[S1]</a></td><td class="num">14.33倍 <a class="source-tag" href="#c4">[C4]</a></td><td>実績PER。予想PERではない。</td></tr>
+<tr><td>FY2026実績 / non-GAAP</td><td>1,065.11 ÷ 75.52 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">14.10倍 <a class="source-tag" href="#c4">[C4]</a></td><td>調整後実績PER。SBC等を除いた基準。</td></tr>
+<tr><td>Q4 EPSの4倍 / non-GAAP</td><td>33.42 × 4＝133.68 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">7.97倍 <a class="source-tag" href="#c4">[C4]</a></td><td>便宜的年率換算。14週相当Q4を4倍する過大換算リスク。</td></tr>
+<tr><td>Q4 EPSの52週換算 / non-GAAP</td><td>33.42 × 52 ÷ 14＝124.13 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">8.58倍 <a class="source-tag" href="#c4">[C4]</a></td><td>週数補正だけの感度。季節性・価格・株数の変化を無視。</td></tr>
+<tr><td>Q1 EPSガイドの4倍 / non-GAAP</td><td>38.15 × 4＝152.60 <a class="source-tag" href="#s2">[S2]</a></td><td class="num">6.98倍 <a class="source-tag" href="#c4">[C4]</a></td><td>13週四半期相当と仮定。会社のFY2027通期予想ではない。</td></tr>
+<tr><td>FY2027コンセンサス / 予想PER</td><td colspan="3"><strong>未確認</strong>。時点・提供元・GAAP/non-GAAPが揃う通期EPSを取得できなかった。上の換算値で代用しない。</td></tr>
+<tr><td>EV/EBITDA・FCF利回り</td><td colspan="3"><strong>未確認・非掲載</strong>。基準日に対応する発行済株数・時価総額と同一期予想EBITDAが不足。Q4調整後EBITDA$47.244Bは会社開示だが、4倍して予想EBITDAとはしない。<a class="source-tag" href="#s2">[S2]</a></td></tr>
+</tbody></table></div>
+<p class="table-note">EV＝時価総額＋有利子負債−対象現金・投資（預り金返還義務の扱いも明記が必要）。EV/EBITDA＝同基準日のEV÷同一期EBITDA、FCF利回り＝同一期FCF÷時価総額。加重平均希薄化株数を現在の発行済株数と取り違えてEVを精密化しない。</p>
+<h3>株価が要求する利益の持続性を逆算する</h3>
+<div class="frame" tabindex="0"><table>
+<caption>目標株価ではなく逆算例。倍率は分析者の仮定</caption>
+<thead><tr><th>仮定した持続的PER</th><th>価格÷倍率＝必要EPS</th><th>FY2026調整後EPSとの比</th></tr></thead><tbody>
+<tr><td>10倍 <span class="tag analysis">仮定</span></td><td>1,065.11÷10＝$106.51 <a class="source-tag" href="#c4">[C4]</a></td><td>106.51÷75.52＝141.04% <a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#c4">[C4]</a></td></tr>
+<tr><td>15倍 <span class="tag analysis">仮定</span></td><td>1,065.11÷15＝$71.01 <a class="source-tag" href="#c4">[C4]</a></td><td>（1,065.11÷15）÷75.52＝94.02% <a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#c4">[C4]</a></td></tr>
+<tr><td>20倍 <span class="tag analysis">仮定</span></td><td>1,065.11÷20＝$53.26 <a class="source-tag" href="#c4">[C4]</a></td><td>53.26÷75.52＝70.52% <a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#c4">[C4]</a></td></tr>
+</tbody></table></div>
+<p class="alert"><span class="tag analysis">「何が織り込まれているか」の結論</span>安定利益に高い倍率を認めるなら必要EPSは低く、従来型サイクルとして低い倍率を置くなら利益の成長・維持が必要になる。市場の実際の期待をこの逆算だけで断定できないが、論点は最高益の年率換算より、契約・価格・供給増後の中期利益水準である。独立した通期・中期EPSと契約条件が不足しているため、精密な目標株価・上昇余地は示さない。</p>
+</section>
+<section id="risks" class="card">
+<h2>12. カタリスト、反証条件、次回までのチェックリスト</h2>
+<div class="scenario">
+<div class="box"><span class="tag analysis">ベース / 当サイトの条件整理</span><h3>価格上昇が減速しても利益を維持</h3><p>Q1のnon-GAAP粗利率約86.25%を起点に回復、SCAの履行・価格枠組みと製品ミックスが支える。通期数量・価格の精密予想は置かない。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a></p><p class="small">仮説を強める：受領預り金・RPOだけでなく出荷・売上・単純FCFが並行して増える。</p></div>
+<div class="box up"><span class="tag analysis">強気 / 条件付き</span><h3>HBM価格改定とSSD成長が費用増を吸収</h3><p>HBMの通常DRAMとの利益率差が縮小し、データセンター向けの実出荷が拡大。新工場の顧客認定も計画内に進む。<a class="source-tag" href="#s3">[S3]</a></p><p class="small">強気化の確認：営業利益と補助金控除前FCFが増え、株主還元が実際の株数減へつながる。</p></div>
+<div class="box down"><span class="tag analysis">弱気 / 反証経路</span><h3>需要抑制・再配分・供給増が価格を崩す</h3><p>顧客の容量削減や投資先送り、競合の量産拡大に対して新設能力が過剰となる。報酬・減価償却・契約返金が利益とFCFを圧迫。<a class="source-tag" href="#s3">[S3]</a><a class="source-tag" href="#s15">[S15]</a><a class="source-tag" href="#s16">[S16]</a></p><p class="small">壊す条件：粗利率の底が後ずれし、在庫・総投資が増える一方で実需要と営業CFが弱る。</p></div>
+</div>
+<div class="frame" tabindex="0"><table>
+<thead><tr><th style="width:25%">カタリスト / 時期</th><th>確認する事実</th><th>投資判断の分岐 / 分析判断</th></tr></thead><tbody>
+<tr><td>配当 / 確定された支払予定</td><td>10/14基準日、10/29支払、1株$0.15を取締役会決定。<a class="source-tag" href="#s1">[S1]</a></td><td>通常配当と将来の追加還元を区別。</td></tr>
+<tr><td>還元増 / 会社の意向</td><td>12/9/2026から増額を意図。具体額・取得株数は未開示。<a class="source-tag" href="#s3">[S3]</a></td><td>開始意向と実行額・新規認可を分ける。顧客預り金を「全額余剰資金」としない。</td></tr>
+<tr><td>次回Q1 FY2027決算</td><td>公式な発表日程は本稿で未確認。慣例から特定日を確定しない。</td><td>Q1売上60–63B、non-GAAP EPS37.15–39.15の目安と実績を同基準で比較。<a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr><td>HBMの2027価格・製品展開</td><td>暦年2027の価格上昇、HBM4/4Eの量産・顧客認定・実売上。<a class="source-tag" href="#s3">[S3]</a></td><td>契約件数だけでなく製品売上・粗利益で確認。顧客名とシェアを推測しない。</td></tr>
+<tr><td>供給増 / 2027年以降の会社計画</td><td>シンガポール後工程、台湾・Idaho前工程の初期稼働。<a class="source-tag" href="#s3">[S3]</a></td><td>設備搬入・初期ウエハ・認定済み出荷の段階を分ける。</td></tr>
+<tr><td>規制・中国 / 日程未確定</td><td>中国顧客制限、輸出許可・関税・補助金要件の公式更新。<a class="source-tag" href="#s8">[S8]</a></td><td>対象製品・顧客・地域と、売上・供給・返金への実影響で評価する。</td></tr>
+</tbody></table></div>
+<h3>次回決算までに確認すべき事項</h3>
+<ul class="list-tight">
+<li><strong>10-K：</strong>特許ライセンス費用、税の一時要因、在庫評価、製造報酬の資本化、補助金の認識・条件、SCAの返金・価格・数量の注記。</li>
+<li><strong>需要：</strong>サーバー・PC・モバイルの台数と搭載量、顧客在庫、ハイパースケーラーの投資と収益化。価格が上がっていてもビット数量を別確認。</li>
+<li><strong>契約：</strong>SCA件数、価格枠組みの比率、RPOと受領預り金、実際の出荷・売上認識。契約額と現金を足さない。</li>
+<li><strong>利益・CF：</strong>Q1粗利率の底、FY2027報酬・減価償却の負担、営業CFの運転資本内訳、補助金控除前FCF。</li>
+<li><strong>市場：</strong>翌営業日以降の通常取引、指数調整後反応、決算後の同一基準FY2027 EPS推計と時価総額。</li>
+</ul><span class="tag analysis">チェックリストは当サイト判断</span>
+</section>
+<section id="events" class="card">
+<h2>13. ニュースと市場イベント：判明時点の切り分け</h2>
+<div class="frame" tabindex="0"><table class="wide">
+<caption>直近四半期を中心とした公表情報。日付は各発表元の表記</caption>
+<thead><tr><th style="width:16%">公表日</th><th style="width:20%">決算発表との関係</th><th>出来事 / 出所</th><th>含意 / 分析判断</th></tr></thead><tbody>
+<tr><td>2026-07-04</td><td>決算発表前 / Q4期間内</td><td>広島工場増設の着工。政府支援決定は2025-09-12。<a class="source-tag" href="#s18">[S18]</a></td><td>供給増は中期工程。支援上限の決定を当期現金受領と扱わない。</td></tr>
+<tr><td>2026-07-22</td><td>決算発表前 / Q4期間内</td><td>Alphabet Q2決算。PP&amp;E支出$44.924B。<a class="source-tag" href="#s17">[S17]</a></td><td>AI設備投資の強さを確認。ただしMU向け発注・メモリ支出の内訳は未確認。</td></tr>
+<tr><td>2026-07-29</td><td>決算発表前 / Q4期間内</td><td>SK hynixがHBM4量産出荷と増産・長期契約を説明。<a class="source-tag" href="#s15">[S15]</a></td><td>業界需要の確認と、将来供給・競争の監視を同時に行う。</td></tr>
+<tr><td>2026-07-30</td><td>決算発表前 / Q4期間内</td><td>SamsungがHBM4売上・HBM4EサンプルとPC・モバイル需要の圧力を説明。<a class="source-tag" href="#s16">[S16]</a></td><td>需要の二極化。サンプル出荷を全顧客認定・全量量産とはしない。</td></tr>
+<tr><td>2026-09-30</td><td>同日 / 公開分時刻未確認</td><td>TrendForceが暦年Q4契約価格の上昇と伸び鈍化を予測。<a class="source-tag" href="#s14">[S14]</a></td><td>価格の水準と変化率を分ける。同日記事を決算後更新と決めつけない。</td></tr>
+<tr><td>2026-09-30</td><td>決算発表・説明会</td><td>MUがQ4実績、Q1ガイド、SCA・RPO・HBM価格・供給計画を開示。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s3">[S3]</a></td><td>本稿の主要分析。FY2027の通期数値ガイドはない。</td></tr>
+<tr><td>2026-09-30 引け後</td><td>発表後 / 基準時刻まで</td><td>Dow Jonesの決算記事と第三者Q&amp;A記録が公開。時間外価格を取得。<a class="source-tag" href="#s11">[S11]</a><a class="source-tag" href="#s12">[S12]</a><a class="source-tag" href="#s13">[S13]</a></td><td>事前期待と事後情報を分離。10/1通常取引の評価はまだできない。</td></tr>
+</tbody></table></div>
+<p><span class="tag company">中国・輸出関連：最新法解釈の確定ではない</span>Q3 10-Qは、中国CACの2023年決定による重要情報インフラ運営者のMicron製品購入制限と、AI関連製品を含む輸出・貿易政策のリスクを記載している。本稿で確認したのは6月25日提出時点の会社記載であり、9月30日までの個別HBM出荷許可、規制変更の網羅、FY2026 Q4の中国関連売上影響は<strong>未確認</strong>。会社が問題なしと確認したかのようには扱わない。<a class="source-tag" href="#s8">[S8]</a></p>
+<p class="alert small"><span class="tag missing">市場イベントの範囲</span>本稿は上記の取得できた公式・公開情報に限定した一覧で、過去12か月の全ニュース・規制・顧客投資変更を網羅していない。発表後の通常取引日が到来したら、市場全体とメモリ業界の要因を追記する余地がある。未取得のニュースを「なかった」と推定しない。</p>
+</section>
+<section id="sources" class="card">
+<h2>14. 情報源・計算仕様・制約</h2>
+<p>出所タグは近接する数値・事実から本一覧にリンクする。会社リリース・SEC・説明資料を一次資料とし、コンセンサスとQ&amp;Aの第三者記録を分離した。<strong>金額のB＝10億USD、M＝100万USD</strong>。財務表では単位を固定し、丸め差を注記した。</p>
+<p class="small"><strong>取得時刻：</strong>資料の取得は2026年10月1日12:46–12:59 JSTの調査バッチ（9月30日23:46–23:59 EDT）。資料ごとの取得秒は記録していないため捏造せず共通の範囲を表示。公開日・市場データの観測時刻とは異なる。情報基準は12:59:56 JSTで固定している。</p>
+<div class="frame" tabindex="0"><table class="wide sources">
+<caption>使用資料一覧 / 資料名をクリックすると原本へ</caption>
+<thead><tr><th style="width:14%">タグ・区分</th><th style="width:43%">名称・URL / 使用範囲</th><th style="width:28%">公開日・対象期間</th><th style="width:15%">取得時刻</th></tr></thead><tbody><tr id="s1"><td><strong>[S1]</strong><br>会社開示</td><td><a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx" target="_blank" rel="noopener noreferrer">Micron FY2026 Q4・通期決算リリース</a><br>財務諸表は未監査表示。公開分時刻は未確認。</td><td>2026-09-30<br>FY2026 Q4 / 通期・Q1 FY2027見通し</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s2"><td><strong>[S2]</strong><br>会社開示</td><td><a href="https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf" target="_blank" rel="noopener noreferrer">Q4-26 Earnings Deck</a><br>特にp24事業、p29/50ガイド、p35製品、p39–44四半期・p49通期調整。</td><td>2026-09-30<br>FY2026 Q4 / 通期</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s3"><td><strong>[S3]</strong><br>会社開示</td><td><a href="https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf" target="_blank" rel="noopener noreferrer">FY2026 Q4 Earnings Call Prepared Remarks</a><br>準備済み発言。将来需要・契約・新工場の見通しは経営陣の主張。</td><td>2026-09-30<br>Q4実績・FY2027/暦年2027以降見通し</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s4"><td><strong>[S4]</strong><br>会社開示</td><td><a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx" target="_blank" rel="noopener noreferrer">Micron FY2026 Q3決算リリース</a><br>Q4会社計画の比較時点として使用。</td><td>2026-06-24<br>2026-05-28終了Q3 / Q4事前ガイド</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s5"><td><strong>[S5]</strong><br>会社開示</td><td><a href="https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Results-for-the-Second-Quarter-of-Fiscal-2026-03-18-2026/default.aspx" target="_blank" rel="noopener noreferrer">Micron FY2026 Q2決算リリース</a><br>四半期CF・Capexの比較欄を使用。</td><td>2026-03-18<br>2026-02-26終了Q2、Q1比較</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s6"><td><strong>[S6]</strong><br>会社開示</td><td><a href="https://investors.micron.com/news/press-release/2025/Micron-Technology-Inc--Reports-Results-for-the-First-Quarter-of-Fiscal-2026-12-17-2025/default.aspx" target="_blank" rel="noopener noreferrer">Micron FY2026 Q1決算リリース</a><br>Q1損益、期末在庫・Receivables等。</td><td>2025-12-17<br>2025-11-27終了Q1</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s7"><td><strong>[S7]</strong><br>会社開示</td><td><a href="https://investors.micron.com/news/press-release/2025/Micron-Technology-Inc--Reports-Results-for-the-Fourth-Quarter-and-Full-Year-of-Fiscal-2025-09-23-2025/default.aspx" target="_blank" rel="noopener noreferrer">Micron FY2025 Q4・通期決算リリース</a><br>現行事業区分の過去比較値。</td><td>2025-09-23<br>2025-08-28終了Q4</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s8"><td><strong>[S8]</strong><br>会社開示 / SEC</td><td><a href="https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm" target="_blank" rel="noopener noreferrer">Micron Q3 FY2026 Form 10-Q</a><br>Note17事業定義・未配賦費用、Receivables内訳、中国・貿易リスク。Q4の代用ではない。</td><td>2026-06-25提出<br>2026-05-28終了Q3</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s9"><td><strong>[S9]</strong><br>SECメタデータ</td><td><a href="https://data.sec.gov/submissions/CIK0000723125.json" target="_blank" rel="noopener noreferrer">SEC EDGAR Micron提出一覧（CIK 723125）</a><br>9/30 8-K: 0000723125-26-000018、mu-20260930.htm。FY2026 10-K本文未確認。</td><td>取得時の一覧<br>2026-09-30 8-Kを含む最新提出</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s10"><td><strong>[S10]</strong><br>コンセンサス / 二次資料</td><td><a href="https://www.tipranks.com/news/micron-earnings-tomorrow-heres-what-analysts-expect" target="_blank" rel="noopener noreferrer">TipRanks: Micron Earnings Tomorrow — Analysts' Expectations</a><br>売上51.33B・adjusted EPS31.73。提供元・集計分時刻未確認。矛盾する目標株価を除外。</td><td>2026-09-29<br>Q4 FY2026決算前期待</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s11"><td><strong>[S11]</strong><br>コンセンサス / 二次資料</td><td><a href="https://www.marketscreener.com/news/micron-4q-profit-revenue-surge-on-memory-demand-ce785ad3db89fe20" target="_blank" rel="noopener noreferrer">Dow Jones / MarketScreener: Micron 4Q Profit, Revenue Surge</a><br>FactSet記載。決算後の記事であり、推計締切は未確認。</td><td>2026-09-30 16:36–16:37 EDT<br>Q4期待・Q1期待の参考記載</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s12"><td><strong>[S12]</strong><br>市場データ</td><td><a href="https://stockanalysis.com/stocks/mu/history/" target="_blank" rel="noopener noreferrer">Stock Analysis: MU Stock Price History</a><br>現時点のページ更新で将来変わり得る。取得時表示を本稿に固定。時間外板の全約定履歴は未取得。</td><td>観測時点: 2026-09-30<br>9/18–9/30終値、9/30 19:59 EDT時間外</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s13"><td><strong>[S13]</strong><br>発言 / 第三者記録</td><td><a href="https://www.benzinga.com/news/26/09/62095451/transcript-micron-technology-q4-2026-earnings-conference-call" target="_blank" rel="noopener noreferrer">Benzinga: MU Q4 2026 Earnings Conference Call Transcript</a><br>日本語要約。音声全編未照合、UBS質問者の氏名表記に留保。</td><td>2026-09-30 17:41 EDT<br>9/30本決算説明会Q&A</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s14"><td><strong>[S14]</strong><br>市場調査 / 予測</td><td><a href="https://www.trendforce.com/presscenter/news/20260930-13258.html" target="_blank" rel="noopener noreferrer">TrendForce: AI Server Demand Sustains Memory Contract Price Increases in 4Q26</a><br>会社ASP実績・スポット価格ではない。</td><td>2026-09-30（分時刻未確認）<br>暦年2026 Q4契約価格予測</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s15"><td><strong>[S15]</strong><br>他社公式開示</td><td><a href="https://news.skhynix.com/en/q2-2026-business-results/" target="_blank" rel="noopener noreferrer">SK hynix 2Q26 Financial Results</a><br>HBM4/4E、長期契約、増産の記述。財務値の単純比較には使用せず。</td><td>2026-07-29<br>2026-06-30終了・暦年Q2</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s16"><td><strong>[S16]</strong><br>他社公式開示</td><td><a href="https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results" target="_blank" rel="noopener noreferrer">Samsung Electronics Second Quarter 2026 Results</a><br>HBM4/4Eと需要の強弱。市場シェア推定に使用せず。</td><td>2026-07-30<br>2026-06-30終了・暦年Q2</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s17"><td><strong>[S17]</strong><br>他社公式 / SEC</td><td><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm" target="_blank" rel="noopener noreferrer">Alphabet Second Quarter 2026 Results / Exhibit 99.1</a><br>CF計算書のPP&E支出44.924B。MUへの発注金額とは異なる。</td><td>2026-07-22<br>2026-06-30終了・暦年Q2</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr>
+<tr id="s18"><td><strong>[S18]</strong><br>会社開示</td><td><a href="https://jp.micron.com/about/press/news/micron-breaks-ground-on-hiroshima-cleanroom-to-support-advanced-memory-for-ai" target="_blank" rel="noopener noreferrer">Micron 広島クリーンルーム着工発表</a><br>支援決定額と実受領・損益認識を区別。</td><td>2026-07-04<br>広島投資・政府支援計画</td><td>2026-10-01<br>12:46–12:59 JST<br><span class="note">共通取得バッチ</span></td></tr></tbody></table></div>
+<h3>当サイト計算の定義と入力</h3>
+<div class="frame" tabindex="0"><table class="wide">
+<thead><tr><th style="width:14%">タグ</th><th>計算式・入力・単位</th></tr></thead><tbody>
+<tr id="c1"><td><strong>[C1]</strong><br>成長・期待差</td><td>差率＝（実績÷比較値−1）×100。売上QoQ：（54,229÷41,456−1）×100＝30.81%。週当たり：（54,229÷14）÷（41,456÷13）−1＝21.47%。YoY比較値11,315M。期待差は売上54.229B対会社50.0B / 事前51.33B、調整EPS33.42対31.00 / 31.73。Q1比較は61.5B対実績54.229B / 参考57.4B、EPS38.15対33.42 / 参考35.47。利益率＝該当利益÷売上×100、pt＝率の単純差。事業別成長は5四半期表の同一区分売上を使用。計画OI＝50.0×0.86−1.65＝41.350B。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s4">[S4]</a><a class="source-tag" href="#s10">[S10]</a><a class="source-tag" href="#s11">[S11]</a></td></tr>
+<tr id="c2"><td><strong>[C2]</strong><br>EPS品質</td><td>調整純利益は37,701＋364＋500＋9＋22−198＝38,398M。株数1,147M→1,149M。概算EPSブリッジは32.87＋697÷1,147（約0.61）＋分母変更影響（約−0.06）＝33.42。税率＝6,583÷44,238＝14.88%。営業EPS代理値と特許のみの代理値の式は品質表参照。SBC/売上＝364÷54,229×100＝0.67%、株数増＝（1,147÷1,131−1）×100＝1.41%。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s2">[S2]</a></td></tr>
+<tr id="c3"><td><strong>[C3]</strong><br>CF・残高</td><td>単純FCF＝営業CF−PP&amp;E総支出、会社FCF＝営業CF−（総支出−政府インセンティブ−設備売却収入）。全5期の入力はCF表。Q4営業CF/NI＝43,973÷37,701×100＝116.64%。在庫増＝（10,372÷8,567−1）×100、Receivables増＝（36,197÷31,025−1）×100。現金・投資合計73,480M−負債5,179M＝純現金68,301M。預り金概数12,700Mを引く感度値55,601Mは会社定義ではない。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s3">[S3]</a></td></tr>
+<tr id="c4"><td><strong>[C4]</strong><br>株価・倍率</td><td>時間外騰落率＝（1,069.00÷1,065.11−1）×100＝0.37%。PER＝終値1,065.11÷指定EPS。EPS入力はFY2026 GAAP74.33、non-GAAP75.52、Q4 33.42、Q1ガイド38.15。年率換算は4倍、Q4週補正は52÷14倍。逆算EPS＝1,065.11÷仮定倍率（10/15/20）、実績比＝逆算EPS÷75.52×100。内部計算は丸め前、表示は2桁。価格系列はS12の9/18–9/30終値で、9/30引け後の決算と別系列の時間外を注記。<a class="source-tag" href="#s2">[S2]</a><a class="source-tag" href="#s12">[S12]</a></td></tr>
+<tr id="c5"><td><strong>[C5]</strong><br>5期・グラフ</td><td>損益3系列は各期GAAP売上・粗利益・純利益、率2系列はGAAP粗利・営業利益÷売上×100。CF3系列は営業CF・総設備支出・その差。グラフ数値は直下の表と同一。暦年系列をMicron会計期に接続していない。FY2026四半期合計チェック：売上133,188M、粗利益107,504M、営業利益99,340M、純利益84,969M、営業CF89,675M、総設備支出30,712M。<a class="source-tag" href="#s1">[S1]</a><a class="source-tag" href="#s4">[S4]</a><a class="source-tag" href="#s5">[S5]</a><a class="source-tag" href="#s6">[S6]</a><a class="source-tag" href="#s7">[S7]</a></td></tr>
+</tbody></table></div>
+<h3>未確認・未開示・ガイダンスなしの一覧</h3>
+<div class="frame" tabindex="0"><table>
+<thead><tr><th>状態</th><th>対象</th><th>分析への影響・必要資料</th></tr></thead><tbody>
+<tr><td><span class="tag missing">未確認</span></td><td>FY2026 10-K本文、Q4 8-Kの添付原本全文</td><td>SEC一覧で9/30 8-Kを確認したが、10-Kは取得一覧に見当たらず本文未取得。未提出の確定とはしない。監査・在庫・税・契約注記を後続確認する。<a class="source-tag" href="#s9">[S9]</a></td></tr>
+<tr><td><span class="tag missing">未確認</span></td><td>厳密な決算前コンセンサス締切・構成、同基準の過去5期予想EPS、FY2027通期予想</td><td>公開日が決算前のベンチマークのみ採用。5期サプライズ・正式予想PER・精密な目標株価を非掲載。</td></tr>
+<tr><td><span class="tag missing">未開示</span></td><td>HBM売上・利益率・歩留まり・顧客別認定、製品別コスト、拠点別Capex完全配分</td><td>CMBUやDRAM全体をHBMの代用にしない。個別顧客シェア・数量モデルを作らない。</td></tr>
+<tr><td><span class="tag missing">会社ガイダンスなし</span></td><td>FY2027売上・EPS・FCFの通期数値、正確な総設備支出・減価償却の通期値</td><td>方向性、上期・下期の表現と分析者の年率換算を区別。</td></tr>
+<tr><td><span class="tag missing">未確認</span></td><td>中国・輸出規制の最新適用、個別出荷許可、Q4地域売上、スポット同一仕様時系列</td><td>Q3法定リスク記載と最新適用を混同しない。中国改善・撤廃・直接影響額を断定しない。</td></tr>
+<tr><td><span class="tag missing">未確認</span></td><td>トランスクリプトの原音全編、UBS氏名表記、別開催のアナリストコール照合</td><td>Q&amp;Aは日本語要約として提示。曖昧な年度・数量を独立KPIに採用しない。</td></tr>
+<tr><td><span class="tag missing">基準時点では未発生</span></td><td>10/1通常取引・翌営業日終値</td><td>取得失敗でなく市場開始前。次の更新で指数・業界要因と共に確認。</td></tr>
+</tbody></table></div>
+<p class="note small">本稿はPublic Equity Investingの決算後分析・証拠分離・EPS品質確認の手順を用いて作成。外部の有料接続データを取得したかのようには表示せず、公開資料を使用した。HTML・CSS・SVGは同梱で、本文表示に外部スクリプトやフォント、画像の読込みは不要。共通Xカードのみ公開絶対URLを指定している。</p>
+</section>
+</main>
+<footer><div class="inner">Earnings Research｜上場企業の決算プレビューと決算後ディープダイブ<br>本ページは公開情報を基にした調査・整理であり、投資助言ではありません。投資判断はご自身の責任で行ってください。<br><a href="index.html">レポート一覧へ</a> · <a href="mu-fy2026-q3-post-earnings-deep-dive.html">Micron FY2026 Q3レポート</a></div></footer>
+</body></html>
